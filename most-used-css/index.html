@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <style>
+        body,
+        html {
+            font-family: 'Raleway', Arial, sans-serif;
+            line-height: 1.5;
+            padding: 4em 1em;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            width: 60%;
+            margin: 0 auto;
+        }
+        
+        h1,
+        h2 {
+            margin-top: 1em;
+            padding-top: 1em;
+        }
+        
+        .stats {
+            text-transform: uppercase;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        code {
+            background: #ddd;
+            padding: 2px;
+            border-radius: 2px;
+        }
+        
+        .properties {
+            background: #ecf0f1;
+        }
+        
+        .properties a {
+            text-decoration: none;
+        }
+        
+        button,
+        .button {
+            margin-top: 7px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background: transparent;
+            padding: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            display: inline-block;
+            -webkit-appearance: none;
+        }
+        
+        .docs-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            transition: 1s;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .docs-modal.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .docs-modal .bg {
+            z-index: 50;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+        }
+        
+        .docs-modal .content {
+            position: fixed;
+            top: 10vh;
+            left: 15vw;
+            width: 70vw;
+            min-height: 100px;
+            background: white;
+            padding: 15px;
+            z-index: 100;
+            max-height: 90vh;
+            overflow: scroll;
+        }
+        
+        a {
+            color: #2980b9;
+        }
+        
+        code a {
+            text-decoration: none;
+        }
+        
+        a code {
+            text-decoration: none;
+        }
+        
+        .compat-table {
+            max-width: 70%;
+            border-collapse: collapse;
+            border: 1px solid #555;
+        }
+        
+        .compat-table td {
+            border: 1px solid #555;
+        }
+        
+        .compat-table th {
+            background: #555;
+            color: white;
+        }
+        
+        .standard-table,
+        .standard-table td {
+            border: 1px solid #555;
+            border-collapse: collapse;
+        }
+        
+        .standard-table th {
+            background: #555;
+            color: white;
+        }
+    </style>
+    <title>Top 100 most used CSS properties</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Top 100 most used CSS properties</h1>
+        <p>All property descriptions, and the docs in the Read More button have been taken from MDN.</p>
+        <section>
+            <h2>display</h2>
+            <div class="stats">Used 2447 times, 7.32% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>display</code></strong> CSS property specifies the type of rendering box used for an element. In HTML, default <code>display</code> property values are taken from behaviors described in the HTML specifications or from the browser/user default stylesheet. The default value in XML is <code>inline</code>.
+            </article>
+            <button class="more" data-name="display">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/display">View on MDN</a>
+        </section>
+        <section>
+            <h2>color</h2>
+            <div class="stats">Used 1950 times, 5.83% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>color</code></strong> property sets the foreground <a href="color_value">color</a> of an element&apos;s text content, and its <a href="text-decoration">decorations</a>. It doesn&apos;t affect any other characteristic of the element; it should really be called <code>text-color</code> and would have been named so, save for historical reasons and its appearance in CSS Level 1.
+            </article>
+            <button class="more" data-name="color">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/color">View on MDN</a>
+        </section>
+        <section>
+            <h2>width</h2>
+            <div class="stats">Used 1632 times, 4.88% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>width</code></strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> property specifies the width of the content area of an element. The <a href="css_box_model/introduction_to_the_css_box_model#content-area">content area</a> is <em>inside</em> the padding, border, and margin of the element.
+            </article>
+            <button class="more" data-name="width">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/width">View on MDN</a>
+        </section>
+        <section>
+            <h2>position</h2>
+            <div class="stats">Used 1306 times, 3.91% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>position</code></strong> <a title="CSS" href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> property chooses alternative rules for positioning elements, designed to be useful for scripted animation effects.
+            </article>
+            <button class="more" data-name="position">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/position">View on MDN</a>
+        </section>
+        <section>
+            <h2>height</h2>
+            <div class="stats">Used 1259 times, 3.77% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>height</code></strong> CSS property specifies the height of the content area of an element. The <a href="box_model#content">content area</a> is <em>inside</em> the padding, border, and margin of the element.
+            </article>
+            <button class="more" data-name="height">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/height">View on MDN</a>
+        </section>
+        <section>
+            <h2>font-size</h2>
+            <div class="stats">Used 1181 times, 3.53% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>font-size</code></strong> <a title="CSS" href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> property specifies the size of the font (historically the width of the capital &quot;M&quot;). Setting the font size may, in turn, change the size of other items, since it is used to compute the value of the <code>em</code> and <code>ex</code> <a title="The &lt;length&gt; CSS data type denotes distance measurements. It is a &lt;number&gt; immediately followed by a length unit (px, em, pc, in, mm, &#x2026;). Like for any CSS dimension, there is no space between the unit literal and the number.&#xA0;The length unit is optional after the &lt;number&gt; 0." href="length"><code>&lt;length&gt;</code></a> units.
+            </article>
+            <button class="more" data-name="font-size">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/font-size">View on MDN</a>
+        </section>
+        <section>
+            <h2>padding</h2>
+            <div class="stats">Used 1135 times, 3.39% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>padding</code></strong> property sets the padding space on all sides of an element. The <a title="http://developer.mozilla.org/en/CSS/Box_model#padding" href="https://developer.mozilla.org/en/CSS/box_model#padding">padding area</a> is the space between the content of the element and its border. Negative values are not allowed.
+            </article>
+            <button class="more" data-name="padding">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/padding">View on MDN</a>
+        </section>
+        <section>
+            <h2>background-color</h2>
+            <div class="stats">Used 1010 times, 3.02% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>background-color</code></strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="CSS">CSS</a> property sets the background color of an element, either through a color value or the keyword <code>transparent</code>.
+            </article>
+            <button class="more" data-name="background-color">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/background-color">View on MDN</a>
+        </section>
+        <section>
+            <h2>margin</h2>
+            <div class="stats">Used 913 times, 2.73% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>margin</code></strong> CSS property sets the margin for all four sides. It is a shorthand to avoid setting each side separately with the other margin properties: <a title="The margin-top CSS property of an element sets the margin space required on the top of an element. A negative value is also allowed." href="margin-top"><code>margin-top</code></a>, <a title="The margin-right CSS property of an element sets the margin space required on the right side of an element. A negative value is also allowed." href="margin-right"><code>margin-right</code></a>, <a title="The margin-bottom CSS property of an element sets the margin space required on the bottom of an element. A negative value is also allowed." href="margin-bottom"><code>margin-bottom</code></a> and <a title="The margin-left CSS property sets the margin space required on the left side of a box associated with an element. A negative value is also allowed." href="margin-left"><code>margin-left</code></a>.
+            </article>
+            <button class="more" data-name="margin">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/margin">View on MDN</a>
+        </section>
+        <section>
+            <h2>content</h2>
+            <div class="stats">Used 800 times, 2.39% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>content</code></strong> CSS property is used with the <a title="::before creates a pseudo-element that is the first child of the element matched. It is often used to add cosmetic content to an element by using the content property. This element is inline by default." href="::before"><code>::before</code></a> and <a title="The CSS ::after pseudo-element matches a virtual last child of the selected element. It is typically used to add cosmetic content to an element by using the content CSS property. This element is inline by default." href="::after"><code>::after</code></a> pseudo-elements to generate content in an element. Objects inserted using the <code>content</code> property are <em>anonymous <a title="CSS/Replaced_element" href="replaced_element">replaced elements</a>.</em>
+            </article>
+            <button class="more" data-name="content">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/content">View on MDN</a>
+        </section>
+        <section>
+            <h2>margin-top</h2>
+            <div class="stats">Used 770 times, 2.30% of all used properties.</div>
+            <article class="docs">
+                <img src="https://developer.mozilla.org/files/4101/margin-top.svg" style="border-style: solid; border-width: 1px; float: left; margin-bottom: 2em; margin-right: 1em;;float: none; display: block;" alt="The effect of the CSS margin-top property on the element box"><span class="seoSummary">The <strong><code>margin-top</code></strong> CSS property of an element sets the margin space required on the top of an element. A negative value is also allowed.</span>
+            </article>
+            <button class="more" data-name="margin-top">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/margin-top">View on MDN</a>
+        </section>
+        <section>
+            <h2>margin-left</h2>
+            <div class="stats">Used 737 times, 2.20% of all used properties.</div>
+            <article class="docs">
+                <img src="https://developer.mozilla.org/files/4039/margin-left.svg" style="border-style: solid; border-width: 1px; float: left; margin-bottom: 2em; margin-right: 1em;;float: none; display: block;" alt="Area on which CSS margin-left apply"><span class="seoSummary">The <strong><code>margin-left</code></strong> <a title="CSS" href="https://developer.mozilla.org/en/CSS">CSS</a> property sets the margin space required on the left side of a <a title="/en-US/docs/CSS/box_model" href="box_model">box</a> associated with an element. A negative value is also allowed.</span>
+            </article>
+            <button class="more" data-name="margin-left">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/margin-left">View on MDN</a>
+        </section>
+        <section>
+            <h2>font-weight</h2>
+            <div class="stats">Used 698 times, 2.09% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>font-weight</code></strong> <a title="CSS" href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> property specifies the weight or boldness of the font. Some fonts are only available in <code>normal</code> and <code>bold</code>.
+            </article>
+            <button class="more" data-name="font-weight">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/font-weight">View on MDN</a>
+        </section>
+        <section>
+            <h2>margin-bottom</h2>
+            <div class="stats">Used 672 times, 2.01% of all used properties.</div>
+            <article class="docs">
+                <img src="https://developer.mozilla.org/files/4045/margin-bottom.svg" style="border: 1px solid; float: left; height: 130px; margin-bottom: 1em; margin-right: 1em; padding-right: 0.5em; width: 400px;;float: none; display: block;" alt="The effect of the CSS margin-bottom property on the element box"><span class="seoSummary">The <code>margin-bottom</code> <a title="CSS" href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> property of an element sets the margin space required on the bottom of an element. A negative value is also allowed.</span>
+            </article>
+            <button class="more" data-name="margin-bottom">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/margin-bottom">View on MDN</a>
+        </section>
+        <section>
+            <h2>top</h2>
+            <div class="stats">Used 652 times, 1.95% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>top</code></strong> CSS property specifies part of the position of positioned elements. It has no effect on non-positioned elements.
+            </article>
+            <button class="more" data-name="top">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/top">View on MDN</a>
+        </section>
+        <section>
+            <h2>line-height</h2>
+            <div class="stats">Used 634 times, 1.90% of all used properties.</div>
+            <article class="docs">
+                On block level elements, the <code>line-height</code> property specifies the minimum height of line boxes within the element.
+            </article>
+            <button class="more" data-name="line-height">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/line-height">View on MDN</a>
+        </section>
+        <section>
+            <h2>background-position</h2>
+            <div class="stats">Used 592 times, 1.77% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>background-position</code></strong> CSS property sets the initial position for each defined background image, relative to the background position layer defined by <a title="The background-origin CSS property determines the background positioning area, that is the position of the origin of an image specified using the background-image CSS property." href="background-origin"><code>background-origin</code></a>.
+            </article>
+            <button class="more" data-name="background-position">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/background-position">View on MDN</a>
+        </section>
+        <section>
+            <h2>margin-right</h2>
+            <div class="stats">Used 561 times, 1.68% of all used properties.</div>
+            <article class="docs">
+                <img src="https://developer.mozilla.org/files/4041/margin-right.svg" style="border: solid 1px; float: left; height: 200px; margin-bottom: 1em; margin-right: 1em; width: 400px;;float: none; display: block;" alt="The effect of the CSS margin-right property on the element box"><span class="seoSummary">The <strong><code>margin-right</code></strong> <a title="CSS" href="mailto:setiawan345@rocketmail.com?subject=%5Berrkk%5D&amp;body=terrreeh">CSS</a> property of an element sets the margin space required on the right side of an element. A negative value is also allowed.</span>
+            </article>
+            <button class="more" data-name="margin-right">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/margin-right">View on MDN</a>
+        </section>
+        <section>
+            <h2>left</h2>
+            <div class="stats">Used 552 times, 1.65% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>left</code></strong> CSS property specifies part of the position of positioned elements.
+            </article>
+            <button class="more" data-name="left">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/left">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-radius</h2>
+            <div class="stats">Used 534 times, 1.60% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>border-radius</code></strong> CSS property allows Web authors to define how rounded border corners are. The curve of each corner is defined using one or two radii, defining its shape: circle or ellipse.
+            </article>
+            <button class="more" data-name="border-radius">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-radius">View on MDN</a>
+        </section>
+        <section>
+            <h2>border</h2>
+            <div class="stats">Used 526 times, 1.57% of all used properties.</div>
+            <article class="docs">
+                The <code>border</code> <a href="https://developer.mozilla.org/en-US/docs/CSS" title="CSS">CSS</a> property is a <a href="shorthand_properties">shorthand property</a> for setting the individual border property values in a single place in the style sheet. <code>border</code> can be used to set the values for one or more of: <a href="border-width" title="The border-width property is a shorthand property for setting border-top-width,&#xA0;border-right-width,&#xA0;border-bottom-width and&#xA0;border-left-width&#xA0;of a box at the same place."><code>border-width</code></a>, <a href="border-style" title="The border-style property is a shorthand property for setting the line style for all four sides of the element&#xB4;s border."><code>border-style</code></a>, <a href="border-color" title="The border-color CSS property is a shorthand for setting the color of the four sides of an element&apos;s border: border-top-color, border-right-color, border-bottom-color, border-left-color"><code>border-color</code></a>.
+            </article>
+            <button class="more" data-name="border">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border">View on MDN</a>
+        </section>
+        <section>
+            <h2>background-image</h2>
+            <div class="stats">Used 512 times, 1.53% of all used properties.</div>
+            <article class="docs">
+                The <a title="/en-US/docs/CSS" href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> <strong><code>background-image</code></strong> property sets one or several background images for an element. The images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user.
+            </article>
+            <button class="more" data-name="background-image">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/background-image">View on MDN</a>
+        </section>
+        <section>
+            <h2>background</h2>
+            <div class="stats">Used 504 times, 1.51% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>background</code></strong> CSS property is a shorthand for setting the individual background values in a single place in the style sheet. <code>background</code> can be used to set the values for one or more of: <a href="background-clip" title="The background-clip CSS property specifies whether an element&apos;s background, either the color or image, extends underneath its border."><code>background-clip</code></a>, <a href="background-color" title="The background-color CSS property sets the background color of an element, either through a color value or the keyword transparent."><code>background-color</code></a>, <a href="background-image" title="The CSS background-image property sets one or several background images for an element. The images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user."><code>background-image</code></a>, <a href="background-origin" title="The background-origin CSS property determines the background positioning area, that is the position of the origin of an image specified using the background-image CSS property."><code>background-origin</code></a>, <a href="background-position" title="The background-position CSS property sets the initial position for each defined background image, relative to the background position layer defined by background-origin."><code>background-position</code></a>, <a href="background-repeat" title="The background-repeat CSS property defines how background images are repeated. A background image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all."><code>background-repeat</code></a>, <a href="background-size" title="The background-size CSS property specifies the size of the background images. The size of the image can be fully constrained or only partially in order to preserve its intrinsic ratio."><code>background-size</code></a>, and <a href="background-attachment" title="If a background-image is specified, the background-attachment CSS property determines whether that image&apos;s position is fixed within the viewport, or scrolls along with its containing block."><code>background-attachment</code></a>.
+            </article>
+            <button class="more" data-name="background">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/background">View on MDN</a>
+        </section>
+        <section>
+            <h2>text-align</h2>
+            <div class="stats">Used 478 times, 1.43% of all used properties.</div>
+            <article class="docs">
+                <span class="seoSummary">The <strong><code>text-align</code></strong> CSS property describes how inline content like text is aligned in its parent block element. <code>text-align</code> does not control the alignment of block elements, only their inline content.</span>
+            </article>
+            <button class="more" data-name="text-align">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/text-align">View on MDN</a>
+        </section>
+        <section>
+            <h2>float</h2>
+            <div class="stats">Used 472 times, 1.41% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>float</code></strong> CSS property specifies that an element should be taken from the normal flow and placed along the left or right side of its container, where text and inline elements will wrap around it.
+            </article>
+            <button class="more" data-name="float">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/float">View on MDN</a>
+        </section>
+        <section>
+            <h2>vertical-align</h2>
+            <div class="stats">Used 421 times, 1.26% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>vertical-align</code></strong> <a title="CSS" href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> property specifies the vertical alignment of an inline or table-cell box.
+            </article>
+            <button class="more" data-name="vertical-align">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/vertical-align">View on MDN</a>
+        </section>
+        <section>
+            <h2>padding-left</h2>
+            <div class="stats">Used 414 times, 1.24% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>padding-left</code></strong> <a href="https://developer.mozilla.org/en/CSS" title="CSS">CSS</a> property of an element sets the padding space required on the left side of an element. The <a href="https://developer.mozilla.org/en/CSS/box_model#padding" title="http://developer.mozilla.org/en/CSS/Box_model#padding">padding area</a> is the space between the content of the element and it&apos;s border. A negative value is not allowed.
+            </article>
+            <button class="more" data-name="padding-left">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/padding-left">View on MDN</a>
+        </section>
+        <section>
+            <h2>right</h2>
+            <div class="stats">Used 400 times, 1.20% of all used properties.</div>
+            <article class="docs">
+                The <code>right</code> <a title="CSS" href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> property specifies part of the position of positioned elements.
+            </article>
+            <button class="more" data-name="right">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/right">View on MDN</a>
+        </section>
+        <section>
+            <h2>overflow</h2>
+            <div class="stats">Used 380 times, 1.14% of all used properties.</div>
+            <article class="docs">
+                Using the <code>overflow</code> property with a value different to <code>visible</code> (its default) will create a new <a href="block_formatting_context">block formatting context</a>. This is technically necessary &#x2014; if a float intersected with the scrolling element it would forcibly rewrap the content. The rewrap would happen after each scroll step, leading to a slow scrolling experience.
+            </article>
+            <button class="more" data-name="overflow">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/overflow">View on MDN</a>
+        </section>
+        <section>
+            <h2>transform</h2>
+            <div class="stats">Used 366 times, 1.09% of all used properties.</div>
+            <article class="docs">
+                The CSS <strong><code>transform</code></strong> property lets you modify the coordinate space of the CSS visual formatting model. Using it, elements can be translated, rotated, scaled, and skewed.
+            </article>
+            <button class="more" data-name="transform">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/transform">View on MDN</a>
+        </section>
+        <section>
+            <h2>box-shadow</h2>
+            <div class="stats">Used 348 times, 1.04% of all used properties.</div>
+            <article class="docs">
+                <span class="seoSummary">The <code>box-shadow</code> property describes one or more shadow effects as a comma-separated list.</span> It enables you to cast a drop shadow from the frame of almost any element. If a <a title="The border-radius CSS property allows Web authors to define how rounded border corners are. The curve of each corner is defined using one or two radii, defining its shape: circle or ellipse." href="border-radius"><code>border-radius</code></a> is specified on the element with a box shadow, the box shadow takes on the same rounded corners. The z-ordering of multiple box shadows is the same as multiple <a href="https://developer.mozilla.org/en-US/CSS/text-shadow">text shadows</a> (the first specified shadow is on top).
+            </article>
+            <button class="more" data-name="box-shadow">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/box-shadow">View on MDN</a>
+        </section>
+        <section>
+            <h2>padding-top</h2>
+            <div class="stats">Used 345 times, 1.03% of all used properties.</div>
+            <article class="docs">
+                <img src="https://developer.mozilla.org/files/4105/padding-top.svg" style="border: 1px solid; float: left; margin-bottom: 1em; margin-right: 1em; padding-right: 0.5em;;float: none; display: block;" alt="The effect of the CSS padding-top property on the element box"><span class="seoSummary">The <strong><code>padding-top</code></strong> <a title="CSS" href="https://developer.mozilla.org/en/CSS">CSS</a> property of an element sets the padding space required on the top of an element. The <a title="http://developer.mozilla.org/en/CSS/Box_model#padding" href="https://developer.mozilla.org/en/CSS/box_model#padding">padding area</a> is the space between the content of the element and its border. Contrary to <a title="The margin-top CSS property of an element sets the margin space required on the top of an element. A negative value is also allowed." href="margin-top"><code>margin-top</code></a> values, negative values of <code>padding-top</code> are invalid.</span>
+            </article>
+            <button class="more" data-name="padding-top">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/padding-top">View on MDN</a>
+        </section>
+        <section>
+            <h2>flex</h2>
+            <div class="stats">Used 325 times, 0.97% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>flex</code></strong> <a title="CSS" href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> property is a <a href="shorthand_properties">shorthand</a> property specifying the ability of a flex item to alter its dimensions to fill available space. Flex items can be stretched to use available space proportional to their flex grow factor or their flex shrink factor to prevent overflow.
+            </article>
+            <button class="more" data-name="flex">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/flex">View on MDN</a>
+        </section>
+        <section>
+            <h2>max-width</h2>
+            <div class="stats">Used 322 times, 0.96% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>max-width</code></strong> property is used to set the maximum width of a given element. It prevents the used value of the <a href="width" title="The width CSS property specifies the width of the content area of an element. The content area is inside the padding, border, and margin of the element."><code>width</code></a> property from becoming larger than the value specified for <code>max-width</code>.
+            </article>
+            <button class="more" data-name="max-width">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/max-width">View on MDN</a>
+        </section>
+        <section>
+            <h2>background-size</h2>
+            <div class="stats">Used 320 times, 0.96% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>background-size</code></strong> <a title="CSS" href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> property specifies the size of the background images. The size of the image can be fully constrained or only partially in order to preserve its intrinsic ratio.
+            </article>
+            <button class="more" data-name="background-size">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/background-size">View on MDN</a>
+        </section>
+        <section>
+            <h2>z-index</h2>
+            <div class="stats">Used 319 times, 0.95% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>z-index</code></strong> property specifies the z-order of an element and its descendants. When elements overlap, z-order determines which one covers the other. An element with a larger z-index generally covers an element with a lower one.
+            </article>
+            <button class="more" data-name="z-index">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/z-index">View on MDN</a>
+        </section>
+        <section>
+            <h2>text-decoration</h2>
+            <div class="stats">Used 318 times, 0.95% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>text-decoration</code></strong> CSS property is used to set the text formatting to <code>underline</code>, <code>overline</code>, <code>line-through</code> or <code>blink</code>. Underline and overline decorations are positioned under the text, line-through over it.
+            </article>
+            <button class="more" data-name="text-decoration">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/text-decoration">View on MDN</a>
+        </section>
+        <section>
+            <h2>opacity</h2>
+            <div class="stats">Used 309 times, 0.92% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>opacity</code></strong> CSS property specifies the transparency of an element, that is, the degree to which the background behind the element is overlaid.
+            </article>
+            <button class="more" data-name="opacity">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/opacity">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-color</h2>
+            <div class="stats">Used 301 times, 0.90% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>border-color</code></strong> CSS property is a shorthand for setting the color of the four sides of an element&apos;s border: <a href="border-top-color" title="The border-top-color CSS property sets the color of the top border of an element. Note that in many cases the shorthand CSS properties border-color or border-top are more convenient and preferable."><code>border-top-color</code></a>, <a href="border-right-color" title="The border-right-color CSS property sets the color of the right border of an element. Note that in many cases the shorthand CSS properties&#xA0; border-color or border-right are more convenient and preferable."><code>border-right-color</code></a>, <a href="border-bottom-color" title="The border-bottom-color CSS property sets the color of the bottom border of an element. Note that in many cases the shorthand CSS properties border-color or border-bottom are more convenient and preferable."><code>border-bottom-color</code></a>, <a href="border-left-color" title="The border-left-color CSS property sets the color of the left border of an element. Note that in many cases the shorthand CSS properties border-color or border-left are more convenient and preferable."><code>border-left-color</code></a>
+            </article>
+            <button class="more" data-name="border-color">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-color">View on MDN</a>
+        </section>
+        <section>
+            <h2>padding-right</h2>
+            <div class="stats">Used 295 times, 0.88% of all used properties.</div>
+            <article class="docs">
+                The<strong> <code>padding-right</code> </strong><a title="CSS" href="https://developer.mozilla.org/en/CSS">CSS</a> property of an element sets the padding space required on the right side of an element. The <a title="http://developer.mozilla.org/en/CSS/Box_model#padding" href="https://developer.mozilla.org/en/CSS/box_model#padding">padding area</a> is the space between the content of the element and its border. Negative values are not allowed.
+            </article>
+            <button class="more" data-name="padding-right">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/padding-right">View on MDN</a>
+        </section>
+        <section>
+            <h2>padding-bottom</h2>
+            <div class="stats">Used 291 times, 0.87% of all used properties.</div>
+            <article class="docs">
+                <img src="https://developer.mozilla.org/files/4109/padding-bottom.svg" style="border: 1px solid; float: left; height: 130px; margin-bottom: 1em; margin-right: 1em; padding-right: 0.5em; width: 400px;;float: none; display: block;" alt="The effect of the CSS padding-bottom property on the element box"><span class="seoSummary">The <strong><code>padding-bottom</code></strong> <a title="CSS" href="https://developer.mozilla.org/en/CSS">CSS</a> property of an element sets the height of the padding area at the bottom of an element. The <a title="http://developer.mozilla.org/en/CSS/Box_model#padding" href="https://developer.mozilla.org/en/CSS/box_model#padding">padding area</a> is the space between the content of the element and its border. Contrary to <a title="The margin-bottom CSS property of an element sets the margin space required on the bottom of an element. A negative value is also allowed." href="margin-bottom"><code>margin-bottom</code></a> values, negative values of <code>padding-bottom</code> are invalid.</span>
+            </article>
+            <button class="more" data-name="padding-bottom">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/padding-bottom">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-bottom</h2>
+            <div class="stats">Used 290 times, 0.87% of all used properties.</div>
+            <article class="docs">
+                The <code>border-bottom</code> <a title="CSS" href="https://developer.mozilla.org/en/CSS">CSS</a> property is a shorthand that sets the values of <a title="The border-bottom-color CSS property sets the color of the bottom border of an element. Note that in many cases the shorthand CSS properties border-color or border-bottom are more convenient and preferable." href="border-bottom-color"><code>border-bottom-color</code></a>, <a title="The border-bottom-style CSS property sets the line style of the bottom border of a box." href="border-bottom-style"><code>border-bottom-style</code></a>, and <a title="The border-bottom-width CSS property sets the width of the bottom border of a box." href="border-bottom-width"><code>border-bottom-width</code></a>. These properties describe the bottom border of elements.
+            </article>
+            <button class="more" data-name="border-bottom">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-bottom">View on MDN</a>
+        </section>
+        <section>
+            <h2>cursor</h2>
+            <div class="stats">Used 269 times, 0.80% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>cursor</code></strong> CSS property specifies the mouse cursor displayed when the mouse pointer is over an element.
+            </article>
+            <button class="more" data-name="cursor">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/cursor">View on MDN</a>
+        </section>
+        <section>
+            <h2>transition</h2>
+            <div class="stats">Used 260 times, 0.78% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>transition</code></strong> <a title="CSS" href="https://developer.mozilla.org/en/CSS">CSS </a>property is a <a title="/en-US/docs/CSS/Shorthand_properties" href="shorthand_properties">shorthand property</a> for <a title="The transition-property CSS property is used to specify the names of CSS properties to which a transition effect should be applied." href="transition-property"><code>transition-property</code></a>, <a title="The transition-duration CSS property specifies the number of seconds or milliseconds a transition animation should take to complete. By default, the value is 0s, meaning that no animation will occur." href="transition-duration"><code>transition-duration</code></a>, <a title="The transition-timing-function CSS property is used to describe how the intermediate values of the CSS&#xA0;properties being affected by a transition effect are calculated. This in essence lets you establish an acceleration curve, so that the speed of the transition can vary over its duration." href="transition-timing-function"><code>transition-timing-function</code></a>, and <a title="The transition-delay CSS property specifies the amount of time to wait between a change being requested to a property that is to be transitioned and the start of the transition effect." href="transition-delay"><code>transition-delay</code></a>. It enables you to define the transition between two states of an element. Different states may be defined using <a title="/en-US/docs/CSS/Pseudo-classes" href="pseudo-classes">pseudo-classes</a> like <a title="The :hover CSS pseudo-class matches when the user designates an element with a pointing device, but does not necessarily activate it. This style may be overridden by any other link-related pseudo-classes, that is :link, :visited, and :active, appearing in subsequent rules. In order to style appropriately links, you need to put the :hover rule after the :link and :visited rules but before the :active one, as defined by the LVHA-order: :link &#x2014; :visited &#x2014; :hover &#x2014; :active." href=":hover"><code>:hover</code></a> or <a title="The :active CSS pseudo-class matches when an element is being activated by the user. It allows the page to give a feedback that the activation has been detected by the browser. When interacting with a mouse, this is typically the time between the user presses the mouse button and releases it. The :active pseudo-class is also typically matched when using the keyboard tab key. It is frequently used on &lt;a&gt; and &lt;button&gt; HTML&#xA0;elements, but may not be limited to just those." href=":active"><code>:active</code></a> or dynamically set using JavaScript.
+            </article>
+            <button class="more" data-name="transition">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/transition">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-top</h2>
+            <div class="stats">Used 252 times, 0.75% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>border-top</code></strong> <a href="https://developer.mozilla.org/en-US/docs/CSS" title="CSS">CSS</a> property is a shorthand that sets the values of <a href="border-top-color" title="The border-top-color CSS property sets the color of the top border of an element. Note that in many cases the shorthand CSS properties border-color or border-top are more convenient and preferable."><code>border-top-color</code></a>, <a href="border-top-style" title="The border-top-style CSS property sets the line style of the top border of a box."><code>border-top-style</code></a>, and <a href="border-top-width" title="The border-top-width CSS property sets the width of the top border of a box."><code>border-top-width</code></a>. These properties describe the top border of elements.
+            </article>
+            <button class="more" data-name="border-top">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-top">View on MDN</a>
+        </section>
+        <section>
+            <h2>background-repeat</h2>
+            <div class="stats">Used 238 times, 0.71% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>background-repeat</code></strong> <a href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> property defines how background images are repeated. A background image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all.
+            </article>
+            <button class="more" data-name="background-repeat">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/background-repeat">View on MDN</a>
+        </section>
+        <section>
+            <h2>white-space</h2>
+            <div class="stats">Used 237 times, 0.71% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>white-space</code></strong> property is used to describe how whitespace inside the element is handled.
+            </article>
+            <button class="more" data-name="white-space">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/white-space">View on MDN</a>
+        </section>
+        <section>
+            <h2>font-family</h2>
+            <div class="stats">Used 233 times, 0.70% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>font-family</code></strong> CSS property lets you specify a prioritized list of font family names and/or generic family names for the selected element. Values are separated by a comma to indicate that they are alternatives. The browser will select the first font on the list that is installed on the computer or that can be downloaded using a <a title="The @font-face CSS at-rule allows authors to specify online fonts to display text on their web pages. By allowing authors to provide their own fonts, @font-face eliminates the need to depend on the limited number of fonts users have installed on their computers. The @font-face at-rule may be used not only at the top level of a CSS, but also inside any CSS conditional-group at-rule." href="@font-face"><code>@font-face</code></a> at-rule.
+            </article>
+            <button class="more" data-name="font-family">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/font-family">View on MDN</a>
+        </section>
+        <section>
+            <h2>bottom</h2>
+            <div class="stats">Used 222 times, 0.66% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>bottom</code></strong> <a href="https://developer.mozilla.org/en-US/docs/CSS" title="CSS">CSS</a> property participates in specifying the position of <strong>positioned elements</strong>.
+            </article>
+            <button class="more" data-name="bottom">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/bottom">View on MDN</a>
+        </section>
+        <section>
+            <h2>box-sizing</h2>
+            <div class="stats">Used 161 times, 0.48% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>box-sizing</code></strong> property is used to alter the default <a href="css_box_model/introduction_to_the_css_box_model">CSS box model</a> used to calculate width and height of the elements. It is possible to use this property to emulate the behavior of browsers that do not correctly support the CSS box model specification.
+            </article>
+            <button class="more" data-name="box-sizing">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/box-sizing">View on MDN</a>
+        </section>
+        <section>
+            <h2>flex-direction</h2>
+            <div class="stats">Used 159 times, 0.48% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>flex-direction</code></strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> property specifies how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
+            </article>
+            <button class="more" data-name="flex-direction">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/flex-direction">View on MDN</a>
+        </section>
+        <section>
+            <h2>max-height</h2>
+            <div class="stats">Used 150 times, 0.45% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>max-height</code></strong> property is used to set the maximum height of an element. It prevents the used value of the <a title="The height CSS property specifies the height of the content area of an element. The content area is inside the padding, border, and margin of the element." href="height"><code>height</code></a> property from becoming larger than the value specified for <code>max-height</code>.
+            </article>
+            <button class="more" data-name="max-height">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/max-height">View on MDN</a>
+        </section>
+        <section>
+            <h2>clear</h2>
+            <div class="stats">Used 134 times, 0.40% of all used properties.</div>
+            <article class="docs">
+                <span class="seoSummary">The <strong><code>clear</code></strong> <a title="CSS" href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> property specifies whether an element can be next to <a title="CSS/float" href="float">floating</a> elements that precede it or must be moved down (cleared) below them. The <code>clear</code> property applies to both floating and non-floating elements.</span>
+            </article>
+            <button class="more" data-name="clear">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/clear">View on MDN</a>
+        </section>
+        <section>
+            <h2>min-height</h2>
+            <div class="stats">Used 131 times, 0.39% of all used properties.</div>
+            <article class="docs">
+                The<strong> <code>min-height</code></strong> property is used to set the minimum height of a given element. It prevents the used value of the <a title="The height CSS property specifies the height of the content area of an element. The content area is inside the padding, border, and margin of the element." href="height"><code>height</code></a> property from becoming smaller than the value specified for <code>min-height</code>.
+            </article>
+            <button class="more" data-name="min-height">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/min-height">View on MDN</a>
+        </section>
+        <section>
+            <h2>outline</h2>
+            <div class="stats">Used 121 times, 0.36% of all used properties.</div>
+            <article class="docs">
+                The <a href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> <strong><code>outline</code></strong> property is a shorthand property for setting one or more of the individual outline properties <a title="The outline-style CSS property is used to set the style of the outline of an element. An outline is a line that is drawn around elements, outside the border edge, to make the element stand out." href="outline-style"><code>outline-style</code></a>, <a title="The outline-width CSS property is used to set the width of the outline of an element. An outline is a line that is drawn around elements, outside the border edge, to make the element stand out:" href="outline-width"><code>outline-width</code></a> and <a title="The outline-color CSS property sets the color of the outline of an element. An outline is a line that is drawn around elements, outside the border edge, to make the element stand out." href="outline-color"><code>outline-color</code></a> in a single declaration. In most cases the use of this shortcut is preferable and more convenient.
+            </article>
+            <button class="more" data-name="outline">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/outline">View on MDN</a>
+        </section>
+        <section>
+            <h2>order</h2>
+            <div class="stats">Used 117 times, 0.35% of all used properties.</div>
+            <article class="docs">
+                The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> <strong><code>order</code></strong> property specifies the order used to lay out flex items in their flex container. Elements are laid out in the ascending order of the <code>order</code> value. Elements with the same <code>order</code> value are laid out in the order in which they appear in the source code.
+            </article>
+            <button class="more" data-name="order">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/order">View on MDN</a>
+        </section>
+        <section>
+            <h2>min-width</h2>
+            <div class="stats">Used 115 times, 0.34% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>min-width</code></strong> property is used to set the minimum width of a given element. It prevents the used value of the <a href="width" title="The width CSS property specifies the width of the content area of an element. The content area is inside the padding, border, and margin of the element."><code>width</code></a> property from becoming smaller than the value specified for <code>min-width</code>.
+            </article>
+            <button class="more" data-name="min-width">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/min-width">View on MDN</a>
+        </section>
+        <section>
+            <h2>text-overflow</h2>
+            <div class="stats">Used 108 times, 0.32% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>text-overflow</code></strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> property determines how overflowed content that is not displayed is signaled to users. It can be clipped, display an ellipsis (&apos;<code>&#x2026;</code>&apos;, <code style="text-transform: uppercase;">U+2026 Horizontal Ellipsis</code>), or display a custom string.
+            </article>
+            <button class="more" data-name="text-overflow">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/text-overflow">View on MDN</a>
+        </section>
+        <section>
+            <h2>align-items</h2>
+            <div class="stats">Used 108 times, 0.32% of all used properties.</div>
+            <article class="docs">
+                The <a href="https://developer.mozilla.org/en-US/docs/CSS" title="CSS">CSS</a> <strong><code>align-items</code></strong> property aligns flex items of the current flex line the same way as <a href="https://developer.mozilla.org/en/CSS/justify-content" title="en/CSS/justify-content"><code>justify-content</code></a> but in the perpendicular direction.
+            </article>
+            <button class="more" data-name="align-items">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/align-items">View on MDN</a>
+        </section>
+        <section>
+            <h2>font-style</h2>
+            <div class="stats">Used 93 times, 0.28% of all used properties.</div>
+            <article class="docs">
+                The<strong> <code>font-style</code></strong> CSS property lets you select <code>italic</code> or <code>oblique</code> faces within a <a title="The font-family CSS property lets you specify a prioritized list of font family names and/or generic family names for the selected element. Values are separated by a comma to indicate that they are alternatives. The browser will select the first font on the list that is installed on the computer or that can be downloaded using a @font-face at-rule." href="font-family"><code>font-family</code></a>. <strong>Italic</strong> forms are generally cursive in nature, usually using less horizontal space than their unstyled counterparts, while <strong>oblique</strong> faces are usually just sloped versions of the regular face. Both italic and oblique faces are simulated by artificially sloping the glyphs of the regular face (see <a title="The font-synthesis CSS property controls which missing typefaces, bold or italic, may be synthesized by the browser." href="font-synthesis"><code>font-synthesis</code></a> for control over this).
+            </article>
+            <button class="more" data-name="font-style">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/font-style">View on MDN</a>
+        </section>
+        <section>
+            <h2>animation</h2>
+            <div class="stats">Used 92 times, 0.28% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>animation</code></strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> property is a <a href="shorthand_properties">shorthand property</a> for <a title="The animation-name CSS property specifies a list of animations that should be applied to the selected element. Each name indicates a @keyframes at-rule that defines the property values for the animation sequence." href="animation-name"><code>animation-name</code></a>, <a title="The animation-duration CSS property specifies the length of time that an animation should take to complete one cycle." href="animation-duration"><code>animation-duration</code></a>, <a title="The animation-timing-function CSS property specifies how a CSS animation should progress over the duration of each cycle. The possible values are one or several &lt;timing-function&gt;." href="animation-timing-function"><code>animation-timing-function</code></a>, <a title="The animation-delay CSS property specifies when the animation should start. This lets the animation sequence begin some time after it&apos;s applied to an element." href="animation-delay"><code>animation-delay</code></a>, <a title="The animation-iteration-count CSS property defines the number of times an animation cycle should be played before stopping." href="animation-iteration-count"><code>animation-iteration-count</code></a>, <a title="The animation-direction CSS property indicates whether the animation should play in reverse on alternate cycles." href="animation-direction"><code>animation-direction</code></a>, <a title="The animation-fill-mode CSS property specifies how a CSS animation should apply styles to its target before and after it is executing." href="animation-fill-mode"><code>animation-fill-mode</code></a> and <a title="The animation-play-state CSS property determines whether an animation is running or paused. This can be queried to determine whether or not the animation is currently running. In addition, its value can be set to pause and resume playback of an animation." href="animation-play-state"><code>animation-play-state</code></a>.
+            </article>
+            <button class="more" data-name="animation">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/animation">View on MDN</a>
+        </section>
+        <section>
+            <h2>justify-content</h2>
+            <div class="stats">Used 89 times, 0.27% of all used properties.</div>
+            <article class="docs">
+                The <a title="CSS" href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> <strong><code>justify-content</code></strong> property defines how the browser distributes space between and around flex items along the main-axis of their container.
+            </article>
+            <button class="more" data-name="justify-content">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/justify-content">View on MDN</a>
+        </section>
+        <section>
+            <h2>text-shadow</h2>
+            <div class="stats">Used 88 times, 0.26% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>text-shadow</code></strong> property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" title="The documentation about this has not yet been written; please consider contributing!"><code>text-decorations</code></a> of the element.
+            </article>
+            <button class="more" data-name="text-shadow">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/text-shadow">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-width</h2>
+            <div class="stats">Used 85 times, 0.25% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>border-width</code></strong> property is a shorthand property for setting <a title="The border-top-width CSS property sets the width of the top border of a box." href="border-top-width"><code>border-top-width</code></a>, <a title="The border-right-width CSS property sets the width of the right border of a box." href="border-right-width"><code>border-right-width</code></a>, <a title="The documentation about this has not yet been written; please consider contributing!" href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-width"><code>border-bottom-width</code></a> and <a title="The border-left-width CSS property sets the width of the left border of a box." href="border-left-width"><code>border-left-width</code></a> of a box at the same place.
+            </article>
+            <button class="more" data-name="border-width">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-width">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-left</h2>
+            <div class="stats">Used 80 times, 0.24% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>border-left</code></strong> <a title="CSS" href="https://developer.mozilla.org/en/CSS">CSS</a> property is a shorthand that sets the values of <a title="The border-left-color CSS property sets the color of the bottom border of an element. Note that in many cases the shorthand CSS properties border-color or border-left are more convenient and preferable." href="border-left-color"><code>border-left-color</code></a>, <a title="The border-left-style CSS property sets the line style of the left border of a box." href="border-left-style"><code>border-left-style</code></a>, and <a title="The border-left-width CSS property sets the width of the left border of a box." href="border-left-width"><code>border-left-width</code></a>. These properties describe the left border of elements.
+            </article>
+            <button class="more" data-name="border-left">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-left">View on MDN</a>
+        </section>
+        <section>
+            <h2>list-style</h2>
+            <div class="stats">Used 78 times, 0.23% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>list-style</code></strong> property is a shorthand property for setting <a href="list-style-type" title="The list-style-type property specifies the appearance of a list item element. Because it is the only property that&#xA0;defaults to display:list-item, this is usually a &lt;li&gt; element, but can be any element with this display value."><code>list-style-type</code></a>, <a href="list-style-image" title="The list-style-image property specifies an image to be used as the list item marker."><code>list-style-image</code></a> and <a href="list-style-position" title="The list-style-position property specifies the position of the marker box in the principal block box."><code>list-style-position</code></a>.
+            </article>
+            <button class="more" data-name="list-style">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/list-style">View on MDN</a>
+        </section>
+        <section>
+            <h2>user-select</h2>
+            <div class="stats">Used 78 times, 0.23% of all used properties.</div>
+            <article class="docs">
+                
+            </article>
+            <button class="more" data-name="user-select">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/user-select">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-bottom-color</h2>
+            <div class="stats">Used 70 times, 0.21% of all used properties.</div>
+            <article class="docs">
+                The<strong> <code>border-bottom-color</code></strong> CSS property sets the color of the bottom border of an element. Note that in many cases the shorthand CSS properties <a title="The border-color CSS property is a shorthand for setting the color of the four sides of an element&apos;s border: border-top-color, border-right-color, border-bottom-color, border-left-color" href="border-color"><code>border-color</code></a> or <a title="The border-bottom CSS property is a shorthand that sets the values of border-bottom-color, border-bottom-style, and border-bottom-width. These properties describe the bottom border of elements." href="border-bottom"><code>border-bottom</code></a> are more convenient and preferable.
+            </article>
+            <button class="more" data-name="border-bottom-color">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-bottom-color">View on MDN</a>
+        </section>
+        <section>
+            <h2>fill</h2>
+            <div class="stats">Used 67 times, 0.20% of all used properties.</div>
+            <article class="docs">
+                
+            </article>
+            <button class="more" data-name="fill">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/fill">View on MDN</a>
+        </section>
+        <section>
+            <h2>src</h2>
+            <div class="stats">Used 66 times, 0.20% of all used properties.</div>
+            <article class="docs">
+                
+            </article>
+            <button class="more" data-name="src">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/src">View on MDN</a>
+        </section>
+        <section>
+            <h2>text-transform</h2>
+            <div class="stats">Used 65 times, 0.19% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>text-transform</code></strong> CSS property specifies how to capitalize an element&apos;s text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized.
+            </article>
+            <button class="more" data-name="text-transform">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/text-transform">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-right</h2>
+            <div class="stats">Used 64 times, 0.19% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>border-right</code></strong> <a title="CSS" href="https://developer.mozilla.org/en/CSS">CSS</a> property is a shorthand that sets the values of <a title="The border-right-color CSS property sets the color of the right border of an element. Note that in many cases the shorthand CSS properties&#xA0; border-color or border-right are more convenient and preferable." href="border-right-color"><code>border-right-color</code></a>, <a title="The border-right-style CSS property sets the line style of the right border of a box." href="border-right-style"><code>border-right-style</code></a>, and <a title="The border-right-width CSS property sets the width of the right border of a box." href="border-right-width"><code>border-right-width</code></a>. These properties describe the right border of elements.
+            </article>
+            <button class="more" data-name="border-right">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-right">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-bottom-right-radius</h2>
+            <div class="stats">Used 63 times, 0.19% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>border-bottom-right-radius</code></strong> CSS property sets the rounding of the bottom-right corner of the element. The rounding can be a circle or an ellipse, or if one of the value is <code>0</code> no rounding is done and the corner is square.
+            </article>
+            <button class="more" data-name="border-bottom-right-radius">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-bottom-right-radius">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-bottom-left-radius</h2>
+            <div class="stats">Used 63 times, 0.19% of all used properties.</div>
+            <article class="docs">
+                The<strong> <code>border-bottom-left-radius</code></strong> CSS property sets the rounding of the bottom-left corner of the element. The rounding can be a circle or an ellipse, or if one of the value is <code>0</code> no rounding is done and the corner is square.
+            </article>
+            <button class="more" data-name="border-bottom-left-radius">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-bottom-left-radius">View on MDN</a>
+        </section>
+        <section>
+            <h2>flex-order</h2>
+            <div class="stats">Used 59 times, 0.18% of all used properties.</div>
+            <article class="docs">
+                
+            </article>
+            <button class="more" data-name="flex-order">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/flex-order">View on MDN</a>
+        </section>
+        <section>
+            <h2>visibility</h2>
+            <div class="stats">Used 59 times, 0.18% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>visibility</code></strong> property can be used to hide an element while leaving the space where it would have been. It can also hide rows or columns of a table.
+            </article>
+            <button class="more" data-name="visibility">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/visibility">View on MDN</a>
+        </section>
+        <section>
+            <h2>pointer-events</h2>
+            <div class="stats">Used 58 times, 0.17% of all used properties.</div>
+            <article class="docs">
+                The CSS property<strong> <code>pointer-events</code></strong> allows authors to control under what circumstances (if any) a particular graphic element can become the <a href="https://developer.mozilla.org/en-US/docs/Web/API/event.target">target</a> of mouse events. When this property is unspecified, the same characteristics of the <code>visiblePainted</code> value apply to SVG content.
+            </article>
+            <button class="more" data-name="pointer-events">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/pointer-events">View on MDN</a>
+        </section>
+        <section>
+            <h2>letter-spacing</h2>
+            <div class="stats">Used 58 times, 0.17% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>letter-spacing</code></strong> CSS property specifies spacing behavior between text characters.
+            </article>
+            <button class="more" data-name="letter-spacing">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/letter-spacing">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-top-left-radius</h2>
+            <div class="stats">Used 53 times, 0.16% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>border-top-left-radius</code></strong> CSS property sets the rounding of the top-left corner of the element. The rounding can be a circle or an ellipse, or if one of the value is <code>0,</code>no rounding is done and the corner is square.
+            </article>
+            <button class="more" data-name="border-top-left-radius">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-top-left-radius">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-top-right-radius</h2>
+            <div class="stats">Used 52 times, 0.16% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>border-top-right-radius</code></strong> CSS property sets the rounding of the top-right corner of the element. The rounding can be a circle or an ellipse, or if one of the value is <code>0</code> no rounding is done and the corner is square.
+            </article>
+            <button class="more" data-name="border-top-right-radius">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-top-right-radius">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-style</h2>
+            <div class="stats">Used 46 times, 0.14% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>border-style</code></strong> property is a shorthand property for setting the line style for all four sides of the element&#xB4;s border.
+            </article>
+            <button class="more" data-name="border-style">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-style">View on MDN</a>
+        </section>
+        <section>
+            <h2>overflow-y</h2>
+            <div class="stats">Used 46 times, 0.14% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>overflow-y</code></strong> property specifies whether to clip content, render a scroll bar, or display overflow content of a block-level element, when it overflows at the top and bottom edges.
+            </article>
+            <button class="more" data-name="overflow-y">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/overflow-y">View on MDN</a>
+        </section>
+        <section>
+            <h2>list-style-type</h2>
+            <div class="stats">Used 45 times, 0.13% of all used properties.</div>
+            <article class="docs">
+                The<strong> <code>list-style-type</code></strong> property specifies the appearance of a list item element. Because it is the only property that defaults to <code>display:list-item</code>, this is usually a <a title="The HTML &lt;li&gt; element (or HTML List Item Element) is used to represent an item in a list. It must be contained in a parent element: an ordered list (&lt;ol&gt;), an unordered list (&lt;ul&gt;), or a menu (&lt;menu&gt;). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li"><code>&lt;li&gt;</code></a> element, but can be any element with this <a title="The display CSS property specifies the type of rendering box used for an element. In HTML, default display property values are taken from behaviors described in the HTML specifications or from the browser/user default stylesheet. The default value in XML is inline." href="display"><code>display</code></a> value.
+            </article>
+            <button class="more" data-name="list-style-type">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/list-style-type">View on MDN</a>
+        </section>
+        <section>
+            <h2>stroke</h2>
+            <div class="stats">Used 44 times, 0.13% of all used properties.</div>
+            <article class="docs">
+                
+            </article>
+            <button class="more" data-name="stroke">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/stroke">View on MDN</a>
+        </section>
+        <section>
+            <h2>word-wrap</h2>
+            <div class="stats">Used 43 times, 0.13% of all used properties.</div>
+            <article class="docs">
+                The <code><strong>overflow</strong></code><strong><code>-wrap</code></strong> property is used to specify whether or not the browser may break lines within words in order to prevent overflow when an otherwise unbreakable string is too long to fit in its containing box.
+            </article>
+            <button class="more" data-name="word-wrap">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/word-wrap">View on MDN</a>
+        </section>
+        <section>
+            <h2>filter</h2>
+            <div class="stats">Used 40 times, 0.12% of all used properties.</div>
+            <article class="docs">
+                <span class="seoSummary">The <strong><code>filter</code></strong> property provides graphical effects like blurring, sharpening, or color shifting an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.</span>
+            </article>
+            <button class="more" data-name="filter">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/filter">View on MDN</a>
+        </section>
+        <section>
+            <h2>tab-size</h2>
+            <div class="stats">Used 36 times, 0.11% of all used properties.</div>
+            <article class="docs">
+                The<strong> <code>tab-size</code></strong> CSS property is used to customize the width of a tab (<code>U+0009</code>) character.
+            </article>
+            <button class="more" data-name="tab-size">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/tab-size">View on MDN</a>
+        </section>
+        <section>
+            <h2>animation-name</h2>
+            <div class="stats">Used 34 times, 0.10% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>animation-name</code></strong> <a title="CSS" href="https://developer.mozilla.org/en-US/docs/CSS">CSS</a> property specifies a list of animations that should be applied to the selected element. Each name indicates a <a title="The @keyframes CSS at-rule lets authors control the intermediate steps in a CSS animation sequence by establishing keyframes (or waypoints) along the animation sequence that must be reached by certain points during the animation. This gives you more specific control over the intermediate steps of the animation sequence than you&apos;d get when letting the browser handle everything automatically." href="@keyframes"><code>@keyframes</code></a> at-rule that defines the property values for the animation sequence.
+            </article>
+            <button class="more" data-name="animation-name">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/animation-name">View on MDN</a>
+        </section>
+        <section>
+            <h2>flex-align</h2>
+            <div class="stats">Used 34 times, 0.10% of all used properties.</div>
+            <article class="docs">
+                
+            </article>
+            <button class="more" data-name="flex-align">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/flex-align">View on MDN</a>
+        </section>
+        <section>
+            <h2>background-clip</h2>
+            <div class="stats">Used 33 times, 0.10% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>background-clip</code></strong> CSS property specifies whether an element&apos;s background, either the color or image, extends underneath its border.
+            </article>
+            <button class="more" data-name="background-clip">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/background-clip">View on MDN</a>
+        </section>
+        <section>
+            <h2>appearance</h2>
+            <div class="stats">Used 32 times, 0.10% of all used properties.</div>
+            <article class="docs">
+                
+            </article>
+            <button class="more" data-name="appearance">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/appearance">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-right-color</h2>
+            <div class="stats">Used 31 times, 0.09% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>border-right-color</code></strong> CSS property sets the color of the right border of an element. Note that in many cases the shorthand CSS properties <a title="The border-color CSS property is a shorthand for setting the color of the four sides of an element&apos;s border: border-top-color, border-right-color, border-bottom-color, border-left-color" href="border-color"><code>border-color</code></a> or <a title="The border-right CSS property is a shorthand that sets the values of border-right-color, border-right-style, and border-right-width. These properties describe the right border of elements." href="border-right"><code>border-right</code></a> are more convenient and preferable.
+            </article>
+            <button class="more" data-name="border-right-color">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-right-color">View on MDN</a>
+        </section>
+        <section>
+            <h2>flex-grow</h2>
+            <div class="stats">Used 26 times, 0.08% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>flex-grow</code></strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> property specifies the flex grow factor of a flex item. It specifies what amount of space inside the flex container the item should take up.
+            </article>
+            <button class="more" data-name="flex-grow">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/flex-grow">View on MDN</a>
+        </section>
+        <section>
+            <h2>font</h2>
+            <div class="stats">Used 25 times, 0.07% of all used properties.</div>
+            <article class="docs">
+                The <code>font</code> CSS property is either a shorthand property for setting <a title="The font-style CSS property lets you select italic or oblique faces within a font-family. Italic forms are generally cursive in nature, usually using less horizontal space than their unstyled counterparts, while oblique faces are usually just sloped versions of the regular face. Oblique faces can be simulated by artificially sloping the glyphs of the regular face." href="font-style"><code>font-style</code></a>, <a title="The font-variant property acts as a shorthand for the longhand properties: font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures, and font-variant-east-asian. You can also set the CSS Level 2 (Revision 1) values of font-variant, (that is, normal or small-caps), by using the font shorthand." href="font-variant"><code>font-variant</code></a>, <a title="The font-weight CSS property specifies the weight or boldness of the font. Some fonts are only available in normal and bold." href="font-weight"><code>font-weight</code></a>, <a title="The font-size CSS property specifies the size of the font. Setting the font size may, in turn, change the size of other items, since it is used to compute the value of the em and ex&#xA0;&lt;length&gt; units." href="font-size"><code>font-size</code></a>, <a title="On block level elements, the line-height property specifies the minimum height of line boxes within the element." href="line-height"><code>line-height</code></a> and <a title="The font-family CSS property lets you specify a prioritized list of font family names and/or generic family names for the selected element. Values are separated by a comma to indicate that they are alternatives. The browser will select the first font on the list that is installed on the computer or that can be downloaded using a @font-face at-rule." href="font-family"><code>font-family</code></a>, or a way to set the element&apos;s font to a system font, using specific keywords.
+            </article>
+            <button class="more" data-name="font">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/font">View on MDN</a>
+        </section>
+        <section>
+            <h2>stroke-width</h2>
+            <div class="stats">Used 25 times, 0.07% of all used properties.</div>
+            <article class="docs">
+                
+            </article>
+            <button class="more" data-name="stroke-width">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/stroke-width">View on MDN</a>
+        </section>
+        <section>
+            <h2>animation-duration</h2>
+            <div class="stats">Used 24 times, 0.07% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>animation-duration</code></strong> CSS property specifies the length of time that an animation should take to complete one cycle.
+            </article>
+            <button class="more" data-name="animation-duration">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/animation-duration">View on MDN</a>
+        </section>
+        <section>
+            <h2>direction</h2>
+            <div class="stats">Used 23 times, 0.07% of all used properties.</div>
+            <article class="docs">
+                <span class="seoSummary">Set the <strong><code>direction</code></strong> CSS property to match the direction of the text: <code>rtl</code> for languages written from right-to-left (like Hebrew or Arabic) text and <code>ltr</code> for other scripts. This is typically done as part of the document (e.g., using the <code>dir</code> attribute in HTML) rather than through direct use of CSS.</span>
+            </article>
+            <button class="more" data-name="direction">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/direction">View on MDN</a>
+        </section>
+        <section>
+            <h2>overflow-x</h2>
+            <div class="stats">Used 22 times, 0.07% of all used properties.</div>
+            <article class="docs">
+                The<strong> <code>overflow-x</code></strong> property specifies whether to clip content, render a scroll bar, or display overflow content of a block-level element, when it overflows at the left and right edges.
+            </article>
+            <button class="more" data-name="overflow-x">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/overflow-x">View on MDN</a>
+        </section>
+        <section>
+            <h2>transition-property</h2>
+            <div class="stats">Used 22 times, 0.07% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>transition-property</code> </strong>CSS property is used to specify the names of CSS properties to which a <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transitions">transition effect</a> should be applied.
+            </article>
+            <button class="more" data-name="transition-property">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/transition-property">View on MDN</a>
+        </section>
+        <section>
+            <h2>border-top-color</h2>
+            <div class="stats">Used 22 times, 0.07% of all used properties.</div>
+            <article class="docs">
+                The <strong><code>border-top-color</code></strong> CSS property sets the color of the top border of an element. Note that in many cases the shorthand CSS properties <a title="The border-color CSS property is a shorthand for setting the color of the four sides of an element&apos;s border: border-top-color, border-right-color, border-bottom-color, border-left-color" href="border-color"><code>border-color</code></a> or <a title="The border-top CSS property is a shorthand that sets the values of border-top-color, border-top-style, and border-top-width. These properties describe the top border of elements." href="border-top"><code>border-top</code></a> are more convenient and preferable.
+            </article>
+            <button class="more" data-name="border-top-color">Read more</button>
+            <a class="view-mdn button" href="https://developer.mozilla.org/pl/docs/Web/CSS/border-top-color">View on MDN</a>
+        </section>
+
+        <section class="global-stats">
+            <h1>Some statistics</h1>
+            <ul>
+                <li>Sites scanned:
+                    <ul>
+                        <li><a href="http://google.com">http://google.com</a></li>
+                        <li><a href="http://facebook.com">http://facebook.com</a></li>
+                        <li><a href="http://pl.wikipedia.org">http://pl.wikipedia.org</a></li>
+                        <li><a href="http://github.com">http://github.com</a></li>
+                        <li><a href="http://www.npmjs.com/">http://www.npmjs.com/</a></li>
+                        <li><a href="http://imgur.com/">http://imgur.com/</a></li>
+                        <li><a href="http://stackoverflow.com/">http://stackoverflow.com/</a></li>
+                        <li><a href="http://youtube.com/">http://youtube.com/</a></li>
+                        <li><a href="http://www.google.com/trends/">http://www.google.com/trends/</a></li>
+                        <li><a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+                        <li><a href="http://fonts.google.com/">http://fonts.google.com/</a></li>
+                        <li><a href="http://material.google.com/style/color.html#">http://material.google.com/style/color.html#</a></li>
+                        <li><a href="http://developer.mozilla.org/en-US/">http://developer.mozilla.org/en-US/</a></li>
+                        <li><a href="http://nodejs.org/en/">http://nodejs.org/en/</a></li>
+                        <li><a href="http://slack.com/">http://slack.com/</a></li>
+                    </ul>
+                </li>
+                <li>Stylesheets scanned: 18</li>
+                <li>Total properties used: 33439</li>
+                <li>Page made by: alufers</li>
+            </ul>
+        </section>
+    </div>
+    <div class="docs-modal">
+        <div class="bg"></div>
+        <div class="content">Hey</div>
+    </div>
+    <script>
+function get(url, cb) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            cb(JSON.parse(this.responseText));
+        }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+}
+
+
+document.querySelector('.docs-modal .bg').addEventListener("click", function () {
+    document.querySelector('.docs-modal').classList.remove("visible");
+
+});
+
+
+get("index.json", function (index) {
+
+    for (var i in index) {
+        localStorage.setItem("index_" + i, index[i]);
+    }
+    bindClick();
+    document.querySelectorAll('.more').forEach(function (but) {
+        but.addEventListener("click", function () {
+            showDocs(this.getAttribute('data-name'));
+        });
+    });
+
+  
+
+
+
+});
+
+function showDocs(name) {
+    getDocs(name, function (docs) {
+        
+        document.querySelector('.docs-modal .content').innerHTML = docs;
+        document.querySelector('.docs-modal').classList.add("visible");
+        document.querySelector('.docs-modal').scrollTop = 0;
+        bindClick();
+    });
+
+}
+
+function getDocs(name, cb) {
+    if (localStorage.getItem(name) == null) {
+        get(localStorage.getItem("index_" + name), function (data) {
+            for (var i in data) {
+                localStorage.setItem(i, data[i]);
+            }
+            cb(localStorage.getItem(name));
+        });
+    } else {
+        setTimeout(function () {
+            cb(localStorage.getItem(name));
+        }, 0);
+    }
+}
+
+function bindClick() {
+    document.querySelectorAll('a').forEach(function (a) {
+        a.removeEventListener('click', handleClick);
+        a.addEventListener('click', handleClick);
+
+    });
+}
+
+function handleClick(e) {
+    
+    if (localStorage.getItem("index_" + this.getAttribute("href")) == null) {
+        
+    } else {
+        e.preventDefault();
+        showDocs(this.getAttribute("href"));
+    }
+}</script>
+</body>
+
+</html>

@@ -1,0 +1,1971 @@
+openapi: "3.0.0"
+info:
+  title: "macdonalds [retrofit2swagger]"
+  description: "Extracted from retrofit"
+  version: "1.0.0"
+paths:
+  "/v3/configurations":
+    "get":
+      summary: "z34.mo55488a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/k54"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            e22<k54>`"
+      x-retrofit-interface: "com.z34"
+  "/v3/geotiles":
+    "get":
+      summary: "z34.mo55489b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/p54"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            e22<List<p54>>`"
+      x-retrofit-interface: "com.z34"
+  "/api/time/v1/time":
+    "get":
+      summary: "AbstractC8285c.mo51145a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ServerTimeModel"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            my4<ServerTimeModel>`"
+      servers:
+      - url: "https://user-api-dot-dev-euw-gmal-mcdonalds.appspot.com"
+      x-retrofit-interface: "com.tz3.AbstractC8285c"
+  "/api/locationfinder/v1/client/location/info":
+    "get":
+      summary: "AbstractC1461b.mo11693a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GeoIpResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            e22<GeoIpResponse>`"
+      servers:
+      - url: "https://locationfinder-api-dot-prd-euw-gmal-mcdonalds.appspot.com"
+      x-retrofit-interface: "com.b04.AbstractC1461b"
+  "/api/config/v1/locations":
+    "get":
+      summary: "AbstractC1086c.mo9402a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApeMarketPickerModel"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            my4<ApeMarketPickerModel>`"
+      servers:
+      - url: "https://config-api-dot-prd-euw-gmal-mcdonalds.appspot.com"
+      x-retrofit-interface: "com.a04.AbstractC1086c"
+  "/v3/advertisements":
+    "get":
+      summary: "c44.mo13037a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/i54"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            e22<List<i54>>`"
+      x-retrofit-interface: "com.c44"
+  "/con/v3/deviceRegistration":
+    "post":
+      summary: "e44.mo15708o"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/a34"
+          description: "Response body type was declared as `/* renamed from: o */\n\
+            my4<a34>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/g34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.e44"
+  "/con/v3/consumers/redeemedOffers":
+    "post":
+      summary: "e44.mo15704k"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/a64"
+          description: "Response body type was declared as `/* renamed from: k */\n\
+            e22<a64>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/b64"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.e44"
+  "/off/v3/redeemedOffers/renewable/generateScanCode/{offerId}":
+    "post":
+      summary: "e44.mo15706m"
+      parameters:
+      - name: "offerId"
+        in: "path"
+        description: "e44.mo15706m.i"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/a64"
+          description: "Response body type was declared as `/* renamed from: m */\n\
+            e22<a64>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.e44"
+  "/con/v3/emailRegistrations":
+    "post":
+      summary: "e44.mo15705l"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/a34"
+          description: "Response body type was declared as `/* renamed from: l */\n\
+            my4<a34>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/l34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.e44"
+  "/con/v3/consumers/points":
+    "post":
+      summary: "e44.mo15707n"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/s54"
+          description: "Response body type was declared as `/* renamed from: n */\n\
+            my4<s54>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/i64"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.e44"
+  "/Authorization/ActivityTokens":
+    "get":
+      summary: "y34.mo54547a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/w34"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            e22<w34>`"
+      x-retrofit-interface: "com.y34"
+  "/Authorization/AuthorizationCode":
+    "get":
+      summary: "y34.mo54548b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/v34"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            e22<v34>`"
+      x-retrofit-interface: "com.y34"
+  "/Authorization/AccessToken":
+    "get":
+      summary: "y34.mo54549c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/w34"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            e22<w34>`"
+      x-retrofit-interface: "com.y34"
+  "/v3/consumers/tokens":
+    "get":
+      summary: "a44.mo9675A"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/w34"
+          description: "Response body type was declared as `/* renamed from: A */\n\
+            e22<w34>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/loyaltyCardInstances/{loyaltyInstanceId}/offeractivation":
+    "post":
+      summary: "a44.mo9676B"
+      parameters:
+      - name: "loyaltyInstanceId"
+        in: "path"
+        description: "a44.mo9676B.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/g12"
+          description: "Response body type was declared as `/* renamed from: B */\n\
+            g12`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/f54"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/redeemedOffers":
+    "get":
+      summary: "a44.mo9677a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/a64"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            e22<List<a64>>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+    "post":
+      summary: "a44.mo9692o"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/a64"
+          description: "Response body type was declared as `/* renamed from: o */\n\
+            e22<a64>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/b64"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/logins":
+    "post":
+      summary: "a44.mo9678b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/i34"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            e22<i34>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/g34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/mfa/SendOTP":
+    "post":
+      summary: "a44.mo9679c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/g12"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            g12`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/loginwithmfa":
+    "post":
+      summary: "a44.mo9680d"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/i34"
+          description: "Response body type was declared as `/* renamed from: d */\n\
+            e22<i34>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/h34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/crossReferences":
+    "post":
+      summary: "a44.mo9681e"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/g12"
+          description: "Response body type was declared as `/* renamed from: e */\n\
+            g12`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/l54"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+    "get":
+      summary: "a44.mo9698u"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/m54"
+          description: "Response body type was declared as `/* renamed from: u */\n\
+            e22<List<m54>>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/consent":
+    "post":
+      summary: "a44.mo9682f"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/g12"
+          description: "Response body type was declared as `/* renamed from: f */\n\
+            g12`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/d34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+    "get":
+      summary: "a44.mo9696s"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/d34"
+          description: "Response body type was declared as `/* renamed from: s */\n\
+            e22<d34>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/me/tagvalues":
+    "put":
+      summary: "a44.mo9683g"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/g12"
+          description: "Response body type was declared as `/* renamed from: g */\n\
+            g12`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/n34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+    "get":
+      summary: "a44.getTags"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/m34"
+          description: "Response body type was declared as `e22<m34>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/serviceIdRequest?source=consumer":
+    "get":
+      summary: "a44.mo9685h"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/e34"
+          description: "Response body type was declared as `/* renamed from: h */\n\
+            e22<e34>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/pointsrequests":
+    "get":
+      summary: "a44.mo9686i"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/y54"
+          description: "Response body type was declared as `/* renamed from: i */\n\
+            e22<y54>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/me/verificationtoken":
+    "get":
+      summary: "a44.mo9687j"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/k64"
+          description: "Response body type was declared as `/* renamed from: j */\n\
+            e22<k64>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/loyaltyCards/{loyaltyCardId}/expiringPoints":
+    "get":
+      summary: "a44.mo9688k"
+      parameters:
+      - name: "loyaltyCardId"
+        in: "path"
+        description: "a44.mo9688k.i"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/n54"
+          description: "Response body type was declared as `/* renamed from: k */\n\
+            e22<List<n54>>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/points":
+    "post":
+      summary: "a44.mo9689l"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/s54"
+          description: "Response body type was declared as `/* renamed from: l */\n\
+            e22<s54>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/i64"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers":
+    "put":
+      summary: "a44.mo9690m"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/g12"
+          description: "Response body type was declared as `/* renamed from: m */\n\
+            g12`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/e54"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+    "get":
+      summary: "a44.mo9699v"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/e54"
+          description: "Response body type was declared as `/* renamed from: v */\n\
+            e22<e54>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/password":
+    "post":
+      summary: "a44.mo9691n"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/a34"
+          description: "Response body type was declared as `/* renamed from: n */\n\
+            e22<a34>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/c34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/resetPassword":
+    "post":
+      summary: "a44.mo9693p"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/g12"
+          description: "Response body type was declared as `/* renamed from: p */\n\
+            g12`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/k34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/mfa/Configure":
+    "post":
+      summary: "a44.mo9694q"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/g12"
+          description: "Response body type was declared as `/* renamed from: q */\n\
+            g12`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/b34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/sendEmail":
+    "post":
+      summary: "a44.mo9695r"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/g12"
+          description: "Response body type was declared as `/* renamed from: r */\n\
+            g12`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/o34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/mfa/ResendOTP":
+    "post":
+      summary: "a44.mo9697t"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/g12"
+          description: "Response body type was declared as `/* renamed from: t */\n\
+            g12`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/emailRegistrations":
+    "post":
+      summary: "a44.mo9700w"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/a34"
+          description: "Response body type was declared as `/* renamed from: w */\n\
+            e22<a34>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/l34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/marketwithMfa":
+    "put":
+      summary: "a44.mo9701x"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/a34"
+          description: "Response body type was declared as `/* renamed from: x */\n\
+            e22<a34>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/j34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/deviceRegistration":
+    "post":
+      summary: "a44.mo9702y"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/a34"
+          description: "Response body type was declared as `/* renamed from: y */\n\
+            e22<a34>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/g34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/v3/consumers/market":
+    "put":
+      summary: "a44.mo9703z"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/a34"
+          description: "Response body type was declared as `/* renamed from: z */\n\
+            e22<a34>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/j34"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.a44"
+  "/{language}-{country}.json":
+    "get":
+      summary: "AbstractC2543c.mo16556a"
+      parameters:
+      - name: "language"
+        in: "path"
+        description: "AbstractC2543c.mo16556a.str"
+        required: true
+        schema:
+          type: "string"
+      - name: "country"
+        in: "path"
+        description: "AbstractC2543c.mo16556a.str2"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties:
+                  type: "object"
+                  additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            my4<Map<String, Object>>`"
+      x-retrofit-interface: "com.f04.AbstractC2543c"
+  "/api/locationfinder/v1/restaurants/{marketid}/{language}-{country}":
+    "get":
+      summary: "AbstractC2874d.mo18227a"
+      parameters:
+      - name: "marketid"
+        in: "path"
+        description: "AbstractC2874d.mo18227a.str"
+        required: true
+        schema:
+          type: "string"
+      - name: "language"
+        in: "path"
+        description: "AbstractC2874d.mo18227a.str2"
+        required: true
+        schema:
+          type: "string"
+      - name: "country"
+        in: "path"
+        description: "AbstractC2874d.mo18227a.str3"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RestaurantResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            my4<RestaurantResponse>`"
+      servers:
+      - url: "https://locationfinder-api-dot-prd-euw-gmal-mcdonalds.appspot.com"
+      x-retrofit-interface: "com.g04.AbstractC2874d"
+  "/v3/loyaltycards":
+    "get":
+      summary: "d44.mo14357b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/q54"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            e22<List<q54>>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.d44"
+  "/v3/offers/{offerId}/termsAndConditions":
+    "get":
+      summary: "d44.mo14358c"
+      parameters:
+      - name: "offerId"
+        in: "path"
+        description: "d44.mo14358c.i"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/g64"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            e22<List<g64>>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.d44"
+  "/v3/offers/reserveOffers":
+    "post":
+      summary: "d44.mo14359d"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/c64"
+          description: "Response body type was declared as `/* renamed from: d */\n\
+            e22<c64>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/d64"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.d44"
+  "/v3/offers":
+    "get":
+      summary: "d44.mo14360e"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/u54"
+          description: "Response body type was declared as `/* renamed from: e */\n\
+            e22<List<u54>>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.d44"
+  "/v3/merchants/{merchantId}/nearestvenue":
+    "get":
+      summary: "d44.mo14362g"
+      parameters:
+      - name: "merchantId"
+        in: "path"
+        description: "d44.mo14362g.i"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/j64"
+          description: "Response body type was declared as `/* renamed from: g */\n\
+            e22<j64>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.d44"
+  "/v3/redeemedOffers/renewable":
+    "get":
+      summary: "d44.mo14363h"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/f64"
+          description: "Response body type was declared as `/* renamed from: h */\n\
+            e22<List<f64>>`"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.d44"
+  "/api/config/v1/configs/{marketid}/{languagecode}-{countrycode}":
+    "get":
+      summary: "AbstractC8034b.mo50211a"
+      parameters:
+      - name: "marketid"
+        in: "path"
+        description: "AbstractC8034b.mo50211a.str"
+        required: true
+        schema:
+          type: "string"
+      - name: "languagecode"
+        in: "path"
+        description: "AbstractC8034b.mo50211a.str2"
+        required: true
+        schema:
+          type: "string"
+      - name: "countrycode"
+        in: "path"
+        description: "AbstractC8034b.mo50211a.str3"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties:
+                  type: "object"
+                  additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            e22<Map<String, Object>>`"
+      servers:
+      - url: "https://config-api-dot-prd-euw-gmal-mcdonalds.appspot.com"
+      x-retrofit-interface: "com.sz3.AbstractC8034b"
+  "/{loyalty_id}/points":
+    "post":
+      summary: "AbstractC8814b.mo52824a"
+      parameters:
+      - name: "loyalty_id"
+        in: "path"
+        description: "AbstractC8814b.mo52824a.i"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            my4<Void>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BurnPointsModel"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.vz3.AbstractC8814b"
+  "/v3/activities":
+    "post":
+      summary: "x34.mo53733a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/g12"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            g12`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/g54"
+      servers:
+      - url: "https://europe-west1-prd-euw-gmal-mcdonalds.cloudfunctions.net/loyalty"
+      x-retrofit-interface: "com.x34"
+components:
+  schemas:
+    "k54":
+      type: "object"
+      properties:
+        "configurationApiUrl":
+          type: "string"
+        "activityApiUrl":
+          type: "string"
+        "consumerApiUrl":
+          type: "string"
+        "locationApiUrl":
+          type: "string"
+        "offerApiUrl":
+          type: "string"
+        "advertisementApiUrl":
+          type: "string"
+        "offerImagePrefix":
+          type: "string"
+        "geoTileSizeInDegrees":
+          type: "number"
+        "extendedParameters":
+          type: "string"
+        "tenantId":
+          type: "string"
+    "p54":
+      type: "object"
+      properties:
+        "id":
+          type: "string"
+        "geofences":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/o54"
+    "ServerTimeModel":
+      type: "object"
+      properties:
+        "currentTime":
+          type: "string"
+    "GeoIpResponse":
+      type: "object"
+      properties:
+        "country":
+          $ref: "#/components/schemas/Country"
+        "location":
+          $ref: "#/components/schemas/Location"
+    "ApeMarketPickerModel":
+      type: "object"
+      properties:
+        "enableMarketSwitch":
+          type: "boolean"
+        "markets":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/ApeMarketModel"
+    "i54":
+      type: "object"
+      properties:
+        "id":
+          type: "integer"
+        "title":
+          type: "string"
+        "description":
+          type: "string"
+        "merchantId":
+          type: "integer"
+        "contentUrl":
+          type: "string"
+        "startDate":
+          type: "string"
+          format: "date-time"
+        "endDate":
+          type: "string"
+          format: "date-time"
+        "dailyStartTime":
+          type: "integer"
+        "dailyEndTime":
+          type: "integer"
+        "daysOfWeek":
+          type: "array"
+          items:
+            type: "integer"
+        "image":
+          type: "string"
+        "imageDescription":
+          type: "string"
+        "contentTagReferenceCodes":
+          type: "array"
+          items:
+            type: "string"
+        "isActive":
+          type: "boolean"
+        "isAvailableAllStores":
+          type: "boolean"
+        "distanceToClosestVenue":
+          type: "number"
+        "extendedData":
+          type: "string"
+        "channelCode":
+          type: "string"
+        "placementCode":
+          type: "string"
+        "clickThroughUrl":
+          type: "string"
+        "eventStartDateTime":
+          type: "string"
+          format: "date-time"
+        "dateCreated":
+          type: "string"
+          format: "date-time"
+        "dateModified":
+          type: "string"
+          format: "date-time"
+        "weight":
+          type: "integer"
+    "g34":
+      type: "object"
+      properties:
+        "grant_type":
+          type: "string"
+        "username":
+          type: "string"
+        "password":
+          type: "string"
+        "returnCrossReferences":
+          type: "boolean"
+        "returnConsumerInfo":
+          type: "boolean"
+    "a34":
+      type: "object"
+      properties:
+        "access_token":
+          type: "string"
+        "token_type":
+          type: "string"
+        "jwtRefreshToken":
+          type: "string"
+        "jwtAccessToken":
+          type: "string"
+        "jwtMfaToken":
+          type: "string"
+        "jwtActivityToken":
+          type: "string"
+        "jwtAuthorizationToken":
+          type: "string"
+    "b64":
+      type: "object"
+      properties:
+        "offerInstanceUniqueId":
+          type: "string"
+        "offerId":
+          type: "integer"
+    "a64":
+      type: "object"
+      properties:
+        "isReward":
+          type: "boolean"
+        "id":
+          type: "integer"
+        "offerId":
+          type: "integer"
+        "offerInstanceUniqueId":
+          type: "string"
+        "promoImagePath":
+          type: "string"
+        "promoImageDescription":
+          type: "string"
+        "altImagePath":
+          type: "string"
+        "altImageDescription":
+          type: "string"
+        "title":
+          type: "string"
+        "description":
+          type: "string"
+        "startDate":
+          type: "string"
+          format: "date-time"
+        "endDate":
+          type: "string"
+          format: "date-time"
+        "lastUpdatedAt":
+          type: "string"
+          format: "date-time"
+        "termsAndConditions":
+          type: "string"
+        "redemptionText":
+          type: "string"
+        "redemptionImage":
+          type: "string"
+        "redeemedAt":
+          type: "string"
+        "redemptionTextExpiry":
+          type: "string"
+        "merchantId":
+          type: "integer"
+        "venueIds":
+          type: "array"
+          items:
+            type: "integer"
+        "paymentProviderSuccessUrl":
+          type: "string"
+        "isAGift":
+          type: "boolean"
+        "giftId":
+          type: "string"
+        "giftBatchId":
+          type: "string"
+        "giftedOnDate":
+          type: "string"
+          format: "date-time"
+        "burnt":
+          type: "boolean"
+        "burntAt":
+          type: "string"
+    "l34":
+      type: "object"
+      properties:
+        "grant_type":
+          type: "string"
+        "username":
+          type: "string"
+        "password":
+          type: "string"
+        "emailRegistration":
+          $ref: "#/components/schemas/f34"
+        "currentMerchantId":
+          type: "integer"
+    "i64":
+      type: "object"
+      properties:
+        "loyaltyCardId":
+          type: "integer"
+        "pointsRequested":
+          type: "integer"
+        "transactionId":
+          type: "string"
+        "autoActivateReward":
+          type: "boolean"
+        "fillMultipleCards":
+          type: "boolean"
+        "extendedData":
+          type: "string"
+    "s54":
+      type: "object"
+      properties:
+        "loyaltyCardId":
+          type: "integer"
+        "pointsBalance":
+          type: "integer"
+        "pointsAllocated":
+          type: "integer"
+        "pointCreationSummary":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/z54"
+    "w34":
+      type: "object"
+      properties:
+        "jwtAccessToken":
+          type: "string"
+        "jwtRefreshToken":
+          type: "string"
+        "jwtAuthorizationToken":
+          type: "string"
+        "token_type":
+          type: "string"
+    "v34":
+      type: "object"
+      properties:
+        "jwtAuthorizationToken":
+          type: "string"
+        "token_type":
+          type: "string"
+    "f54":
+      type: "object"
+      properties:
+        "offerId":
+          type: "integer"
+    "g12":
+      type: "object"
+    "i34":
+      allOf:
+      - $ref: "#/components/schemas/a34"
+      - type: "object"
+        properties:
+          "consumerInfo":
+            $ref: "#/components/schemas/e54"
+          "crossReferences":
+            type: "array"
+            items:
+              $ref: "#/components/schemas/m54"
+    "h34":
+      type: "object"
+      properties:
+        "otp":
+          type: "string"
+        "returnCrossReferences":
+          type: "boolean"
+        "returnConsumerInfo":
+          type: "boolean"
+    "l54":
+      type: "object"
+      properties:
+        "systemType":
+          type: "integer"
+        "externalId":
+          type: "string"
+    "d34":
+      type: "object"
+      properties:
+        "f6315a":
+          type: "string"
+        "consentToStoreAndProcess":
+          type: "boolean"
+        "services":
+          type: "object"
+          additionalProperties:
+            type: "boolean"
+    "n34":
+      type: "object"
+      properties:
+        "tagValueAddReferenceCodes":
+          type: "array"
+          items:
+            type: "string"
+        "tagValueRemoveReferenceCodes":
+          type: "array"
+          items:
+            type: "string"
+    "m34":
+      type: "object"
+      properties:
+        "tagValueReferenceCodes":
+          type: "array"
+          items:
+            type: "string"
+    "e34":
+      type: "object"
+      properties:
+        "serviceId":
+          type: "string"
+    "y54":
+      type: "object"
+      properties:
+        "pointsRequests":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/x54"
+    "k64":
+      type: "object"
+      properties:
+        "verificationToken":
+          type: "string"
+        "expiryDate":
+          type: "string"
+          format: "date-time"
+    "n54":
+      type: "object"
+      properties:
+        "loyaltyCardId":
+          type: "integer"
+        "f29418b":
+          type: "integer"
+        "expiryDayUtc":
+          type: "string"
+          format: "date-time"
+    "e54":
+      type: "object"
+      properties:
+        "userName":
+          type: "string"
+        "f7463b":
+          type: "string"
+        "f7464c":
+          type: "string"
+        "f7465d":
+          type: "string"
+        "fullName":
+          type: "string"
+        "f7467f":
+          $ref: "#/components/schemas/GenderType"
+        "f7468g":
+          type: "string"
+        "homeCity":
+          type: "integer"
+        "extendedData":
+          type: "string"
+        "mobileNumber":
+          type: "string"
+        "postcode":
+          type: "string"
+        "currentMerchant":
+          type: "integer"
+        "isMfaEnabled":
+          type: "boolean"
+        "mfaChannel":
+          type: "string"
+    "c34":
+      type: "object"
+      properties:
+        "currentPassword":
+          type: "string"
+        "newPassword":
+          type: "string"
+    "k34":
+      type: "object"
+      properties:
+        "f25840a":
+          type: "string"
+        "action":
+          type: "string"
+    "b34":
+      type: "object"
+      properties:
+        "Otp":
+          type: "string"
+        "EnableMfa":
+          type: "boolean"
+        "MfaChannel":
+          type: "string"
+    "o34":
+      type: "object"
+      properties:
+        "emailTemplate":
+          type: "string"
+        "f30303b":
+          type: "string"
+        "inboundChannel":
+          type: "string"
+    "m54":
+      type: "object"
+      properties:
+        "externalId":
+          type: "string"
+        "systemType":
+          type: "string"
+    "j34":
+      type: "object"
+      properties:
+        "f24820a":
+          type: "string"
+        "otp":
+          type: "string"
+    "RestaurantResponse":
+      type: "object"
+      properties:
+        "facilities":
+          type: "array"
+          items:
+            type: "string"
+        "restaurants":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/Restaurant"
+    "q54":
+      type: "object"
+      properties:
+        "reasonCodes":
+          type: "array"
+          items:
+            type: "integer"
+        "instances":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/r54"
+        "f32392C":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/u54"
+        "contentTagReferenceCodes":
+          type: "array"
+          items:
+            type: "string"
+        "loyaltyCardId":
+          type: "integer"
+        "dailyStartTime":
+          type: "integer"
+        "dailyEndTime":
+          type: "integer"
+        "maxInstances":
+          type: "integer"
+        "startDate":
+          type: "string"
+        "endDate":
+          type: "string"
+        "extendedData":
+          type: "string"
+        "title":
+          type: "string"
+        "subtitle":
+          type: "string"
+        "description":
+          type: "string"
+        "instructions":
+          type: "string"
+        "termsAndConditions":
+          type: "string"
+        "pointsRequired":
+          type: "integer"
+        "initialPoints":
+          type: "integer"
+        "weighting":
+          type: "integer"
+        "cardImage":
+          type: "string"
+        "cardImageDescription":
+          type: "string"
+        "assetsPath":
+          type: "string"
+        "instancesAvailable":
+          type: "integer"
+        "maxPointsPerDay":
+          type: "number"
+        "maxPointsRequestsPerDay":
+          type: "number"
+        "loyaltyCardType":
+          $ref: "#/components/schemas/LoyaltyCardType"
+        "pointsExpiryDays":
+          type: "integer"
+        "categoryId":
+          type: "integer"
+        "categoryName":
+          type: "string"
+        "isActive":
+          type: "boolean"
+    "g64":
+      type: "object"
+      properties:
+        "offerId":
+          type: "integer"
+        "content":
+          type: "string"
+    "d64":
+      type: "object"
+      properties:
+        "f6424a":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/t54"
+    "c64":
+      type: "object"
+      properties:
+        "f5289a":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/e64"
+    "u54":
+      type: "object"
+      properties:
+        "paymentAmount":
+          type: "number"
+        "paymentTaxRate":
+          type: "number"
+        "redemptionCount":
+          type: "integer"
+        "lastRedeemedAt":
+          type: "string"
+        "codeExpiryInMinutes":
+          type: "integer"
+        "pointValue":
+          type: "integer"
+        "burntCount":
+          type: "integer"
+        "lastBurntAt":
+          type: "string"
+        "weighting":
+          type: "integer"
+        "isGiftable":
+          type: "boolean"
+        "isAGift":
+          type: "boolean"
+        "giftedBy":
+          type: "string"
+        "giftedCopy":
+          type: "string"
+        "giftId":
+          type: "string"
+        "giftBatchId":
+          type: "string"
+        "giftedOnDate":
+          type: "string"
+          format: "date-time"
+        "termsAndConditions":
+          type: "string"
+        "isReward":
+          type: "boolean"
+        "isRespawningOffer":
+          type: "boolean"
+        "respawnsInDays":
+          type: "integer"
+        "respawnLimit":
+          type: "integer"
+        "venueIds":
+          type: "array"
+          items:
+            type: "integer"
+        "venueExternalIds":
+          type: "array"
+          items:
+            type: "string"
+        "closestVenue":
+          $ref: "#/components/schemas/j54"
+        "isReserved":
+          type: "boolean"
+        "offerReservation":
+          $ref: "#/components/schemas/v54"
+        "id":
+          type: "integer"
+        "title":
+          type: "string"
+        "description":
+          type: "string"
+        "merchantId":
+          type: "integer"
+        "contentUrl":
+          type: "string"
+        "startDate":
+          type: "string"
+          format: "date-time"
+        "endDate":
+          type: "string"
+          format: "date-time"
+        "dailyStartTime":
+          type: "integer"
+        "dailyEndTime":
+          type: "integer"
+        "daysOfWeek":
+          type: "array"
+          items:
+            type: "integer"
+        "image":
+          type: "string"
+        "imageDescription":
+          type: "string"
+        "contentTagReferenceCodes":
+          type: "array"
+          items:
+            type: "string"
+        "isActive":
+          type: "boolean"
+        "isAvailableAllStores":
+          type: "boolean"
+        "distanceToClosestVenue":
+          type: "number"
+        "extendedData":
+          type: "string"
+        "offerInstanceUniqueId":
+          type: "string"
+        "imageAlt":
+          type: "string"
+        "imageAltDescription":
+          type: "string"
+        "isMerchantFavourite":
+          type: "boolean"
+        "lastUpdatedAt":
+          type: "string"
+          format: "date-time"
+        "categoryId":
+          type: "integer"
+        "categoryName":
+          type: "string"
+        "sortOrder":
+          type: "integer"
+        "isPremiumPlacement":
+          type: "boolean"
+    "j64":
+      type: "object"
+      properties:
+        "id":
+          type: "integer"
+        "distanceInMeters":
+          type: "number"
+    "f64":
+      allOf:
+      - $ref: "#/components/schemas/u54"
+      - type: "object"
+        properties:
+          "whenLastOfferCodeRequested":
+            type: "string"
+          "whenNewOfferCodeAvailable":
+            type: "string"
+          "redemptionText":
+            type: "string"
+          "redemptionTextExpiry":
+            type: "string"
+    "BurnPointsModel":
+      type: "object"
+      properties:
+        "autoActivateReward":
+          type: "boolean"
+        "extendedData":
+          type: "string"
+        "fillMultipleCards":
+          type: "boolean"
+        "pointsRequested":
+          type: "integer"
+        "transactionId":
+          type: "string"
+    "g54":
+      type: "object"
+      properties:
+        "activities":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/h54"
+    "o54":
+      type: "object"
+      properties:
+        "id":
+          type: "string"
+        "latitude":
+          type: "number"
+        "longitude":
+          type: "number"
+        "radius":
+          type: "number"
+    "Country":
+      type: "object"
+      properties:
+        "code":
+          type: "string"
+        "name":
+          type: "string"
+    "Location":
+      type: "object"
+      properties:
+        "latitude":
+          type: "string"
+        "longitude":
+          type: "string"
+    "ApeMarketModel":
+      type: "object"
+      properties:
+        "androidUrl":
+          type: "string"
+        "availableLanguage":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/ApeLanguageModel"
+        "emojiFlag":
+          type: "string"
+        "englishName":
+          type: "string"
+        "iOSUrl":
+          type: "string"
+        "marketId":
+          type: "string"
+        "name":
+          type: "string"
+    "f34":
+      type: "object"
+      properties:
+        "f8308a":
+          type: "string"
+        "mobilePhoneNumber":
+          type: "string"
+        "mobileNumber":
+          type: "string"
+        "password":
+          type: "string"
+        "f8312e":
+          type: "string"
+        "f8313f":
+          type: "string"
+        "fullName":
+          type: "string"
+        "f8315h":
+          $ref: "#/components/schemas/GenderType"
+        "f8316i":
+          type: "string"
+        "homeCity":
+          type: "integer"
+        "extendedData":
+          type: "string"
+        "postcode":
+          type: "string"
+        "tagValueAddReferenceCodes":
+          type: "array"
+          items:
+            type: "string"
+    "z54":
+      type: "object"
+      properties:
+        "instanceId":
+          type: "string"
+        "offerInstanceUniqueId":
+          type: "string"
+        "pointsBalance":
+          type: "integer"
+        "pointsAllocated":
+          type: "integer"
+        "outcomeCode":
+          type: "integer"
+        "outcomeDescription":
+          type: "string"
+    "x54":
+      type: "object"
+      properties:
+        "transactionId":
+          type: "string"
+        "loyaltyCardId":
+          type: "integer"
+        "loyaltyCardInstance":
+          type: "string"
+        "dateRequested":
+          type: "string"
+          format: "date-time"
+        "pointsRequested":
+          type: "integer"
+        "pointsAllocated":
+          type: "integer"
+        "isPointsExpiry":
+          type: "boolean"
+        "extendedData":
+          type: "string"
+    "GenderType":
+      type: "string"
+      enum:
+      - "MALE"
+      - "FEMALE"
+      - "UNKNOWN"
+    "Restaurant":
+      type: "object"
+      properties:
+        "addressLine1":
+          type: "string"
+        "addressLine2":
+          type: "string"
+        "addressLine3":
+          type: "string"
+        "city":
+          type: "string"
+        "email":
+          type: "string"
+        "facilities":
+          type: "array"
+          items:
+            type: "string"
+        "lab":
+          type: "boolean"
+        "latitude":
+          type: "number"
+        "longitude":
+          type: "number"
+        "mopEnabled":
+          type: "boolean"
+        "name":
+          type: "string"
+        "openingHours":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/OpenHourCategory"
+        "phone":
+          type: "string"
+        "remarkHour":
+          type: "string"
+        "rid":
+          type: "integer"
+        "uuid":
+          type: "string"
+        "zipCode":
+          type: "string"
+    "r54":
+      type: "object"
+      properties:
+        "instanceId":
+          type: "string"
+        "loyaltyCardId":
+          type: "integer"
+        "isActive":
+          type: "boolean"
+        "pointsBalance":
+          type: "integer"
+        "redeemedOfferId":
+          type: "integer"
+    "LoyaltyCardType":
+      type: "string"
+      enum:
+      - "STAMP_CARD"
+      - "POINT_CARD"
+    "t54":
+      type: "object"
+      properties:
+        "offerId":
+          type: "integer"
+        "offerInstanceId":
+          type: "string"
+    "e64":
+      type: "object"
+      properties:
+        "offerId":
+          type: "integer"
+        "offerInstanceId":
+          type: "string"
+        "offerReserveId":
+          type: "string"
+        "offerReserveExpiryTimeUtc":
+          type: "string"
+        "promotionXml":
+          type: "string"
+        "errorMessage":
+          type: "string"
+        "statusCode":
+          type: "string"
+    "j54":
+      type: "object"
+      properties:
+        "id":
+          type: "integer"
+        "externalId":
+          type: "string"
+        "address":
+          type: "string"
+        "name":
+          type: "string"
+    "v54":
+      type: "object"
+      properties:
+        "offerReserveId":
+          type: "string"
+        "offerReserveExpiryTimeUtc":
+          type: "string"
+        "offerReservedTimeUtc":
+          type: "string"
+    "h54":
+      type: "object"
+      properties:
+        "id":
+          type: "string"
+        "sourceActivityTime":
+          type: "string"
+        "sourceActivityTimeZoneOffset":
+          type: "string"
+        "actionTypeCode":
+          type: "integer"
+        "actionCode":
+          type: "string"
+        "actionValue1":
+          type: "string"
+        "actionValue2":
+          type: "string"
+        "actionValue3":
+          type: "string"
+        "latitude":
+          type: "number"
+        "longitude":
+          type: "number"
+        "locationSource":
+          type: "string"
+        "locationAccuracy":
+          type: "number"
+        "merchantId":
+          type: "integer"
+        "venueId":
+          type: "integer"
+        "itemId":
+          type: "integer"
+        "itemCode":
+          type: "string"
+    "ApeLanguageModel":
+      type: "object"
+      properties:
+        "countryCode":
+          type: "string"
+        "languageCode":
+          type: "string"
+        "name":
+          type: "string"
+        "selectType":
+          type: "string"
+    "OpenHourCategory":
+      type: "object"
+      properties:
+        "categoryName":
+          type: "string"
+        "hours":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/OpenHour"
+    "OpenHour":
+      type: "object"
+      properties:
+        "end":
+          type: "string"
+        "start":
+          type: "string"
+        "status":
+          type: "string"
+        "weekday":
+          type: "string"

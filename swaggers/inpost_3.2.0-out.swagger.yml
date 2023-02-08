@@ -1,0 +1,5910 @@
+openapi: "3.0.0"
+info:
+  title: "inpost-decomp [retrofit2swagger]"
+  description: "Extracted from retrofit"
+  version: "1.0.0"
+paths:
+  "/v4/my-account/personal-information":
+    "get":
+      summary: "ClientApi.m50439a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GetAccountInformation"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<GetAccountInformation>`"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+    "post":
+      summary: "ClientApi.m50426a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateAccountInformation"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/my-account/change-password":
+    "post":
+      summary: "ClientApi.m50438a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ChangePasswordPayload"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/sauth/clients/activation/by-pin-code/confirmation":
+    "post":
+      summary: "ClientApi.m50437a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ClientPinConfirmationPayload"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/my-account/email-change/confirmation":
+    "post":
+      summary: "ClientApi.m50436a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ConfirmEmailChange"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/my-account/phone-update/confirmation":
+    "post":
+      summary: "ClientApi.m50435a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ConfirmPhoneUpdate"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/clients/facebook/deleted":
+    "post":
+      summary: "ClientApi.m50434a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DeleteAccountByFacebook"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/clients/oauth/deleted":
+    "post":
+      summary: "ClientApi.m50433a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DeleteAccountByOAuth"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/sauth/v2/my-account/delete":
+    "post":
+      summary: "ClientApi.m50432a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DeleteAccountRequestBody"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/sauth/v2/my-account/email-change/request":
+    "post":
+      summary: "ClientApi.m50431a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EmailChangeRequestBody"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/my-account/email-change/request":
+    "post":
+      summary: "ClientApi.m50430a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestEmailChange"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/clients/facebook/email-change/request":
+    "post":
+      summary: "ClientApi.m50429a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestFacebookEmailChange"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/my-account/phone-update/request":
+    "post":
+      summary: "ClientApi.m50428a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestPhoneUpdate"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/sauth/clients/activation/by-pin-code/request":
+    "post":
+      summary: "ClientApi.m50427a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestPinBody"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/clients/activation/request":
+    "post":
+      summary: "ClientApi.m50425a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ActivateClient"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/clients/activation/confirmation":
+    "post":
+      summary: "ClientApi.m50424a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ConfirmClient"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/my-account/delete":
+    "post":
+      summary: "ClientApi.m50423a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DeleteClientPayload"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/clients/registered":
+    "post":
+      summary: "ClientApi.m50422a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegisterClient"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/clients/password-reset/confirmation":
+    "post":
+      summary: "ClientApi.m50421a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PasswordResetConfirmation"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/clients/password-reset/request":
+    "post":
+      summary: "ClientApi.m50420a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PasswordResetRequest"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/sauth/v3/my-account/logout":
+    "post":
+      summary: "ClientApi.m50419a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SignOutPayload"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/clients/by-uuid/{uuid}/linked-devices":
+    "post":
+      summary: "ClientApi.m50418a"
+      parameters:
+      - name: "uuid"
+        in: "path"
+        description: "ClientApi.m50418a.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegisterForPushRequest"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/v4/events":
+    "get":
+      summary: "ClientApi.m50417a"
+      parameters:
+      - name: "action"
+        in: "query"
+        description: "ClientApi.m50417a.str"
+        schema:
+          type: "string"
+      - name: "time[from]"
+        in: "query"
+        description: "ClientApi.m50417a.str2"
+        schema:
+          type: "string"
+      - name: "time[to]"
+        in: "query"
+        description: "ClientApi.m50417a.str3"
+        schema:
+          type: "string"
+      - name: "limit"
+        in: "query"
+        description: "ClientApi.m50417a.i"
+        schema:
+          type: "integer"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/ClientEventData"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<List<ClientEventData>>`"
+      x-retrofit-interface: "com.synerise.sdk.client.p059b.p060a.ClientApi"
+  "/schema-service/document/slug/{slug_name}":
+    "get":
+      summary: "ContentApi.m50279a"
+      parameters:
+      - name: "slug_name"
+        in: "path"
+        description: "ContentApi.m50279a.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<Object>`"
+      x-retrofit-interface: "com.synerise.sdk.content.p064a.p065a.ContentApi"
+    "post":
+      summary: "ContentApi.m50278a"
+      parameters:
+      - name: "slug_name"
+        in: "path"
+        description: "ContentApi.m50278a.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RecommendationResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<RecommendationResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RecommendationRequestBody"
+      x-retrofit-interface: "com.synerise.sdk.content.p064a.p065a.ContentApi"
+  "/schema-service/document/{type}/{type_value}":
+    "get":
+      summary: "ContentApi.m50277a"
+      parameters:
+      - name: "type"
+        in: "path"
+        description: "ContentApi.m50277a.str"
+        required: true
+        schema:
+          type: "string"
+      - name: "type_value"
+        in: "path"
+        description: "ContentApi.m50277a.str2"
+        required: true
+        schema:
+          type: "string"
+      - name: "version"
+        in: "query"
+        description: "ContentApi.m50277a.str3"
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  type: "object"
+                  additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<List<Object>>`"
+      x-retrofit-interface: "com.synerise.sdk.content.p064a.p065a.ContentApi"
+  "/schema-service/v2/screenViews/generate":
+    "get":
+      summary: "ContentApi.m50276b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ScreenViewResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            AbstractC17546g<ScreenViewResponse>`"
+      x-retrofit-interface: "com.synerise.sdk.content.p064a.p065a.ContentApi"
+  "/v4/server/time":
+    "get":
+      summary: "ServerTimeApi.m49992c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ServerTimeResponse"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            AbstractC17546g<ServerTimeResponse>`"
+      x-retrofit-interface: "com.synerise.sdk.core.net.p082a.ServerTimeApi"
+  "/v4/auth/login/client/facebook":
+    "post":
+      summary: "ClientAccountApi.m50000a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SignInResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<SignInResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AuthFacebookPayload"
+      x-retrofit-interface: "com.synerise.sdk.core.net.p082a.ClientAccountApi"
+  "/sauth/v3/auth/login/client":
+    "post":
+      summary: "ClientAccountApi.m49999a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SignInResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<SignInResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AuthenticatePayload"
+      x-retrofit-interface: "com.synerise.sdk.core.net.p082a.ClientAccountApi"
+  "/v4/auth/login/client/oauth/no-registration":
+    "post":
+      summary: "ClientAccountApi.m49998a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SignInResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<SignInResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OAuthPayload"
+      x-retrofit-interface: "com.synerise.sdk.core.net.p082a.ClientAccountApi"
+  "/sauth/v3/auth/refresh/client":
+    "post":
+      summary: "ClientAccountApi.m49997a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SignInResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<SignInResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RefreshTokenWithApiKeyPayload"
+      x-retrofit-interface: "com.synerise.sdk.core.net.p082a.ClientAccountApi"
+  "/sauth/v3/auth/login/client/anonymous":
+    "post":
+      summary: "ClientAccountApi.m49996a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SignInResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<SignInResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SignInAnonymousPayload"
+      x-retrofit-interface: "com.synerise.sdk.core.net.p082a.ClientAccountApi"
+  "/v4/auth/login/client/facebook/no-registration":
+    "post":
+      summary: "ClientAccountApi.m49995b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SignInResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            AbstractC17546g<SignInResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AuthFacebookPayload"
+      x-retrofit-interface: "com.synerise.sdk.core.net.p082a.ClientAccountApi"
+  "/sauth/v3/auth/login/client/conditional":
+    "post":
+      summary: "ClientAccountApi.m49994b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ConditionalAuthResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            AbstractC17546g<ConditionalAuthResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AuthenticatePayload"
+      x-retrofit-interface: "com.synerise.sdk.core.net.p082a.ClientAccountApi"
+  "/v4/auth/login/client/oauth":
+    "post":
+      summary: "ClientAccountApi.m49993b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SignInResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            AbstractC17546g<SignInResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/OAuthPayload"
+      x-retrofit-interface: "com.synerise.sdk.core.net.p082a.ClientAccountApi"
+  "/v4/events/batch":
+    "post":
+      summary: "TrackerApi.m49810c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            AbstractC17546g<C11572s<ResponseBody>>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/Event"
+      x-retrofit-interface: "com.synerise.sdk.event.p093a.p094a.TrackerApi"
+  "/campaign-backend/campaign/ANDROID/get-pushes/{uuid}":
+    "get":
+      summary: "InjectorApi.m49734a"
+      parameters:
+      - name: "uuid"
+        in: "path"
+        description: "InjectorApi.m49734a.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/SynerisePushResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<List<SynerisePushResponse>>`"
+      x-retrofit-interface: "com.synerise.sdk.injector.p101a.p102a.InjectorApi"
+  "/campaign-backend/campaign/get-walkthrough/{uuid}":
+    "get":
+      summary: "InjectorApi.m49733a"
+      parameters:
+      - name: "uuid"
+        in: "path"
+        description: "InjectorApi.m49733a.str"
+        required: true
+        schema:
+          type: "string"
+      - name: "app-version"
+        in: "query"
+        description: "InjectorApi.m49733a.str2"
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WalkthroughResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<WalkthroughResponse>`"
+      x-retrofit-interface: "com.synerise.sdk.injector.p101a.p102a.InjectorApi"
+  "/campaign-backend/campaign/ANDROID/get-banners/{uuid}":
+    "get":
+      summary: "InjectorApi.m49732b"
+      parameters:
+      - name: "uuid"
+        in: "path"
+        description: "InjectorApi.m49732b.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/SyneriseBannerResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            AbstractC17546g<List<SyneriseBannerResponse>>`"
+      x-retrofit-interface: "com.synerise.sdk.injector.p101a.p102a.InjectorApi"
+  "/v4/vouchers/item/assign":
+    "post":
+      summary: "PromotionsApi.m49589a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AssignVoucherResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<AssignVoucherResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AssignVoucherPayload"
+      x-retrofit-interface: "com.synerise.sdk.promotions.p110a.p111a.PromotionsApi"
+  "/v4/promotions/promotion/deactivate":
+    "post":
+      summary: "PromotionsApi.m49588a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ActivatePromotion"
+      x-retrofit-interface: "com.synerise.sdk.promotions.p110a.p111a.PromotionsApi"
+  "/v4/promotions/promotion/get-for-client":
+    "get":
+      summary: "PromotionsApi.m49587a"
+      parameters:
+      - name: "status"
+        in: "query"
+        description: "PromotionsApi.m49587a.str"
+        schema:
+          type: "string"
+      - name: "type"
+        in: "query"
+        description: "PromotionsApi.m49587a.str2"
+        schema:
+          type: "string"
+      - name: "limit"
+        in: "query"
+        description: "PromotionsApi.m49587a.i"
+        schema:
+          type: "integer"
+      - name: "page"
+        in: "query"
+        description: "PromotionsApi.m49587a.i2"
+        schema:
+          type: "integer"
+      - name: "includeMeta"
+        in: "query"
+        description: "PromotionsApi.m49587a.z"
+        schema:
+          type: "boolean"
+      - name: "sort"
+        in: "query"
+        description: "PromotionsApi.m49587a.list"
+        schema:
+          type: "array"
+          items:
+            type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PromotionResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<PromotionResponse>`"
+      x-retrofit-interface: "com.synerise.sdk.promotions.p110a.p111a.PromotionsApi"
+  "/v4/promotions/promotion/batch-activate":
+    "post":
+      summary: "PromotionsApi.m49586a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/PromotionIdentifier"
+      x-retrofit-interface: "com.synerise.sdk.promotions.p110a.p111a.PromotionsApi"
+  "/v4/vouchers/item/get-or-assign":
+    "post":
+      summary: "PromotionsApi.m49585b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AssignVoucherResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            AbstractC17546g<AssignVoucherResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AssignVoucherPayload"
+      x-retrofit-interface: "com.synerise.sdk.promotions.p110a.p111a.PromotionsApi"
+  "/v4/promotions/promotion/activate":
+    "post":
+      summary: "PromotionsApi.m49584b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ActivatePromotion"
+      x-retrofit-interface: "com.synerise.sdk.promotions.p110a.p111a.PromotionsApi"
+  "/v4/promotions/promotion/get-item-for-client/uuid/{uuid}":
+    "get":
+      summary: "PromotionsApi.m49583b"
+      parameters:
+      - name: "uuid"
+        in: "path"
+        description: "PromotionsApi.m49583b.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SinglePromotionResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            AbstractC17546g<SinglePromotionResponse>`"
+      x-retrofit-interface: "com.synerise.sdk.promotions.p110a.p111a.PromotionsApi"
+  "/v4/promotions/promotion/batch-deactivate":
+    "post":
+      summary: "PromotionsApi.m49582b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            AbstractC17546g<ResponseBody>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/PromotionIdentifier"
+      x-retrofit-interface: "com.synerise.sdk.promotions.p110a.p111a.PromotionsApi"
+  "/v4/promotions/promotion/get-item-for-client/code/{code}":
+    "get":
+      summary: "PromotionsApi.m49581c"
+      parameters:
+      - name: "code"
+        in: "path"
+        description: "PromotionsApi.m49581c.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SinglePromotionResponse"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            AbstractC17546g<SinglePromotionResponse>`"
+      x-retrofit-interface: "com.synerise.sdk.promotions.p110a.p111a.PromotionsApi"
+  "/v4/vouchers/item/get-assigned":
+    "get":
+      summary: "PromotionsApi.m49580d"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VoucherCodesResponse"
+          description: "Response body type was declared as `/* renamed from: d */\n\
+            AbstractC17546g<VoucherCodesResponse>`"
+      x-retrofit-interface: "com.synerise.sdk.promotions.p110a.p111a.PromotionsApi"
+  "/payment_api/payment_operation_token/":
+    "get":
+      summary: "DotPayInterface.checkOperationToken"
+      parameters:
+      - name: "id"
+        in: "query"
+        description: "DotPayInterface.checkOperationToken.str"
+        schema:
+          type: "string"
+      - name: "amount"
+        in: "query"
+        description: "DotPayInterface.checkOperationToken.str2"
+        schema:
+          type: "string"
+      - name: "currency"
+        in: "query"
+        description: "DotPayInterface.checkOperationToken.str3"
+        schema:
+          type: "string"
+      - name: "control"
+        in: "query"
+        description: "DotPayInterface.checkOperationToken.str4"
+        schema:
+          type: "string"
+      - name: "channel"
+        in: "query"
+        description: "DotPayInterface.checkOperationToken.str5"
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OperationTokenResult"
+          description: "Response body type was declared as `InterfaceC11519b<OperationTokenResult>`"
+      x-retrofit-interface: "pl.mobiltek.paymentsmobile.dotpay.communication.DotPayInterface"
+  "/payment_api/payment_operation/":
+    "get":
+      summary: "DotPayInterface.checkTransactionResult"
+      parameters:
+      - name: "id"
+        in: "query"
+        description: "DotPayInterface.checkTransactionResult.str"
+        schema:
+          type: "string"
+      - name: "token"
+        in: "query"
+        description: "DotPayInterface.checkTransactionResult.str2"
+        schema:
+          type: "string"
+      - name: "number"
+        in: "query"
+        description: "DotPayInterface.checkTransactionResult.str3"
+        schema:
+          type: "string"
+      - name: "lang"
+        in: "query"
+        description: "DotPayInterface.checkTransactionResult.str4"
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PaymentResult"
+          description: "Response body type was declared as `InterfaceC11519b<PaymentResult>`"
+      x-retrofit-interface: "pl.mobiltek.paymentsmobile.dotpay.communication.DotPayInterface"
+  "/payment_api/channels/":
+    "get":
+      summary: "DotPayInterface.getChannels"
+      parameters:
+      - name: "id"
+        in: "query"
+        description: "DotPayInterface.getChannels.str"
+        schema:
+          type: "string"
+      - name: "amount"
+        in: "query"
+        description: "DotPayInterface.getChannels.str2"
+        schema:
+          type: "string"
+      - name: "currency"
+        in: "query"
+        description: "DotPayInterface.getChannels.str3"
+        schema:
+          type: "string"
+      - name: "lang"
+        in: "query"
+        description: "DotPayInterface.getChannels.str4"
+        schema:
+          type: "string"
+      - name: "credit_card_customer_id"
+        in: "query"
+        description: "DotPayInterface.getChannels.str5"
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+          description: "Response body type was declared as `void`"
+      x-retrofit-interface: "pl.mobiltek.paymentsmobile.dotpay.communication.DotPayInterface"
+  "/payment_api/currencies/":
+    "get":
+      summary: "DotPayInterface.getCurrencies"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/Currency"
+          description: "Response body type was declared as `InterfaceC11519b<List<Currency>>`"
+      x-retrofit-interface: "pl.mobiltek.paymentsmobile.dotpay.communication.DotPayInterface"
+  "/payment_api/langs/":
+    "get":
+      summary: "DotPayInterface.getLanguages"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/Language"
+          description: "Response body type was declared as `InterfaceC11519b<List<Language>>`"
+      x-retrofit-interface: "pl.mobiltek.paymentsmobile.dotpay.communication.DotPayInterface"
+  "/":
+    "post":
+      summary: "DotPayInterface.registerCard"
+      parameters:
+      - name: "amount"
+        in: "query"
+        description: "DotPayInterface.registerCard.str"
+        schema:
+          type: "string"
+      - name: "id"
+        in: "query"
+        description: "DotPayInterface.registerCard.str2"
+        schema:
+          type: "string"
+      - name: "currency"
+        in: "query"
+        description: "DotPayInterface.registerCard.str3"
+        schema:
+          type: "string"
+      - name: "lang"
+        in: "query"
+        description: "DotPayInterface.registerCard.str4"
+        schema:
+          type: "string"
+      - name: "brandName"
+        in: "query"
+        description: "DotPayInterface.registerCard.str5"
+        schema:
+          type: "string"
+      - name: "channel"
+        in: "query"
+        description: "DotPayInterface.registerCard.str6"
+        schema:
+          type: "string"
+      - name: "type"
+        in: "query"
+        description: "DotPayInterface.registerCard.str7"
+        schema:
+          type: "string"
+      - name: "application"
+        in: "query"
+        description: "DotPayInterface.registerCard.str8"
+        schema:
+          type: "string"
+      - name: "application_version"
+        in: "query"
+        description: "DotPayInterface.registerCard.str9"
+        schema:
+          type: "string"
+      - name: "control"
+        in: "query"
+        description: "DotPayInterface.registerCard.str10"
+        schema:
+          type: "string"
+      - name: "firstname"
+        in: "query"
+        description: "DotPayInterface.registerCard.str11"
+        schema:
+          type: "string"
+      - name: "lastname"
+        in: "query"
+        description: "DotPayInterface.registerCard.str12"
+        schema:
+          type: "string"
+      - name: "email"
+        in: "query"
+        description: "DotPayInterface.registerCard.str13"
+        schema:
+          type: "string"
+      - name: "credit_card_customer_id"
+        in: "query"
+        description: "DotPayInterface.registerCard.str14"
+        schema:
+          type: "string"
+      - name: "credit_card_store"
+        in: "query"
+        description: "DotPayInterface.registerCard.str15"
+        schema:
+          type: "string"
+      - name: "credit_card_registration"
+        in: "query"
+        description: "DotPayInterface.registerCard.str16"
+        schema:
+          type: "string"
+      - name: "credit_card_number"
+        in: "query"
+        description: "DotPayInterface.registerCard.str17"
+        schema:
+          type: "string"
+      - name: "credit_card_security_code"
+        in: "query"
+        description: "DotPayInterface.registerCard.str18"
+        schema:
+          type: "string"
+      - name: "credit_card_expiration_date_month"
+        in: "query"
+        description: "DotPayInterface.registerCard.str19"
+        schema:
+          type: "string"
+      - name: "credit_card_expiration_date_year"
+        in: "query"
+        description: "DotPayInterface.registerCard.str20"
+        schema:
+          type: "string"
+      - name: "bylaw"
+        in: "query"
+        description: "DotPayInterface.registerCard.str21"
+        schema:
+          type: "string"
+      - name: "personal_data"
+        in: "query"
+        description: "DotPayInterface.registerCard.str22"
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+          description: "Response body type was declared as `void`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: "string"
+      x-retrofit-interface: "pl.mobiltek.paymentsmobile.dotpay.communication.DotPayInterface"
+  "/payment_api/":
+    "post":
+      summary: "DotPayInterface.unregisterCard"
+      parameters:
+      - name: "Accept"
+        in: "header"
+        description: "Static header added by @Headers({...})"
+        required: true
+        schema:
+          type: "string"
+          example: "application/json"
+      - name: "Content-Type"
+        in: "header"
+        description: "Static header added by @Headers({...})"
+        required: true
+        schema:
+          type: "string"
+          example: "application/json"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+          description: "Response body type was declared as `void`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UnregisterData"
+      x-retrofit-interface: "pl.mobiltek.paymentsmobile.dotpay.communication.DotPayInterface"
+  "/v1/chatbot/authenticate":
+    "get":
+      summary: "ChatbotApi.m4729a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Object`"
+      x-retrofit-interface: "x50.ChatbotApi"
+  "/v1/documents/shopping/policy":
+    "get":
+      summary: "ShoppingDocumentsApi.m4726a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Object`"
+      x-retrofit-interface: "x50.ShoppingDocumentsApi"
+  "/v1/id-token":
+    "get":
+      summary: "SyneriseApi.m4715a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Object`"
+      x-retrofit-interface: "x50.SyneriseApi"
+  "/v1/shopping/basket":
+    "post":
+      summary: "ShoppingBasketApi.m4728a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Object`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AddBasketRequest"
+      x-retrofit-interface: "x50.ShoppingBasketApi"
+  "/v1/shopping/profile":
+    "delete":
+      summary: "ShoppingProfileApi.m4724a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Object`"
+      x-retrofit-interface: "x50.ShoppingProfileApi"
+    "get":
+      summary: "ShoppingProfileApi.m4723b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Object`"
+      x-retrofit-interface: "x50.ShoppingProfileApi"
+    "post":
+      summary: "ShoppingProfileApi.m4722c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            Object`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ShoppingPersonalDataNetwork"
+      x-retrofit-interface: "x50.ShoppingProfileApi"
+  "/v1/consent/marketing_phone,marketing_push,marketing_email":
+    "get":
+      summary: "ConsentApi.m4712a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Object`"
+      x-retrofit-interface: "x50.ConsentApi"
+  "/v1/consent":
+    "post":
+      summary: "ConsentApi.m4711b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                additionalProperties: {}
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Object`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ConsentsRequest"
+      x-retrofit-interface: "x50.ConsentApi"
+  "/v1/logout":
+    "post":
+      summary: "UserApi.m4713a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Completable`"
+      x-retrofit-interface: "x50.UserApi"
+  "/v2/setPushId":
+    "post":
+      summary: "CloudMessagingApi.m4727a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Completable`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PushTokenRequest"
+      x-retrofit-interface: "x50.CloudMessagingApi"
+  "/v1/companies/{taxNumber}":
+    "get":
+      summary: "CompanyApi.m4725a"
+      parameters:
+      - name: "taxNumber"
+        in: "path"
+        description: "CompanyApi.m4725a.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompaniesResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<CompaniesResponse>`"
+      x-retrofit-interface: "x50.CompanyApi"
+  "/v1/documents/policy":
+    "get":
+      summary: "DocumentsApi.m4706a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PolicyNetwork"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<PolicyNetwork>`"
+      x-retrofit-interface: "x50.DocumentsApi"
+  "/payment_api/channels/?amount=100.00&lang=pl&format=json":
+    "get":
+      summary: "DotpayApi.m4705a"
+      parameters:
+      - name: "Content-Type"
+        in: "header"
+        description: "Static header added by @Headers({...})"
+        required: true
+        schema:
+          type: "string"
+          example: "application/json"
+      - name: "Accept"
+        in: "header"
+        description: "Static header added by @Headers({...})"
+        required: true
+        schema:
+          type: "string"
+          example: "application/json"
+      - name: "id"
+        in: "query"
+        description: "DotpayApi.m4705a.str"
+        schema:
+          type: "string"
+      - name: "currency"
+        in: "query"
+        description: "DotpayApi.m4705a.str2"
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DotpayChannelsResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<DotpayChannelsResponse>`"
+      x-retrofit-interface: "x50.DotpayApi"
+  "/v1/prices/parcels":
+    "get":
+      summary: "PriceApi.m4677a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PriceResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<PriceResponse>`"
+      x-retrofit-interface: "x50.PriceApi"
+  "/v1/collect/compartment/status":
+    "post":
+      summary: "CompartmentStatusApi.m4714a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentStatusResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<CompartmentStatusResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentStatusRequest"
+      x-retrofit-interface: "x50.CompartmentStatusApi"
+  "/v1/payments/transactions/create/blik":
+    "post":
+      summary: "CreateBlikTransactionApi.m4709a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TransactionDetailsResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<TransactionDetailsResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateBlikTransactionRequest"
+      x-retrofit-interface: "x50.CreateBlikTransactionApi"
+  "/v1/preferences/profile":
+    "get":
+      summary: "PreferenceApi.m4679a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProfilePreferencesNetwork"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<ProfilePreferencesNetwork>`"
+      x-retrofit-interface: "x50.PreferenceApi"
+  "/v1/preferences":
+    "get":
+      summary: "PreferenceApi.m4678b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PreferenceResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Single<PreferenceResponse>`"
+      x-retrofit-interface: "x50.PreferenceApi"
+  "/v3/points/{boxMachineName}":
+    "get":
+      summary: "MapApi.m4697a"
+      parameters:
+      - name: "boxMachineName"
+        in: "path"
+        description: "MapApi.m4697a.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BoxMachineNetwork"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<BoxMachineNetwork>`"
+      x-retrofit-interface: "x50.MapApi"
+  "/v3/points":
+    "get":
+      summary: "MapApi.m4695c"
+      parameters:
+      - name: "query"
+        in: "query"
+        description: "MapApi.m4695c.str"
+        schema:
+          type: "string"
+      - name: "filter"
+        in: "query"
+        description: "MapApi.m4695c.str2"
+        schema:
+          type: "string"
+      - name: "perPage"
+        in: "query"
+        description: "MapApi.m4695c.i"
+        schema:
+          type: "integer"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DeliveryPointsResponse"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            Single<DeliveryPointsResponse>`"
+      x-retrofit-interface: "x50.MapApi"
+  "/v1/return/compartment/status":
+    "post":
+      summary: "ReturnRemoteStatusApi.m4665a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentStatusResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<CompartmentStatusResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentStatusRequest"
+      x-retrofit-interface: "x50.ReturnRemoteStatusApi"
+  "/v1/returns/tickets":
+    "get":
+      summary: "ReturnTicketApi.m4664a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReturnTicketsResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<ReturnTicketsResponse>`"
+      x-retrofit-interface: "x50.ReturnTicketApi"
+    "post":
+      summary: "CreateTicketApi.m4707b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CreateTicketDetailsNetwork"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Single<CreateTicketDetailsNetwork>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateOrganizationTicketRequest"
+      x-retrofit-interface: "x50.CreateTicketApi"
+  "/v1/returns/tickets/{uuid}":
+    "get":
+      summary: "ReturnTicketApi.m4663b"
+      parameters:
+      - name: "uuid"
+        in: "path"
+        description: "ReturnTicketApi.m4663b.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReturnTicketNetwork"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Single<ReturnTicketNetwork>`"
+      x-retrofit-interface: "x50.ReturnTicketApi"
+  "/v1/voicebot/authenticate":
+    "post":
+      summary: "VoicebotApi.m4710a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VoicebotAuthenticationResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<VoicebotAuthenticationResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/VoicebotAuthenticationRequest"
+      x-retrofit-interface: "x50.VoicebotApi"
+  "/v1/send/compartment/status":
+    "post":
+      summary: "SendRemoteStatusApi.m4652a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentStatusResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<CompartmentStatusResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentStatusRequest"
+      x-retrofit-interface: "x50.SendRemoteStatusApi"
+  "/v1/returns/parcels/tickets":
+    "post":
+      summary: "CreateTicketApi.m4708a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CreateTicketDetailsNetwork"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<CreateTicketDetailsNetwork>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateParcelTicketRequest"
+      x-retrofit-interface: "x50.CreateTicketApi"
+  "/v1/sendSMSCode":
+    "get":
+      summary: "RefreshTokenApi.m4676a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendSMSCodeResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<SendSMSCodeResponse>`"
+      x-retrofit-interface: "x50.RefreshTokenApi"
+    "post":
+      summary: "RegistrationApi.m4673b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SendSMSCodeResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Single<SendSMSCodeResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SendSMSCodeRequest"
+      x-retrofit-interface: "x50.RegistrationApi"
+  "/v1/reconfirmSMSCode":
+    "post":
+      summary: "RefreshTokenApi.m4675b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ConfirmSMSResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Single<ConfirmSMSResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ReconfirmSMSRequest"
+      x-retrofit-interface: "x50.RefreshTokenApi"
+  "/v1/returns/organizations":
+    "get":
+      summary: "ReturnsApi.m4662a"
+      parameters:
+      - name: "query"
+        in: "query"
+        description: "ReturnsApi.m4662a.str"
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrganizationsResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<OrganizationsResponse>`"
+      x-retrofit-interface: "x50.ReturnsApi"
+  "/v1/returns/parcels":
+    "get":
+      summary: "ReturnsApi.m4661b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReturnableParcelsResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Single<ReturnableParcelsResponse>`"
+      x-retrofit-interface: "x50.ReturnsApi"
+  "/v1/returns/reasons":
+    "get":
+      summary: "ReturnsApi.m4660c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReturnReasonsResponse"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            Single<ReturnReasonsResponse>`"
+      x-retrofit-interface: "x50.ReturnsApi"
+  "/v1/returns/reasons/{uuid}":
+    "get":
+      summary: "ReturnsApi.m4659d"
+      parameters:
+      - name: "uuid"
+        in: "path"
+        description: "ReturnsApi.m4659d.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReturnReasonsResponse"
+          description: "Response body type was declared as `/* renamed from: d */\n\
+            Single<ReturnReasonsResponse>`"
+      x-retrofit-interface: "x50.ReturnsApi"
+  "/v1/notifications/readAll":
+    "post":
+      summary: "NotificationCenterApi.m4692a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Completable`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MarkAllAsReadRequest"
+      x-retrofit-interface: "x50.NotificationCenterApi"
+  "/v1/notifications/read":
+    "post":
+      summary: "NotificationCenterApi.m4691b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Completable`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MarkMultipleAsReadRequest"
+      x-retrofit-interface: "x50.NotificationCenterApi"
+  "/v2/notifications":
+    "get":
+      summary: "NotificationCenterApi.m4690c"
+      parameters:
+      - name: "type"
+        in: "query"
+        description: "NotificationCenterApi.m4690c.str"
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NotificationResponse"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            Single<NotificationResponse>`"
+      x-retrofit-interface: "x50.NotificationCenterApi"
+  "/v2/parcels/sent/{shipmentNumber}":
+    "get":
+      summary: "SentParcelApi.m4651a"
+      parameters:
+      - name: "shipmentNumber"
+        in: "path"
+        description: "SentParcelApi.m4651a.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SentParcelNetwork"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<SentParcelNetwork>`"
+      x-retrofit-interface: "x50.SentParcelApi"
+  "/v2/parcels/sent":
+    "get":
+      summary: "SentParcelApi.m4650b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SentParcelsResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Single<SentParcelsResponse>`"
+      x-retrofit-interface: "x50.SentParcelApi"
+  "/v1/parcels":
+    "post":
+      summary: "SentParcelApi.m4649c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CreateParcelResponse"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            Single<CreateParcelResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateParcelRequest"
+      x-retrofit-interface: "x50.SentParcelApi"
+  "/v1/payments/transactions/cancel":
+    "post":
+      summary: "PaymentApi.m4682a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Completable`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CancelTransactionRequest"
+      x-retrofit-interface: "x50.PaymentApi"
+  "/v1/payments/transactions/create":
+    "post":
+      summary: "PaymentApi.m4681b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TransactionDetailsResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Single<TransactionDetailsResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateTransactionRequest"
+      x-retrofit-interface: "x50.PaymentApi"
+  "/v1/payments/blik/alias/status":
+    "get":
+      summary: "PaymentApi.m4680c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BlikAliasStatusResponse"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            Single<BlikAliasStatusResponse>`"
+      x-retrofit-interface: "x50.PaymentApi"
+  "/v1/authenticate":
+    "post":
+      summary: "RegistrationApi.m4674a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthenticationResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<AuthenticationResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AuthenticateRequest"
+      x-retrofit-interface: "x50.RegistrationApi"
+  "/v1/confirmSMSCode":
+    "post":
+      summary: "RegistrationApi.m4672c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ConfirmSMSResponse"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            Single<ConfirmSMSResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ConfirmSMSRequest"
+      x-retrofit-interface: "x50.RegistrationApi"
+  "/v1/send/compartment/reopen":
+    "post":
+      summary: "SendRemoteApi.m4658a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentOpenResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<CompartmentOpenResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.SendRemoteApi"
+  "/v1/send/cancel":
+    "post":
+      summary: "SendRemoteApi.m4657b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentCloseResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Single<CompartmentCloseResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.SendRemoteApi"
+  "/v1/send/compartment/open":
+    "post":
+      summary: "SendRemoteApi.m4656c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentOpenResponse"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            Single<CompartmentOpenResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.SendRemoteApi"
+  "/v1/send/confirm":
+    "post":
+      summary: "SendRemoteApi.m4655d"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: d */\n\
+            Completable`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.SendRemoteApi"
+  "/v1/send/compartment/closed":
+    "post":
+      summary: "SendRemoteApi.m4654e"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentCloseResponse"
+          description: "Response body type was declared as `/* renamed from: e */\n\
+            Single<CompartmentCloseResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.SendRemoteApi"
+  "/v1/send/validate":
+    "post":
+      summary: "SendRemoteApi.m4653f"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentValidateResponse"
+          description: "Response body type was declared as `/* renamed from: f */\n\
+            Single<CompartmentValidateResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SendValidationRequest"
+      x-retrofit-interface: "x50.SendRemoteApi"
+  "/v3/parcels/tracked/{shipmentNumber}":
+    "get":
+      summary: "ParcelApi.m4689a"
+      parameters:
+      - name: "shipmentNumber"
+        in: "path"
+        description: "ParcelApi.m4689a.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TrackedParcelNetwork"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<TrackedParcelNetwork>`"
+      x-retrofit-interface: "x50.ParcelApi"
+  "/v3/parcels/tracked":
+    "get":
+      summary: "ParcelApi.m4688b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "object"
+                properties:
+                  "f44542a":
+                    $ref: "#/components/schemas/TrackedParcelsResponse"
+                  "f44543b":
+                    $ref: "#/components/schemas/java.lang.Throwable"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Single<C12510d<TrackedParcelsResponse>>`"
+      x-retrofit-interface: "x50.ParcelApi"
+  "/v1/parcels/properties":
+    "post":
+      summary: "ParcelApi.m4687c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            Completable`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ParcelPropertiesRequest"
+      x-retrofit-interface: "x50.ParcelApi"
+  "/v1/parcels/shared":
+    "post":
+      summary: "ParcelApi.m4686d"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: d */\n\
+            Completable`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ShareParcelsRequest"
+      x-retrofit-interface: "x50.ParcelApi"
+  "/v1/observedParcel/{shipmentNumber}":
+    "delete":
+      summary: "ParcelApi.m4685e"
+      parameters:
+      - name: "shipmentNumber"
+        in: "path"
+        description: "ParcelApi.m4685e.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: e */\n\
+            Completable`"
+      x-retrofit-interface: "x50.ParcelApi"
+  "/v1/observedParcel":
+    "post":
+      summary: "ParcelApi.m4684f"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TrackedParcelNetwork"
+          description: "Response body type was declared as `/* renamed from: f */\n\
+            Single<TrackedParcelNetwork>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SubscribeParcelRequest"
+      x-retrofit-interface: "x50.ParcelApi"
+  "/v3/parcels/multi/{multiCompartmentUuid}":
+    "get":
+      summary: "ParcelApi.m4683g"
+      parameters:
+      - name: "multiCompartmentUuid"
+        in: "path"
+        description: "ParcelApi.m4683g.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TrackedParcelsResponse"
+          description: "Response body type was declared as `/* renamed from: g */\n\
+            Single<TrackedParcelsResponse>`"
+      x-retrofit-interface: "x50.ParcelApi"
+  "/v1/return/compartment/reopen":
+    "post":
+      summary: "ReturnRemoteApi.m4671a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentOpenResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<CompartmentOpenResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.ReturnRemoteApi"
+  "/v1/return/cancel":
+    "post":
+      summary: "ReturnRemoteApi.m4670b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentCloseResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Single<CompartmentCloseResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.ReturnRemoteApi"
+  "/v1/return/confirm":
+    "post":
+      summary: "ReturnRemoteApi.m4669d"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: d */\n\
+            Completable`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.ReturnRemoteApi"
+  "/v1/return/compartment/closed":
+    "post":
+      summary: "ReturnRemoteApi.m4668e"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentCloseResponse"
+          description: "Response body type was declared as `/* renamed from: e */\n\
+            Single<CompartmentCloseResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.ReturnRemoteApi"
+  "/v1/return/compartment/open":
+    "post":
+      summary: "ReturnRemoteApi.m4667f"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentOpenResponse"
+          description: "Response body type was declared as `/* renamed from: f */\n\
+            Single<CompartmentOpenResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ReturnOpenRequest"
+      x-retrofit-interface: "x50.ReturnRemoteApi"
+  "/v1/return/validate":
+    "post":
+      summary: "ReturnRemoteApi.m4666g"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentValidateResponse"
+          description: "Response body type was declared as `/* renamed from: g */\n\
+            Single<CompartmentValidateResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ReturnValidationRequest"
+      x-retrofit-interface: "x50.ReturnRemoteApi"
+  "/v1/collect/compartment/reopen":
+    "post":
+      summary: "CompartmentApi.m4721a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentOpenResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<CompartmentOpenResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.CompartmentApi"
+  "/v1/collect/compartment/open":
+    "post":
+      summary: "CompartmentApi.m4720c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentOpenResponse"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            Single<CompartmentOpenResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.CompartmentApi"
+  "/v1/collect/compartment/claim":
+    "post":
+      summary: "CompartmentApi.m4719d"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentClaimResponse"
+          description: "Response body type was declared as `/* renamed from: d */\n\
+            Single<CompartmentClaimResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentClaimRequest"
+      x-retrofit-interface: "x50.CompartmentApi"
+  "/v1/collect/compartment/closed":
+    "post":
+      summary: "CompartmentApi.m4718e"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentCloseResponse"
+          description: "Response body type was declared as `/* renamed from: e */\n\
+            Single<CompartmentCloseResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.CompartmentApi"
+  "/v1/collect/terminate":
+    "post":
+      summary: "CompartmentApi.m4717f"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: f */\n\
+            Completable`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentSessionIdRequest"
+      x-retrofit-interface: "x50.CompartmentApi"
+  "/v1/collect/validate":
+    "post":
+      summary: "CompartmentApi.m4716g"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CompartmentValidateResponse"
+          description: "Response body type was declared as `/* renamed from: g */\n\
+            Single<CompartmentValidateResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CompartmentValidationRequest"
+      x-retrofit-interface: "x50.CompartmentApi"
+  "/v1/friends":
+    "get":
+      summary: "FriendApi.m4704a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FriendsResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            Single<FriendsResponse>`"
+      x-retrofit-interface: "x50.FriendApi"
+    "post":
+      summary: "FriendApi.m4699f"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FriendInvitationResponse"
+          description: "Response body type was declared as `/* renamed from: f */\n\
+            Single<FriendInvitationResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FriendInvitationRequest"
+      x-retrofit-interface: "x50.FriendApi"
+  "/v1/friends/{uuid}":
+    "delete":
+      summary: "FriendApi.m4703b"
+      parameters:
+      - name: "uuid"
+        in: "path"
+        description: "FriendApi.m4703b.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            Completable`"
+      x-retrofit-interface: "x50.FriendApi"
+    "patch":
+      summary: "FriendApi.m4700e"
+      parameters:
+      - name: "uuid"
+        in: "path"
+        description: "FriendApi.m4700e.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Completable"
+          description: "Response body type was declared as `/* renamed from: e */\n\
+            Completable`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateFriendRequest"
+      x-retrofit-interface: "x50.FriendApi"
+  "/v1/friends/{shipmentNumber}":
+    "get":
+      summary: "FriendApi.m4702c"
+      parameters:
+      - name: "shipmentNumber"
+        in: "path"
+        description: "FriendApi.m4702c.str"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ShareableParcelFriendsDetailsResponse"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            Single<ShareableParcelFriendsDetailsResponse>`"
+      x-retrofit-interface: "x50.FriendApi"
+  "/v1/invitations/validate":
+    "post":
+      summary: "FriendApi.m4701d"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ValidateInvitationResponse"
+          description: "Response body type was declared as `/* renamed from: d */\n\
+            Single<ValidateInvitationResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ValidateInvitationRequest"
+      x-retrofit-interface: "x50.FriendApi"
+  "/v1/invitations/accept":
+    "post":
+      summary: "FriendApi.m4698g"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FriendNetwork"
+          description: "Response body type was declared as `/* renamed from: g */\n\
+            Single<FriendNetwork>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AcceptInvitationRequest"
+      x-retrofit-interface: "x50.FriendApi"
+  "/cards/{cardId}/external-payments.do":
+    "post":
+      summary: "MCWPaymentService.m27929a"
+      parameters:
+      - name: "cardId"
+        in: "path"
+        description: "MCWPaymentService.m27929a.j"
+        required: true
+        schema:
+          type: "integer"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MCWInitPaymentResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17554l<MCWInitPaymentResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MCWInitPaymentRequest"
+      x-retrofit-interface: "p401nt.MCWPaymentService"
+  "/accounts.do":
+    "post":
+      summary: "MCWAccountService.m27933a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MCWLinksResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17554l<MCWLinksResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MCWAccountsRequest"
+      x-retrofit-interface: "p401nt.MCWAccountService"
+  "/login.do":
+    "post":
+      summary: "MCWAuthenticationService.m27932a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MCWLoginResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17554l<MCWLoginResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MCWLoginRequest"
+      x-retrofit-interface: "p401nt.MCWAuthenticationService"
+  "/refreshToken.do":
+    "post":
+      summary: "MCWRefreshTokenService.m27928a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MCWSessionResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17554l<MCWSessionResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MCWRefreshTokenRequest"
+      x-retrofit-interface: "p401nt.MCWRefreshTokenService"
+  "/tos.do":
+    "post":
+      summary: "MCWTermsOfServiceService.m27922a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MCWLinksResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17554l<MCWLinksResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MCWTermsOfServiceRequest"
+      x-retrofit-interface: "p401nt.MCWTermsOfServiceService"
+  "/cards.do":
+    "post":
+      summary: "MCWCardsService.m27931a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/MCWCardListResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17554l<List<MCWCardListResponse>>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MCWCardListRequest"
+      x-retrofit-interface: "p401nt.MCWCardsService"
+  "/addCard.do":
+    "post":
+      summary: "MCWCardsService.m27930b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MCWAddCardResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            AbstractC17554l<MCWAddCardResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MCWAddCardRequest"
+      x-retrofit-interface: "p401nt.MCWCardsService"
+  "/registration/finalize.do":
+    "post":
+      summary: "MCWRegistrationService.m27927a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MCWSessionResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17554l<MCWSessionResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MCWRegistrationRequest"
+      x-retrofit-interface: "p401nt.MCWRegistrationService"
+  "/registration/init.do":
+    "post":
+      summary: "MCWRegistrationService.m27926b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MCWLinksResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            AbstractC17554l<MCWLinksResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MCWRegistrationInitRequest"
+      x-retrofit-interface: "p401nt.MCWRegistrationService"
+  "/sessions/init.do":
+    "post":
+      summary: "MCWSessionService.m27925a"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MCWResetPasswordInitResponse"
+          description: "Response body type was declared as `/* renamed from: a */\n\
+            AbstractC17554l<MCWResetPasswordInitResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MCWResetPasswordInitRequest"
+      x-retrofit-interface: "p401nt.MCWSessionService"
+  "/sessions/complete.do":
+    "post":
+      summary: "MCWSessionService.m27924b"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MCWSessionResponse"
+          description: "Response body type was declared as `/* renamed from: b */\n\
+            AbstractC17554l<MCWSessionResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MCWResetPasswordWithOTPRequest"
+      x-retrofit-interface: "p401nt.MCWSessionService"
+  "/users/passwords/complete.do":
+    "post":
+      summary: "MCWSessionService.m27923c"
+      responses:
+        "default":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MCWSessionResponse"
+          description: "Response body type was declared as `/* renamed from: c */\n\
+            AbstractC17554l<MCWSessionResponse>`"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MCWResetPasswordCompleteRequest"
+      x-retrofit-interface: "p401nt.MCWSessionService"
+components:
+  schemas:
+    "GetAccountInformation":
+      allOf:
+      - $ref: "#/components/schemas/AccountInformation"
+      - type: "object"
+        properties:
+          "clientId":
+            type: "integer"
+          "lastActivityDate":
+            type: "string"
+            format: "date-time"
+    "ChangePasswordPayload":
+      type: "object"
+      properties:
+        "oldPassword":
+          type: "string"
+        "password":
+          type: "string"
+        "deviceId":
+          type: "string"
+    "ClientPinConfirmationPayload":
+      type: "object"
+      properties:
+        "pinCode":
+          type: "string"
+        "uuid":
+          type: "string"
+        "email":
+          type: "string"
+        "deviceId":
+          type: "string"
+    "ConfirmEmailChange":
+      type: "object"
+      properties:
+        "token":
+          type: "string"
+        "newsletterAgreement":
+          type: "boolean"
+    "ConfirmPhoneUpdate":
+      type: "object"
+      properties:
+        "phone":
+          type: "string"
+        "confirmationCode":
+          type: "string"
+        "deviceId":
+          type: "string"
+        "smsAgreement":
+          type: "boolean"
+    "DeleteAccountByFacebook":
+      type: "object"
+      properties:
+        "facebookToken":
+          type: "string"
+        "uuid":
+          type: "string"
+        "deviceId":
+          type: "string"
+    "DeleteAccountByOAuth":
+      type: "object"
+      properties:
+        "accessToken":
+          type: "string"
+        "uuid":
+          type: "string"
+        "deviceId":
+          type: "string"
+    "DeleteAccountRequestBody":
+      type: "object"
+      properties:
+        "customId":
+          type: "string"
+        "deviceId":
+          type: "string"
+        "identityProvider":
+          type: "string"
+        "identityProviderToken":
+          type: "string"
+        "password":
+          type: "string"
+        "uuid":
+          type: "string"
+    "EmailChangeRequestBody":
+      type: "object"
+      properties:
+        "customId":
+          type: "string"
+        "deviceId":
+          type: "string"
+        "email":
+          type: "string"
+        "externalToken":
+          type: "string"
+        "password":
+          type: "string"
+        "uuid":
+          type: "string"
+    "RequestEmailChange":
+      type: "object"
+      properties:
+        "email":
+          type: "string"
+        "password":
+          type: "string"
+        "uuid":
+          type: "string"
+        "deviceId":
+          type: "string"
+    "RequestFacebookEmailChange":
+      type: "object"
+      properties:
+        "email":
+          type: "string"
+        "uuid":
+          type: "string"
+        "deviceId":
+          type: "string"
+    "RequestPhoneUpdate":
+      type: "object"
+      properties:
+        "phone":
+          type: "string"
+        "deviceId":
+          type: "string"
+    "RequestPinBody":
+      type: "object"
+      properties:
+        "uuid":
+          type: "string"
+        "email":
+          type: "string"
+        "deviceId":
+          type: "string"
+    "UpdateAccountInformation":
+      allOf:
+      - $ref: "#/components/schemas/AccountInformation"
+      - type: "object"
+    "ActivateClient":
+      type: "object"
+      properties:
+        "email":
+          type: "string"
+    "ConfirmClient":
+      type: "object"
+      properties:
+        "token":
+          type: "string"
+    "DeleteClientPayload":
+      type: "object"
+      properties:
+        "password":
+          type: "string"
+    "RegisterClient":
+      allOf:
+      - $ref: "#/components/schemas/BaseClient"
+      - type: "object"
+        properties:
+          "password":
+            type: "string"
+          "deviceId":
+            type: "string"
+    "PasswordResetConfirmation":
+      type: "object"
+      properties:
+        "password":
+          type: "string"
+        "token":
+          type: "string"
+    "PasswordResetRequest":
+      type: "object"
+      properties:
+        "email":
+          type: "string"
+    "SignOutPayload":
+      type: "object"
+      properties:
+        "action":
+          type: "string"
+    "RegisterForPushRequest":
+      type: "object"
+      properties:
+        "deviceId":
+          type: "string"
+        "registrationId":
+          type: "string"
+        "type":
+          type: "string"
+        "manufacturer":
+          type: "string"
+        "model":
+          type: "string"
+        "osVersion":
+          type: "string"
+        "product":
+          type: "string"
+        "screenWidth":
+          type: "integer"
+        "screenHeight":
+          type: "integer"
+        "mobilePushAgreement":
+          type: "boolean"
+        "f17876k":
+          type: "string"
+        "algorithm":
+          type: "integer"
+        "f17879a":
+          type: "integer"
+    "ClientEventData":
+      type: "object"
+      properties:
+        "time":
+          type: "string"
+        "action":
+          type: "string"
+        "label":
+          type: "string"
+        "client":
+          type: "object"
+          additionalProperties:
+            type: "object"
+            additionalProperties: {}
+        "params":
+          type: "object"
+          additionalProperties:
+            type: "object"
+            additionalProperties: {}
+    "RecommendationRequestBody":
+      type: "object"
+      properties:
+        "product:retailer_part_no":
+          type: "string"
+        "itemsIds":
+          type: "array"
+          items:
+            type: "string"
+        "itemIdExcluded":
+          type: "array"
+          items:
+            type: "string"
+        "additionalFilters":
+          type: "string"
+        "filtersJoiner":
+          type: "string"
+        "additionalElasticFilters":
+          type: "string"
+        "elasticFiltersJoiner":
+          type: "string"
+        "displayAttribute":
+          type: "array"
+          items:
+            type: "string"
+        "includeContextItems":
+          type: "boolean"
+    "RecommendationResponse":
+      type: "object"
+      properties:
+        "f17932a":
+          $ref: "#/components/schemas/RecommendationContent"
+        "schema":
+          type: "string"
+        "slug":
+          type: "string"
+        "uuid":
+          type: "string"
+    "ScreenViewResponse":
+      type: "object"
+      properties:
+        "audience":
+          $ref: "#/components/schemas/Audience"
+        "createdAt":
+          type: "string"
+        "data":
+          type: "object"
+          additionalProperties: {}
+        "id":
+          type: "string"
+        "hash":
+          type: "string"
+        "f17904f":
+          type: "string"
+        "parentVersion":
+          type: "string"
+        "path":
+          type: "string"
+        "priority":
+          type: "integer"
+        "updatedAt":
+          type: "string"
+        "version":
+          type: "string"
+    "ServerTimeResponse":
+      type: "object"
+      properties:
+        "serverTime":
+          type: "string"
+          format: "date-time"
+    "AuthFacebookPayload":
+      type: "object"
+      properties:
+        "facebookToken":
+          type: "string"
+        "apiKey":
+          type: "string"
+        "uuid":
+          type: "string"
+        "deviceId":
+          type: "string"
+        "agreements":
+          $ref: "#/components/schemas/Agreements"
+        "attributes":
+          type: "object"
+          additionalProperties:
+            type: "string"
+    "SignInResponse":
+      type: "object"
+      properties:
+        "token":
+          type: "string"
+        "expiration":
+          type: "integer"
+        "origin":
+          type: "string"
+        "customId":
+          type: "string"
+        "realm":
+          type: "string"
+    "AuthenticatePayload":
+      type: "object"
+      properties:
+        "identityProviderToken":
+          type: "string"
+        "identityProvider":
+          type: "string"
+        "apiKey":
+          type: "string"
+        "uuid":
+          type: "string"
+        "email":
+          type: "string"
+        "password":
+          type: "string"
+        "deviceId":
+          type: "string"
+        "agreements":
+          $ref: "#/components/schemas/Agreements"
+        "attributes":
+          type: "object"
+          additionalProperties:
+            type: "string"
+        "customId":
+          type: "string"
+    "OAuthPayload":
+      type: "object"
+      properties:
+        "accessToken":
+          type: "string"
+        "apiKey":
+          type: "string"
+        "uuid":
+          type: "string"
+        "deviceId":
+          type: "string"
+        "agreements":
+          $ref: "#/components/schemas/Agreements"
+        "attributes":
+          type: "object"
+          additionalProperties:
+            type: "string"
+        "customId":
+          type: "string"
+    "RefreshTokenWithApiKeyPayload":
+      type: "object"
+      properties:
+        "apiKey":
+          type: "string"
+    "SignInAnonymousPayload":
+      type: "object"
+      properties:
+        "apiKey":
+          type: "string"
+        "uuid":
+          type: "string"
+        "deviceId":
+          type: "string"
+    "ConditionalAuthResponse":
+      type: "object"
+      properties:
+        "conditions":
+          type: "array"
+          items:
+            type: "object"
+            additionalProperties: {}
+        "created":
+          type: "integer"
+        "customId":
+          type: "string"
+        "expiration":
+          type: "integer"
+        "origin":
+          type: "string"
+        "realm":
+          type: "string"
+        "status":
+          type: "string"
+        "token":
+          type: "string"
+    "Event":
+      type: "object"
+      properties:
+        "time":
+          type: "string"
+          format: "date-time"
+        "type":
+          type: "string"
+        "action":
+          type: "string"
+        "label":
+          type: "string"
+        "client":
+          type: "object"
+          additionalProperties:
+            type: "object"
+            additionalProperties: {}
+        "params":
+          type: "object"
+          additionalProperties:
+            type: "object"
+            additionalProperties: {}
+        "f18329a":
+          type: "string"
+    "SynerisePushResponse":
+      type: "object"
+      properties:
+        "contentAvailable":
+          type: "boolean"
+        "data":
+          $ref: "#/components/schemas/SynerisePush"
+        "notification":
+          $ref: "#/components/schemas/SimpleNotification"
+    "WalkthroughResponse":
+      allOf:
+      - $ref: "#/components/schemas/BasePageMapper"
+      - type: "object"
+        properties:
+          "id":
+            type: "string"
+          "type":
+            type: "string"
+          "is_loop_enabled":
+            type: "boolean"
+          "are_indicators_visible":
+            type: "boolean"
+          "campaign":
+            $ref: "#/components/schemas/Campaign"
+          "pages":
+            type: "array"
+            items:
+              $ref: "#/components/schemas/NetGenericPageData"
+          "f18519g":
+            type: "array"
+            items:
+              $ref: "#/components/schemas/PageItem"
+    "SyneriseBannerResponse":
+      type: "object"
+      properties:
+        "contentAvailable":
+          type: "boolean"
+        "data":
+          $ref: "#/components/schemas/SyneriseBanner"
+        "notification":
+          $ref: "#/components/schemas/ComplexNotification"
+    "AssignVoucherPayload":
+      type: "object"
+      properties:
+        "poolUuid":
+          type: "string"
+        "clientUuid":
+          type: "string"
+    "AssignVoucherResponse":
+      type: "object"
+      properties:
+        "message":
+          type: "string"
+        "data":
+          $ref: "#/components/schemas/AssignVoucherData"
+    "ActivatePromotion":
+      type: "object"
+      properties:
+        "key":
+          type: "string"
+        "value":
+          type: "string"
+    "PromotionResponse":
+      type: "object"
+      properties:
+        "meta":
+          $ref: "#/components/schemas/PromotionMetadata"
+        "data":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/Promotion"
+    "PromotionIdentifier":
+      type: "object"
+      properties:
+        "key":
+          type: "string"
+        "value":
+          type: "string"
+    "SinglePromotionResponse":
+      type: "object"
+      properties:
+        "data":
+          $ref: "#/components/schemas/Promotion"
+    "VoucherCodesResponse":
+      type: "object"
+      properties:
+        "data":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/VoucherCodesData"
+    "OperationTokenResult":
+      type: "object"
+      properties:
+        "creation_datetime":
+          type: "string"
+        "number":
+          type: "string"
+        "token":
+          type: "string"
+    "PaymentResult":
+      allOf:
+      - $ref: "#/components/schemas/Result"
+      - type: "object"
+        properties:
+          "RecipientId":
+            type: "string"
+          "additionalInfoParams":
+            type: "object"
+            additionalProperties: {}
+          "additional_info_html":
+            type: "string"
+          "additional_info_text":
+            type: "string"
+          "amount":
+            type: "string"
+          "channel_id":
+            type: "string"
+          "control":
+            type: "string"
+          "creation_datetime":
+            type: "string"
+          "currency":
+            type: "string"
+          "dayAndMonth":
+            type: "string"
+          "dbId":
+            type: "integer"
+          "description":
+            type: "string"
+          "exchange":
+            type: "string"
+          "exchange_rate":
+            type: "string"
+          "exchange_reverse":
+            type: "string"
+          "hasTransactionInfo":
+            type: "boolean"
+          "isTransactionInterrupted":
+            type: "boolean"
+          "is_exchanged":
+            type: "boolean"
+          "credit_card_info":
+            $ref: "#/components/schemas/CreditCardInfo"
+          "money":
+            type: "string"
+          "number":
+            type: "string"
+          "original_amount":
+            type: "string"
+          "original_currency":
+            type: "string"
+          "original_money":
+            type: "string"
+          "paymentDate":
+            type: "string"
+            format: "date-time"
+          "paymentLanguage":
+            type: "string"
+          "related_operations":
+            type: "object"
+            additionalProperties: {}
+          "status":
+            type: "string"
+          "status_i18n":
+            type: "string"
+          "token":
+            type: "string"
+          "type":
+            type: "string"
+          "type_i18n":
+            type: "string"
+          "year":
+            type: "string"
+    "MerchantInformation":
+      type: "object"
+      properties:
+        "payment_details":
+          $ref: "#/components/schemas/PaymentDetails"
+        "channels":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/Channel"
+        "forms":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/Form"
+        "countries":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/Country"
+    "Currency":
+      type: "object"
+      properties:
+        "currency":
+          type: "string"
+    "Language":
+      type: "object"
+      properties:
+        "lang":
+          type: "string"
+    "UnregisterData":
+      type: "object"
+      properties:
+        "credit_card_customer_id":
+          type: "string"
+        "credit_card_id":
+          type: "string"
+        "f51717id":
+          type: "string"
+        "unregister_type":
+          type: "string"
+    "AddBasketRequest":
+      type: "object"
+      properties:
+        "basketId":
+          type: "string"
+    "ShoppingPersonalDataNetwork":
+      type: "object"
+      properties:
+        "email":
+          type: "string"
+        "firstName":
+          type: "string"
+        "lastName":
+          type: "string"
+    "ConsentsRequest":
+      type: "object"
+      properties:
+        "consents":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/ConsentNetwork"
+    "Completable":
+      type: "object"
+    "PushTokenRequest":
+      type: "object"
+      properties:
+        "pushToken":
+          type: "string"
+        "pushTokenStatus":
+          type: "string"
+        "refreshToken":
+          type: "string"
+    "CompaniesResponse":
+      type: "object"
+      properties:
+        "companies":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/CompanyNetwork"
+        "nationalBusinessRegistryNumber":
+          type: "string"
+        "taxNumber":
+          type: "string"
+    "PolicyNetwork":
+      type: "object"
+      properties:
+        "content":
+          type: "string"
+        "version":
+          type: "integer"
+    "DotpayChannelsResponse":
+      type: "object"
+      properties:
+        "channels":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/DotpayChannelNetwork"
+    "PriceResponse":
+      type: "object"
+      properties:
+        "boxMachine":
+          $ref: "#/components/schemas/ServicePriceNetwork"
+        "courier":
+          $ref: "#/components/schemas/ServicePriceNetwork"
+        "expandAvizo":
+          $ref: "#/components/schemas/ExpandAvizoPriceNetwork"
+    "CompartmentStatusRequest":
+      type: "object"
+      properties:
+        "expectedStatus":
+          $ref: "#/components/schemas/CompartmentExpectedStatusNetwork"
+        "sessionUuid":
+          type: "string"
+    "CompartmentStatusResponse":
+      type: "object"
+      properties:
+        "compartment":
+          $ref: "#/components/schemas/CompartmentNetwork"
+        "status":
+          type: "string"
+    "CreateBlikTransactionRequest":
+      type: "object"
+      properties:
+        "amount":
+          type: "string"
+        "appKey":
+          type: "integer"
+        "blikCode":
+          type: "string"
+        "currency":
+          $ref: "#/components/schemas/CurrencyNetwork"
+        "details":
+          $ref: "#/components/schemas/PaymentDetailsNetwork"
+        "invoice":
+          $ref: "#/components/schemas/InvoiceNetwork"
+        "paymentMethod":
+          $ref: "#/components/schemas/BlikPaymentMethodNetwork"
+        "process":
+          $ref: "#/components/schemas/PaymentProcessNetwork"
+        "shipmentNumber":
+          type: "string"
+    "TransactionDetailsResponse":
+      type: "object"
+      properties:
+        "multiMerchantParentId":
+          type: "string"
+        "services":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/ChildTransactionNetwork"
+        "transactionId":
+          type: "string"
+    "ProfilePreferencesNetwork":
+      type: "object"
+      properties:
+        "carouselBanner":
+          $ref: "#/components/schemas/CarouselBannerNetwork"
+        "ecoReturn":
+          $ref: "#/components/schemas/EcoReturnNetwork"
+        "isAnalyticsPermitted":
+          type: "boolean"
+        "lottery":
+          $ref: "#/components/schemas/LotteryNetwork"
+        "menuBanner":
+          $ref: "#/components/schemas/BannerDataNetwork"
+    "PreferenceResponse":
+      type: "object"
+      properties:
+        "preferences":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/PreferenceNetwork"
+    "BoxMachineNetwork":
+      type: "object"
+      properties:
+        "addressDetails":
+          $ref: "#/components/schemas/AddressDetailsNetwork"
+        "airSensor":
+          type: "boolean"
+        "airSensorData":
+          $ref: "#/components/schemas/AirSensorNetwork"
+        "doubled":
+          type: "boolean"
+        "imageUrl":
+          type: "string"
+        "location":
+          $ref: "#/components/schemas/PointLocationNetwork"
+        "location247":
+          type: "boolean"
+        "locationDescription":
+          type: "string"
+        "name":
+          type: "string"
+        "openingHours":
+          type: "string"
+        "paymentType":
+          type: "object"
+          additionalProperties:
+            type: "string"
+        "pointType":
+          type: "string"
+        "remoteReturn":
+          type: "boolean"
+        "remoteSend":
+          type: "boolean"
+        "virtual":
+          type: "integer"
+    "DeliveryPointsResponse":
+      type: "object"
+      properties:
+        "points":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/BoxMachineNetwork"
+    "ReturnTicketsResponse":
+      type: "object"
+      properties:
+        "tickets":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/ReturnTicketNetwork"
+    "ReturnTicketNetwork":
+      type: "object"
+      properties:
+        "acceptedDate":
+          type: "string"
+          format: "date-time"
+        "address":
+          type: "string"
+        "createdDate":
+          type: "string"
+          format: "date-time"
+        "deliveredDate":
+          type: "string"
+          format: "date-time"
+        "description":
+          type: "string"
+        "eventLog":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/ReturnTicketEventLogNetwork"
+        "expiryDate":
+          type: "string"
+          format: "date-time"
+        "formType":
+          type: "string"
+        "operations":
+          $ref: "#/components/schemas/ReturnTicketOperationsNetwork"
+        "orderNumber":
+          type: "string"
+        "organizationName":
+          type: "string"
+        "parcelSize":
+          type: "string"
+        "qrCode":
+          type: "string"
+        "returnCode":
+          type: "string"
+        "returnReason":
+          type: "string"
+        "rma":
+          type: "string"
+        "sentDate":
+          type: "string"
+          format: "date-time"
+        "shipmentNumber":
+          type: "string"
+        "status":
+          type: "string"
+        "uuid":
+          type: "string"
+    "VoicebotAuthenticationRequest":
+      type: "object"
+      properties:
+        "shipmentNumber":
+          type: "string"
+    "VoicebotAuthenticationResponse":
+      type: "object"
+      properties:
+        "contactCenterNumber":
+          type: "string"
+        "token":
+          type: "string"
+    "CreateParcelTicketRequest":
+      type: "object"
+      properties:
+        "description":
+          type: "string"
+        "orderNumber":
+          type: "string"
+        "organizationUuid":
+          type: "string"
+        "parcelSize":
+          type: "string"
+        "reasonUuid":
+          type: "string"
+        "sender":
+          $ref: "#/components/schemas/ReturnSenderNetwork"
+        "shipmentNumber":
+          type: "string"
+    "CreateTicketDetailsNetwork":
+      type: "object"
+      properties:
+        "accepted":
+          type: "boolean"
+        "rma":
+          type: "string"
+        "uuid":
+          type: "string"
+    "CreateOrganizationTicketRequest":
+      type: "object"
+      properties:
+        "address":
+          type: "string"
+        "description":
+          type: "string"
+        "orderNumber":
+          type: "string"
+        "organizationUuid":
+          type: "string"
+        "parcelSize":
+          type: "string"
+        "reasonUuid":
+          type: "string"
+        "sender":
+          $ref: "#/components/schemas/ReturnSenderNetwork"
+    "SendSMSCodeResponse":
+      type: "object"
+      properties:
+        "expirationTime":
+          type: "string"
+          format: "date-time"
+    "ReconfirmSMSRequest":
+      type: "object"
+      properties:
+        "refreshToken":
+          type: "string"
+        "smsCode":
+          type: "string"
+    "ConfirmSMSResponse":
+      type: "object"
+      properties:
+        "authToken":
+          type: "string"
+        "refreshToken":
+          type: "string"
+    "OrganizationsResponse":
+      type: "object"
+      properties:
+        "organizations":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/OrganizationNetwork"
+    "ReturnableParcelsResponse":
+      type: "object"
+      properties:
+        "parcels":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/ReturnableParcelNetwork"
+    "ReturnReasonsResponse":
+      type: "object"
+      properties:
+        "returnReasons":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/ReturnReasonNetwork"
+    "MarkAllAsReadRequest":
+      type: "object"
+      properties:
+        "date":
+          type: "string"
+    "MarkMultipleAsReadRequest":
+      type: "object"
+      properties:
+        "notificationIds":
+          type: "array"
+          items:
+            type: "string"
+    "NotificationResponse":
+      type: "object"
+      properties:
+        "notifications":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/NotificationNetwork"
+    "SentParcelNetwork":
+      type: "object"
+      properties:
+        "confirmationDate":
+          type: "string"
+          format: "date-time"
+        "customerReference":
+          type: "string"
+        "deliveryPoint":
+          $ref: "#/components/schemas/TargetAddressNetwork"
+        "dropOffPoint":
+          $ref: "#/components/schemas/BoxMachineNetwork"
+        "endOfWeekCollection":
+          type: "boolean"
+        "eventLog":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/EventLogNetwork"
+        "expiryDate":
+          type: "string"
+          format: "date-time"
+        "operations":
+          $ref: "#/components/schemas/SentParcelOperationsNetwork"
+        "originSystem":
+          type: "string"
+        "parcelSize":
+          type: "string"
+        "payment":
+          $ref: "#/components/schemas/PaymentNetwork"
+        "pickUpDate":
+          type: "string"
+          format: "date-time"
+        "pickUpPoint":
+          $ref: "#/components/schemas/BoxMachineNetwork"
+        "qrCode":
+          type: "string"
+        "quickSendCode":
+          type: "string"
+        "receiver":
+          $ref: "#/components/schemas/CustomerNetwork"
+        "sender":
+          $ref: "#/components/schemas/CustomerNetwork"
+        "shipmentNumber":
+          type: "string"
+        "shipmentType":
+          type: "string"
+        "status":
+          type: "string"
+        "unlabeled":
+          type: "boolean"
+    "SentParcelsResponse":
+      type: "object"
+      properties:
+        "more":
+          type: "boolean"
+        "parcels":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/SentParcelNetwork"
+        "updatedUntil":
+          type: "string"
+          format: "date-time"
+    "CreateParcelRequest":
+      type: "object"
+      properties:
+        "customerReference":
+          type: "string"
+        "deliveryPoint":
+          $ref: "#/components/schemas/DeliveryPointNetwork"
+        "deliveryType":
+          type: "string"
+        "parcelSize":
+          type: "string"
+        "price":
+          type: "string"
+        "receiver":
+          $ref: "#/components/schemas/ReceiverNetwork"
+        "sender":
+          $ref: "#/components/schemas/SenderNetwork"
+    "CreateParcelResponse":
+      type: "object"
+      properties:
+        "shipmentNumber":
+          type: "string"
+    "CancelTransactionRequest":
+      type: "object"
+      properties:
+        "transactionId":
+          type: "string"
+    "CreateTransactionRequest":
+      type: "object"
+      properties:
+        "amount":
+          type: "string"
+        "currency":
+          $ref: "#/components/schemas/CurrencyNetwork"
+        "details":
+          $ref: "#/components/schemas/PaymentDetailsNetwork"
+        "invoice":
+          $ref: "#/components/schemas/InvoiceNetwork"
+        "paymentMethod":
+          $ref: "#/components/schemas/PaymentMethodNetwork"
+        "process":
+          $ref: "#/components/schemas/PaymentProcessNetwork"
+        "shipmentNumber":
+          type: "string"
+    "BlikAliasStatusResponse":
+      type: "object"
+      properties:
+        "isActive":
+          type: "boolean"
+    "AuthenticateRequest":
+      type: "object"
+      properties:
+        "phoneOS":
+          type: "string"
+        "refreshToken":
+          type: "string"
+    "AuthenticationResponse":
+      type: "object"
+      properties:
+        "authToken":
+          type: "string"
+        "pushTokenStatus":
+          type: "string"
+        "reauthenticationRequired":
+          type: "boolean"
+        "refreshTokenExpiryDate":
+          type: "string"
+          format: "date-time"
+    "SendSMSCodeRequest":
+      type: "object"
+      properties:
+        "phoneNumber":
+          type: "string"
+    "ConfirmSMSRequest":
+      type: "object"
+      properties:
+        "phoneNumber":
+          type: "string"
+        "phoneOS":
+          type: "string"
+        "smsCode":
+          type: "string"
+    "CompartmentSessionIdRequest":
+      type: "object"
+      properties:
+        "sessionUuid":
+          type: "string"
+    "CompartmentOpenResponse":
+      type: "object"
+      properties:
+        "actionTime":
+          type: "integer"
+        "compartment":
+          $ref: "#/components/schemas/CompartmentNetwork"
+        "confirmActionTime":
+          type: "integer"
+        "openCompartmentWaitingTime":
+          type: "integer"
+    "CompartmentCloseResponse":
+      type: "object"
+      properties:
+        "closed":
+          type: "boolean"
+    "SendValidationRequest":
+      type: "object"
+      properties:
+        "boxMachineName":
+          type: "string"
+        "geoPoint":
+          $ref: "#/components/schemas/GeoPointNetwork"
+        "parcel":
+          $ref: "#/components/schemas/SendParcelNetwork"
+    "CompartmentValidateResponse":
+      type: "object"
+      properties:
+        "sessionExpirationTime":
+          type: "integer"
+        "sessionUuid":
+          type: "string"
+    "TrackedParcelNetwork":
+      type: "object"
+      properties:
+        "avizoTransactionStatus":
+          type: "string"
+        "cashOnDelivery":
+          $ref: "#/components/schemas/CashOnDeliveryNetwork"
+        "courierPhoneNumber":
+          type: "string"
+        "endOfWeekCollection":
+          type: "boolean"
+        "eventLog":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/EventLogNetwork"
+        "expiryDate":
+          type: "string"
+          format: "date-time"
+        "inEasyAccessZone":
+          type: "boolean"
+        "mobileCollectPossible":
+          type: "boolean"
+        "multiCompartment":
+          $ref: "#/components/schemas/MultiCompartmentNetwork"
+        "openCode":
+          type: "string"
+        "operations":
+          $ref: "#/components/schemas/TrackedParcelOperationsNetwork"
+        "ownershipStatus":
+          type: "string"
+        "parcelSize":
+          type: "string"
+        "pickUpDate":
+          type: "string"
+          format: "date-time"
+        "pickUpPoint":
+          $ref: "#/components/schemas/BoxMachineNetwork"
+        "qrCode":
+          type: "string"
+        "receiver":
+          $ref: "#/components/schemas/CustomerNetwork"
+        "returnedToSenderDate":
+          type: "string"
+          format: "date-time"
+        "sender":
+          $ref: "#/components/schemas/CustomerNetwork"
+        "sharedTo":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/FriendNetwork"
+        "shipmentNumber":
+          type: "string"
+        "shipmentType":
+          type: "string"
+        "status":
+          type: "string"
+        "storedDate":
+          type: "string"
+          format: "date-time"
+    "TrackedParcelsResponse":
+      type: "object"
+      properties:
+        "more":
+          type: "boolean"
+        "parcels":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/TrackedParcelNetwork"
+        "removedParcelList":
+          type: "array"
+          items:
+            type: "string"
+        "updatedUntil":
+          type: "string"
+          format: "date-time"
+    "java.lang.Throwable":
+      type: "object"
+      additionalProperties: {}
+    "ParcelPropertiesRequest":
+      type: "object"
+      properties:
+        "propertyKey":
+          type: "string"
+        "shipmentNumber":
+          type: "string"
+    "ShareParcelsRequest":
+      type: "object"
+      properties:
+        "parcels":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/SharedParcelNetwork"
+    "SubscribeParcelRequest":
+      type: "object"
+      properties:
+        "shipmentNumber":
+          type: "string"
+    "ReturnOpenRequest":
+      type: "object"
+      properties:
+        "parcelSize":
+          type: "string"
+        "sessionUuid":
+          type: "string"
+    "ReturnValidationRequest":
+      type: "object"
+      properties:
+        "boxMachineName":
+          type: "string"
+        "geoPoint":
+          $ref: "#/components/schemas/GeoPointNetwork"
+        "ticket":
+          $ref: "#/components/schemas/pl.inpost.inmobile.networkModel.returnremote.ReturnTicketNetwork"
+    "CompartmentClaimRequest":
+      type: "object"
+      properties:
+        "sessionUuid":
+          type: "string"
+        "shipmentNumbers":
+          type: "array"
+          items:
+            type: "string"
+    "CompartmentClaimResponse":
+      type: "object"
+      properties:
+        "actionTime":
+          type: "integer"
+        "confirmActionTime":
+          type: "integer"
+        "openCompartmentWaitingTime":
+          type: "integer"
+    "CompartmentValidationRequest":
+      type: "object"
+      properties:
+        "geoPoint":
+          $ref: "#/components/schemas/GeoPointNetwork"
+        "parcel":
+          $ref: "#/components/schemas/ParcelCompartmentNetwork"
+    "FriendsResponse":
+      type: "object"
+      properties:
+        "friends":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/FriendNetwork"
+        "invitations":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/FriendInvitationDetailsNetwork"
+    "ShareableParcelFriendsDetailsResponse":
+      type: "object"
+      properties:
+        "friends":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/FriendNetwork"
+        "pendingInvitations":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/FriendInvitationDetailsNetwork"
+        "sharedWith":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/FriendNetwork"
+    "ValidateInvitationRequest":
+      type: "object"
+      properties:
+        "invitationCode":
+          type: "string"
+    "ValidateInvitationResponse":
+      type: "object"
+      properties:
+        "phoneNumber":
+          type: "string"
+        "uuid":
+          type: "string"
+    "UpdateFriendRequest":
+      type: "object"
+      properties:
+        "name":
+          type: "string"
+    "FriendInvitationRequest":
+      type: "object"
+      properties:
+        "name":
+          type: "string"
+        "phoneNumber":
+          type: "string"
+    "FriendInvitationResponse":
+      type: "object"
+      properties:
+        "friendInvitationDetails":
+          $ref: "#/components/schemas/FriendInvitationDetailsNetwork"
+        "status":
+          type: "string"
+    "AcceptInvitationRequest":
+      type: "object"
+      properties:
+        "friendName":
+          type: "string"
+        "invitationCode":
+          type: "string"
+    "FriendNetwork":
+      type: "object"
+      properties:
+        "name":
+          type: "string"
+        "phoneNumber":
+          type: "string"
+        "uuid":
+          type: "string"
+    "MCWInitPaymentRequest":
+      type: "object"
+      properties:
+        "merchantNumber":
+          type: "string"
+        "f33334b":
+          type: "string"
+        "f33335c":
+          type: "string"
+        "externalMerchant":
+          type: "string"
+        "merchantType":
+          type: "string"
+    "MCWInitPaymentResponse":
+      type: "object"
+      properties:
+        "f33338a":
+          type: "string"
+        "f33339b":
+          type: "string"
+        "encryptedCardNumber":
+          type: "string"
+        "encryptionKey":
+          type: "string"
+        "cardExpirationDate":
+          type: "string"
+        "cardId":
+          type: "string"
+        "itemId":
+          type: "string"
+        "userId":
+          type: "string"
+        "f33346i":
+          type: "string"
+    "MCWAccountsRequest":
+      type: "object"
+      properties:
+        "merchantNumber":
+          type: "string"
+        "phoneNumber":
+          type: "string"
+        "merchantType":
+          type: "string"
+    "MCWLinksResponse":
+      type: "object"
+      properties:
+        "f33347a":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/MCWLink"
+    "MCWLoginRequest":
+      type: "object"
+      properties:
+        "merchantNumber":
+          type: "string"
+        "merchantType":
+          type: "string"
+        "f33350c":
+          type: "string"
+        "f33351d":
+          type: "string"
+        "rememberMe":
+          type: "boolean"
+    "MCWLoginResponse":
+      type: "object"
+      properties:
+        "sessionToken":
+          type: "string"
+        "refreshToken":
+          type: "string"
+        "endTimeStamp":
+          type: "string"
+        "isPaired":
+          type: "boolean"
+        "isLoggedIn":
+          type: "boolean"
+        "f33358f":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/MCWLink"
+    "MCWRefreshTokenRequest":
+      type: "object"
+      properties:
+        "merchantNumber":
+          type: "string"
+        "merchantType":
+          type: "string"
+        "refreshToken":
+          type: "string"
+    "MCWSessionResponse":
+      type: "object"
+      properties:
+        "sessionToken":
+          type: "string"
+        "refreshToken":
+          type: "string"
+        "endTimestamp":
+          type: "string"
+        "isPaired":
+          type: "boolean"
+        "isLoggedIn":
+          type: "boolean"
+        "f33398f":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/MCWLink"
+    "MCWTermsOfServiceRequest":
+      type: "object"
+      properties:
+        "merchantNumber":
+          type: "string"
+        "merchantType":
+          type: "string"
+        "acceptTos":
+          type: "boolean"
+    "MCWCardListRequest":
+      type: "object"
+      properties:
+        "merchantNumber":
+          type: "string"
+        "merchantType":
+          type: "string"
+    "MCWCardListResponse":
+      type: "object"
+      properties:
+        "f33324a":
+          type: "integer"
+        "cardNo":
+          type: "string"
+        "f33326c":
+          type: "boolean"
+        "isDefault":
+          type: "boolean"
+        "f33328e":
+          type: "string"
+        "fullDescription":
+          type: "string"
+        "lastFourDigits":
+          type: "string"
+        "strongVerification":
+          type: "boolean"
+        "f33332i":
+          $ref: "#/components/schemas/MCWCardBrand"
+    "MCWAddCardRequest":
+      type: "object"
+      properties:
+        "merchantNumber":
+          type: "string"
+        "merchantType":
+          type: "string"
+        "cardNo":
+          type: "string"
+        "expDate":
+          type: "string"
+    "MCWAddCardResponse":
+      type: "object"
+      properties:
+        "cardId":
+          type: "integer"
+        "f33321b":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/MCWLink"
+    "MCWRegistrationRequest":
+      type: "object"
+      properties:
+        "merchantNumber":
+          type: "string"
+        "merchantType":
+          type: "string"
+        "f33367c":
+          type: "string"
+        "f33368d":
+          type: "string"
+        "f33369e":
+          type: "string"
+        "f33370f":
+          type: "string"
+        "acceptTos":
+          type: "boolean"
+        "smsCode":
+          type: "string"
+        "f33373i":
+          type: "string"
+        "f33374j":
+          type: "string"
+        "acceptMarketing":
+          type: "boolean"
+        "acceptMarketingReceiving":
+          type: "boolean"
+        "rememberMe":
+          type: "boolean"
+    "MCWRegistrationInitRequest":
+      type: "object"
+      properties:
+        "merchantNumber":
+          type: "string"
+        "merchantType":
+          type: "string"
+        "phoneNumber":
+          type: "string"
+    "MCWResetPasswordInitRequest":
+      type: "object"
+      properties:
+        "merchantNumber":
+          type: "string"
+        "merchantType":
+          type: "string"
+        "phoneNumber":
+          type: "string"
+    "MCWResetPasswordInitResponse":
+      type: "object"
+      properties:
+        "loggingToken":
+          type: "string"
+    "MCWResetPasswordWithOTPRequest":
+      type: "object"
+      properties:
+        "merchantNumber":
+          type: "string"
+        "merchantType":
+          type: "string"
+        "loggingToken":
+          type: "string"
+        "smsPassword":
+          type: "string"
+        "rememberMe":
+          type: "boolean"
+    "MCWResetPasswordCompleteRequest":
+      type: "object"
+      properties:
+        "merchantNumber":
+          type: "string"
+        "merchantType":
+          type: "string"
+        "resetPasswordToken":
+          type: "string"
+        "smsPassword":
+          type: "string"
+        "newPassword":
+          type: "string"
+        "rememberMe":
+          type: "boolean"
+    "AccountInformation":
+      type: "object"
+      properties:
+        "email":
+          type: "string"
+        "phone":
+          type: "string"
+        "customId":
+          type: "string"
+        "uuid":
+          type: "string"
+        "f17775e":
+          type: "string"
+        "f17776f":
+          type: "string"
+        "displayName":
+          type: "string"
+        "company":
+          type: "string"
+        "f17779i":
+          type: "string"
+        "city":
+          type: "string"
+        "province":
+          type: "string"
+        "zipCode":
+          type: "string"
+        "countryCode":
+          type: "string"
+        "birthDate":
+          type: "string"
+        "sex":
+          type: "string"
+        "avatarUrl":
+          type: "string"
+        "anonymous":
+          type: "boolean"
+        "agreements":
+          $ref: "#/components/schemas/Agreements"
+        "attributes":
+          type: "object"
+          additionalProperties:
+            type: "string"
+        "tags":
+          type: "array"
+          items:
+            type: "string"
+    "BaseClient":
+      type: "object"
+      properties:
+        "f17836a":
+          type: "string"
+        "agreements":
+          $ref: "#/components/schemas/Agreements"
+        "attributes":
+          type: "object"
+          additionalProperties:
+            type: "string"
+        "city":
+          type: "string"
+        "company":
+          type: "string"
+        "countryCode":
+          type: "string"
+        "customId":
+          type: "string"
+        "email":
+          type: "string"
+        "f17844i":
+          type: "string"
+        "f17845j":
+          type: "string"
+        "phone":
+          type: "string"
+        "province":
+          type: "string"
+        "sex":
+          type: "string"
+        "tags":
+          type: "array"
+          items:
+            type: "string"
+        "uuid":
+          type: "string"
+        "zipCode":
+          type: "string"
+    "RecommendationContent":
+      type: "object"
+      properties:
+        "f17921a":
+          type: "string"
+        "recommendations":
+          $ref: "#/components/schemas/RecommendationContainer"
+    "Audience":
+      type: "object"
+      properties:
+        "ids":
+          type: "array"
+          items:
+            type: "string"
+        "query":
+          type: "string"
+    "Agreements":
+      type: "object"
+      properties:
+        "email":
+          type: "boolean"
+        "sms":
+          type: "boolean"
+        "push":
+          type: "boolean"
+        "bluetooth":
+          type: "boolean"
+        "rfid":
+          type: "boolean"
+        "wifi":
+          type: "boolean"
+    "SynerisePush":
+      allOf:
+      - $ref: "#/components/schemas/SyneriseData"
+      - type: "object"
+        properties:
+          "f18556d":
+            $ref: "#/components/schemas/SyneriseNotification"
+    "SimpleNotification":
+      type: "object"
+      properties:
+        "title":
+          type: "string"
+        "body":
+          type: "string"
+    "Campaign":
+      type: "object"
+      properties:
+        "hash_id":
+          type: "string"
+        "title":
+          type: "string"
+        "type":
+          type: "string"
+        "variant_id":
+          type: "integer"
+    "NetGenericPageData":
+      type: "object"
+      properties:
+        "index":
+          type: "integer"
+        "type":
+          type: "string"
+        "image":
+          $ref: "#/components/schemas/Image"
+        "header":
+          $ref: "#/components/schemas/Text"
+        "description":
+          $ref: "#/components/schemas/Text"
+        "background":
+          $ref: "#/components/schemas/Background"
+        "button":
+          $ref: "#/components/schemas/Button"
+        "close_button":
+          $ref: "#/components/schemas/CloseButton"
+        "action":
+          $ref: "#/components/schemas/Action"
+    "PageItem":
+      type: "object"
+      properties:
+        "f18499a":
+          type: "object"
+          additionalProperties: {}
+    "BasePageMapper":
+      type: "object"
+    "SyneriseBanner":
+      allOf:
+      - $ref: "#/components/schemas/SyneriseData"
+      - type: "object"
+        properties:
+          "f18520d":
+            $ref: "#/components/schemas/TemplateBanner"
+    "ComplexNotification":
+      allOf:
+      - $ref: "#/components/schemas/SimpleNotification"
+      - type: "object"
+        properties:
+          "sound":
+            type: "string"
+          "icon":
+            type: "string"
+          "priority":
+            type: "string"
+          "action":
+            $ref: "#/components/schemas/Action"
+    "AssignVoucherData":
+      type: "object"
+      properties:
+        "code":
+          type: "string"
+        "expireIn":
+          type: "string"
+          format: "date-time"
+        "redeemAt":
+          type: "string"
+          format: "date-time"
+        "assignedAt":
+          type: "string"
+          format: "date-time"
+        "createdAt":
+          type: "string"
+          format: "date-time"
+        "updatedAt":
+          type: "string"
+          format: "date-time"
+    "PromotionMetadata":
+      type: "object"
+      properties:
+        "totalCount":
+          type: "integer"
+        "totalPages":
+          type: "integer"
+        "page":
+          type: "integer"
+        "limit":
+          type: "integer"
+        "code":
+          type: "integer"
+    "Promotion":
+      allOf:
+      - $ref: "#/components/schemas/BaseModel"
+      - type: "object"
+        properties:
+          "lastingTime":
+            type: "integer"
+          "lastingAt":
+            type: "string"
+            format: "date-time"
+          "params":
+            type: "object"
+            additionalProperties:
+              type: "object"
+              additionalProperties: {}
+          "catalogIndexItems":
+            type: "array"
+            items:
+              type: "string"
+          "price":
+            type: "integer"
+          "priority":
+            type: "integer"
+          "itemScope":
+            type: "string"
+          "minBasketValue":
+            type: "integer"
+          "maxBasketValue":
+            type: "integer"
+          "uuid":
+            type: "string"
+          "code":
+            type: "string"
+          "status":
+            type: "string"
+          "type":
+            type: "string"
+          "redeemLimitPerClient":
+            type: "integer"
+          "redeemQuantityPerActivation":
+            type: "integer"
+          "currentRedeemedQuantity":
+            type: "integer"
+          "currentRedeemLimit":
+            type: "integer"
+          "activationCounter":
+            type: "integer"
+          "possibleRedeems":
+            type: "integer"
+          "details":
+            $ref: "#/components/schemas/PromotionDetails"
+          "discountType":
+            type: "string"
+          "discountValue":
+            type: "integer"
+          "discountMode":
+            type: "string"
+          "discountModeDetails":
+            $ref: "#/components/schemas/DiscountModeDetails"
+          "requireRedeemedPoints":
+            type: "integer"
+          "f18703q":
+            type: "string"
+          "headline":
+            type: "string"
+          "description":
+            type: "string"
+          "images":
+            type: "array"
+            items:
+              $ref: "#/components/schemas/PromotionImage"
+          "tags":
+            type: "array"
+            items:
+              type: "object"
+              additionalProperties:
+                type: "object"
+                additionalProperties: {}
+          "startAt":
+            type: "string"
+            format: "date-time"
+          "expireAt":
+            type: "string"
+            format: "date-time"
+          "displayFrom":
+            type: "string"
+          "displayTo":
+            type: "string"
+          "assignedAt":
+            type: "string"
+            format: "date-time"
+    "VoucherCodesData":
+      type: "object"
+      properties:
+        "code":
+          type: "string"
+        "status":
+          type: "string"
+        "clientUuid":
+          type: "string"
+        "poolUuid":
+          type: "string"
+        "expireIn":
+          type: "string"
+          format: "date-time"
+        "redeemAt":
+          type: "string"
+          format: "date-time"
+        "assignedAt":
+          type: "string"
+          format: "date-time"
+        "createdAt":
+          type: "string"
+          format: "date-time"
+        "updatedAt":
+          type: "string"
+          format: "date-time"
+    "CreditCardInfo":
+      type: "object"
+      properties:
+        "brand":
+          $ref: "#/components/schemas/Brand"
+        "channelId":
+          type: "integer"
+        "credit_card_id":
+          type: "string"
+        "cvv":
+          type: "string"
+        "date":
+          type: "string"
+        "f51713id":
+          type: "integer"
+        "isCvvRequired":
+          type: "boolean"
+        "isRemoved":
+          type: "boolean"
+        "maskedNumber":
+          type: "string"
+        "unregisterUrl":
+          type: "string"
+    "Result":
+      type: "object"
+    "PaymentDetails":
+      type: "object"
+      properties:
+        "amount":
+          type: "string"
+        "currency":
+          type: "string"
+        "exchange":
+          type: "string"
+        "exchange_rate":
+          type: "string"
+        "exchange_reverse":
+          type: "string"
+        "is_exchanged":
+          type: "string"
+        "money":
+          type: "string"
+        "original_amount":
+          type: "string"
+        "original_currency":
+          type: "string"
+        "original_money":
+          type: "string"
+        "receiver":
+          type: "string"
+        "receiver_email":
+          type: "string"
+    "Channel":
+      type: "object"
+      properties:
+        "channelLanguage":
+          type: "string"
+        "config":
+          $ref: "#/components/schemas/ChannelConfig"
+        "date":
+          type: "string"
+        "dbId":
+          type: "integer"
+        "disable_message":
+          type: "string"
+        "disabled_message":
+          type: "string"
+        "form_names":
+          type: "array"
+          items:
+            type: "string"
+        "group":
+          type: "string"
+        "group_name":
+          type: "string"
+        "f51712id":
+          type: "integer"
+        "is_disable":
+          type: "string"
+        "is_not_online":
+          type: "string"
+        "is_offline":
+          type: "boolean"
+        "lastSelected":
+          type: "boolean"
+        "logo":
+          type: "string"
+        "name":
+          type: "string"
+        "not_online_message":
+          type: "string"
+        "paymentMethodType":
+          $ref: "#/components/schemas/PaymentMethodType"
+        "paymentType":
+          $ref: "#/components/schemas/PaymentType"
+        "short_name":
+          type: "string"
+        "state":
+          type: "string"
+        "validation_fields":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/Sender"
+        "warranty_amount":
+          type: "string"
+        "warranty_available":
+          type: "boolean"
+        "warranty_currency":
+          type: "string"
+        "warranty_money":
+          type: "string"
+    "Form":
+      type: "object"
+      properties:
+        "dbId":
+          type: "integer"
+        "fields":
+          type: "object"
+          additionalProperties: {}
+        "form_label":
+          type: "string"
+        "form_name":
+          type: "string"
+        "f51715id":
+          type: "integer"
+    "Country":
+      type: "object"
+      properties:
+        "additionalProperties":
+          type: "object"
+          additionalProperties:
+            type: "object"
+            additionalProperties: {}
+        "fields":
+          $ref: "#/components/schemas/Fields"
+        "f51710id":
+          type: "string"
+        "name":
+          type: "string"
+    "ConsentNetwork":
+      type: "object"
+      properties:
+        "channel":
+          type: "string"
+        "consentId":
+          type: "string"
+        "status":
+          $ref: "#/components/schemas/ConsentStatus"
+    "CompanyNetwork":
+      type: "object"
+      properties:
+        "buildingNumber":
+          type: "string"
+        "city":
+          type: "string"
+        "flatNumber":
+          type: "string"
+        "name":
+          type: "string"
+        "postCode":
+          type: "string"
+        "postOffice":
+          type: "string"
+        "street":
+          type: "string"
+    "DotpayChannelNetwork":
+      type: "object"
+      properties:
+        "config":
+          $ref: "#/components/schemas/DotpayChannelConfigNetwork"
+        "disabled":
+          type: "string"
+        "f46687id":
+          type: "integer"
+        "name":
+          type: "string"
+        "offline":
+          type: "string"
+    "ServicePriceNetwork":
+      type: "object"
+      properties:
+        "endOfWeekCollectionPrice":
+          type: "string"
+        "price":
+          $ref: "#/components/schemas/ParcelPriceNetwork"
+    "ExpandAvizoPriceNetwork":
+      type: "object"
+      properties:
+        "price":
+          type: "string"
+        "time":
+          type: "integer"
+    "CompartmentExpectedStatusNetwork":
+      type: "string"
+      enum:
+      - "OPENED"
+      - "CLOSED"
+    "CompartmentNetwork":
+      type: "object"
+      properties:
+        "location":
+          $ref: "#/components/schemas/CompartmentLocationNetwork"
+        "name":
+          type: "string"
+    "CurrencyNetwork":
+      type: "string"
+      enum:
+      - "PLN"
+      - "EUR"
+      - "USD"
+      - "GBP"
+    "PaymentDetailsNetwork":
+      type: "object"
+      properties:
+        "expandAvizoTime":
+          type: "integer"
+    "InvoiceNetwork":
+      type: "object"
+      properties:
+        "additionalInformation":
+          type: "string"
+        "addressDetails":
+          $ref: "#/components/schemas/InvoiceAddressNetwork"
+        "companyName":
+          type: "string"
+        "email":
+          type: "string"
+        "firstName":
+          type: "string"
+        "invoiceType":
+          type: "string"
+        "lastName":
+          type: "string"
+        "nationalBusinessRegistryNumber":
+          type: "string"
+        "taxNumber":
+          type: "string"
+        "taxNumberPrefix":
+          type: "string"
+        "verified":
+          type: "boolean"
+    "BlikPaymentMethodNetwork":
+      type: "string"
+      enum:
+      - "CODE"
+      - "ALIAS"
+      - "APP_KEY"
+    "PaymentProcessNetwork":
+      type: "string"
+      enum:
+      - "COD"
+      - "C2X"
+      - "AVIZO"
+    "ChildTransactionNetwork":
+      type: "object"
+      properties:
+        "multiMerchantChildId":
+          type: "string"
+        "process":
+          $ref: "#/components/schemas/PaymentProcessNetwork"
+        "shipmentNumber":
+          type: "string"
+        "transactionId":
+          type: "string"
+    "CarouselBannerNetwork":
+      type: "object"
+      properties:
+        "banners":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/BannerDataNetwork"
+    "EcoReturnNetwork":
+      type: "object"
+      properties:
+        "autoAccept":
+          type: "boolean"
+        "defaultParcelSize":
+          type: "string"
+        "formType":
+          type: "string"
+        "organizationName":
+          type: "string"
+        "organizationUuid":
+          type: "string"
+        "showTile":
+          type: "boolean"
+    "LotteryNetwork":
+      type: "object"
+      properties:
+        "closeButtonColor":
+          type: "string"
+        "detailsImageUrl":
+          type: "string"
+        "detailsRedirectUrl":
+          type: "string"
+        "endDate":
+          type: "string"
+          format: "date-time"
+        "fastPickupDuration":
+          type: "integer"
+        "fastPickupImageUrl":
+          type: "string"
+        "fastPickupRedirectUrl":
+          type: "string"
+        "hideDuration":
+          type: "integer"
+        "listImageUrl":
+          type: "string"
+        "listRedirectUrl":
+          type: "string"
+        "slowPickupRedirectUrl":
+          type: "string"
+        "startDate":
+          type: "string"
+          format: "date-time"
+    "BannerDataNetwork":
+      type: "object"
+      properties:
+        "darkImageUrl":
+          type: "string"
+        "lightImageUrl":
+          type: "string"
+        "redirectUrl":
+          type: "string"
+    "PreferenceNetwork":
+      type: "object"
+      properties:
+        "key":
+          type: "string"
+        "value":
+          type: "string"
+    "AddressDetailsNetwork":
+      type: "object"
+      properties:
+        "buildingNumber":
+          type: "string"
+        "city":
+          type: "string"
+        "flatNumber":
+          type: "string"
+        "postCode":
+          type: "string"
+        "province":
+          type: "string"
+        "street":
+          type: "string"
+    "AirSensorNetwork":
+      type: "object"
+      properties:
+        "airQuality":
+          $ref: "#/components/schemas/AirQualityNetwork"
+        "pollutants":
+          $ref: "#/components/schemas/PollutantsNetwork"
+        "updatedUntil":
+          type: "string"
+          format: "date-time"
+        "weather":
+          $ref: "#/components/schemas/WeatherNetwork"
+    "PointLocationNetwork":
+      type: "object"
+      properties:
+        "latitude":
+          type: "number"
+        "longitude":
+          type: "number"
+    "ReturnTicketEventLogNetwork":
+      type: "object"
+      properties:
+        "date":
+          type: "string"
+          format: "date-time"
+        "name":
+          type: "string"
+        "type":
+          type: "string"
+    "ReturnTicketOperationsNetwork":
+      type: "object"
+      properties:
+        "autoArchivableSince":
+          type: "string"
+          format: "date-time"
+        "delete":
+          type: "boolean"
+        "highlight":
+          type: "boolean"
+        "manualArchive":
+          type: "boolean"
+        "refreshUntil":
+          type: "string"
+          format: "date-time"
+        "send":
+          type: "boolean"
+    "ReturnSenderNetwork":
+      type: "object"
+      properties:
+        "email":
+          type: "string"
+        "name":
+          type: "string"
+    "OrganizationNetwork":
+      type: "object"
+      properties:
+        "autoAccept":
+          type: "boolean"
+        "defaultParcelSize":
+          type: "string"
+        "formType":
+          type: "string"
+        "name":
+          type: "string"
+        "uuid":
+          type: "string"
+    "ReturnableParcelNetwork":
+      type: "object"
+      properties:
+        "deliveredDate":
+          type: "string"
+          format: "date-time"
+        "organization":
+          $ref: "#/components/schemas/ReturnableParcelOrganizationNetwork"
+        "parcelSize":
+          type: "string"
+        "receiver":
+          $ref: "#/components/schemas/ReturnableParcelReceiverNetwork"
+        "senderName":
+          type: "string"
+        "shipmentNumber":
+          type: "string"
+    "ReturnReasonNetwork":
+      type: "object"
+      properties:
+        "name":
+          type: "string"
+        "uuid":
+          type: "string"
+    "NotificationNetwork":
+      type: "object"
+      properties:
+        "action":
+          type: "string"
+        "actionParam":
+          type: "string"
+        "content":
+          type: "string"
+        "date":
+          type: "string"
+          format: "date-time"
+        "f46688id":
+          type: "string"
+        "imageUrl":
+          type: "string"
+        "parcelCount":
+          type: "integer"
+        "parcelType":
+          type: "string"
+        "read":
+          type: "boolean"
+        "receiver":
+          type: "string"
+        "sender":
+          type: "string"
+        "shipmentNumber":
+          type: "string"
+        "theme":
+          type: "string"
+        "title":
+          type: "string"
+        "type":
+          type: "string"
+        "validUntil":
+          type: "string"
+          format: "date-time"
+    "TargetAddressNetwork":
+      type: "object"
+      properties:
+        "address":
+          $ref: "#/components/schemas/AddressNetwork"
+        "companyName":
+          type: "string"
+        "name":
+          type: "string"
+    "EventLogNetwork":
+      type: "object"
+      properties:
+        "date":
+          type: "string"
+          format: "date-time"
+        "details":
+          $ref: "#/components/schemas/EventLogDetailsNetwork"
+        "name":
+          type: "string"
+        "type":
+          type: "string"
+    "SentParcelOperationsNetwork":
+      type: "object"
+      properties:
+        "autoArchivableSince":
+          type: "string"
+          format: "date-time"
+        "delete":
+          type: "boolean"
+        "highlight":
+          type: "boolean"
+        "manualArchive":
+          type: "boolean"
+        "payToSend":
+          type: "boolean"
+        "refreshUntil":
+          type: "string"
+          format: "date-time"
+        "send":
+          type: "boolean"
+        "voicebot":
+          type: "boolean"
+    "PaymentNetwork":
+      type: "object"
+      properties:
+        "endOfWeekCollectionPrice":
+          type: "string"
+        "insurancePrice":
+          type: "string"
+        "paid":
+          type: "boolean"
+        "totalPrice":
+          type: "string"
+        "transactionStatus":
+          type: "string"
+    "CustomerNetwork":
+      type: "object"
+      properties:
+        "address":
+          $ref: "#/components/schemas/AddressNetwork"
+        "email":
+          type: "string"
+        "name":
+          type: "string"
+        "phoneNumber":
+          type: "string"
+    "DeliveryPointNetwork":
+      type: "object"
+      properties:
+        "address":
+          $ref: "#/components/schemas/DeliveryPointAddressNetwork"
+        "boxMachineName":
+          type: "string"
+    "ReceiverNetwork":
+      type: "object"
+      properties:
+        "email":
+          type: "string"
+        "name":
+          type: "string"
+        "phoneNumber":
+          type: "string"
+    "SenderNetwork":
+      type: "object"
+      properties:
+        "address":
+          $ref: "#/components/schemas/AddressNetwork"
+        "email":
+          type: "string"
+        "name":
+          type: "string"
+    "PaymentMethodNetwork":
+      type: "string"
+      enum:
+      - "GOOGLE_PAY"
+      - "PAY_BY_LINK"
+      - "CREDIT_CARD"
+    "GeoPointNetwork":
+      type: "object"
+      properties:
+        "accuracy":
+          type: "number"
+        "latitude":
+          type: "number"
+        "longitude":
+          type: "number"
+    "SendParcelNetwork":
+      type: "object"
+      properties:
+        "quickSendCode":
+          type: "string"
+        "shipmentNumber":
+          type: "string"
+    "CashOnDeliveryNetwork":
+      type: "object"
+      properties:
+        "paid":
+          type: "boolean"
+        "payCode":
+          type: "string"
+        "price":
+          type: "string"
+        "transactionStatus":
+          type: "string"
+        "url":
+          type: "string"
+    "MultiCompartmentNetwork":
+      type: "object"
+      properties:
+        "collected":
+          type: "boolean"
+        "presentation":
+          type: "boolean"
+        "shipmentNumbers":
+          type: "array"
+          items:
+            type: "string"
+        "uuid":
+          type: "string"
+    "TrackedParcelOperationsNetwork":
+      type: "object"
+      properties:
+        "autoArchivableSince":
+          type: "string"
+          format: "date-time"
+        "canShareOpenCode":
+          type: "boolean"
+        "canShareParcel":
+          type: "boolean"
+        "canShareToObserve":
+          type: "boolean"
+        "collect":
+          type: "boolean"
+        "delete":
+          type: "boolean"
+        "expandAvizo":
+          type: "boolean"
+        "highlight":
+          type: "boolean"
+        "manualArchive":
+          type: "boolean"
+        "redirectionUrl":
+          type: "string"
+        "refreshUntil":
+          type: "string"
+          format: "date-time"
+        "requestEasyAccessZone":
+          type: "string"
+        "voicebot":
+          type: "boolean"
+    "SharedParcelNetwork":
+      type: "object"
+      properties:
+        "friendUuids":
+          type: "array"
+          items:
+            type: "string"
+        "shipmentNumber":
+          type: "string"
+    "pl.inpost.inmobile.networkModel.returnremote.ReturnTicketNetwork":
+      type: "object"
+      properties:
+        "returnCode":
+          type: "string"
+        "uuid":
+          type: "string"
+    "ParcelCompartmentNetwork":
+      type: "object"
+      properties:
+        "openCode":
+          type: "string"
+        "receiverPhoneNumber":
+          type: "string"
+        "shipmentNumber":
+          type: "string"
+    "FriendInvitationDetailsNetwork":
+      type: "object"
+      properties:
+        "createdDate":
+          type: "string"
+          format: "date-time"
+        "expiryDate":
+          type: "string"
+          format: "date-time"
+        "friend":
+          $ref: "#/components/schemas/FriendNetwork"
+        "invitationCode":
+          type: "string"
+    "MCWLink":
+      type: "object"
+      properties:
+        "rel":
+          $ref: "#/components/schemas/MCWLinkDestination"
+        "f24764b":
+          type: "string"
+        "f24765c":
+          type: "string"
+        "f24766d":
+          type: "string"
+        "f24767e":
+          type: "string"
+        "f24768f":
+          type: "string"
+    "MCWCardBrand":
+      type: "string"
+      enum:
+      - "MASTERCARD"
+      - "VISA"
+    "RecommendationContainer":
+      type: "object"
+      properties:
+        "campaignHash":
+          type: "string"
+        "campaignId":
+          type: "string"
+        "recommended":
+          $ref: "#/components/schemas/Recommended"
+    "SyneriseNotification":
+      type: "object"
+      properties:
+        "campaign":
+          $ref: "#/components/schemas/Campaign"
+        "notification":
+          $ref: "#/components/schemas/ComplexNotification"
+        "buttons":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/NotificationButton"
+    "SyneriseData":
+      type: "object"
+      properties:
+        "f18530a":
+          type: "string"
+        "messageType":
+          type: "string"
+        "contentType":
+          type: "string"
+    "Image":
+      type: "object"
+      properties:
+        "url":
+          type: "string"
+    "Text":
+      type: "object"
+      properties:
+        "text":
+          type: "string"
+        "alpha":
+          type: "number"
+        "color":
+          type: "string"
+        "size":
+          type: "integer"
+    "Background":
+      type: "object"
+      properties:
+        "alpha":
+          type: "number"
+        "color":
+          type: "string"
+    "Button":
+      type: "object"
+      properties:
+        "is_enabled":
+          type: "boolean"
+        "text":
+          type: "string"
+        "text_color":
+          type: "string"
+        "color":
+          type: "string"
+        "corner_radius":
+          type: "integer"
+    "CloseButton":
+      type: "object"
+      properties:
+        "is_enabled":
+          type: "boolean"
+        "alignment":
+          type: "string"
+    "Action":
+      type: "object"
+      properties:
+        "type":
+          type: "string"
+        "item":
+          type: "string"
+    "TemplateBanner":
+      allOf:
+      - $ref: "#/components/schemas/BasePageMapper"
+      - type: "object"
+        properties:
+          "campaign":
+            $ref: "#/components/schemas/Campaign"
+          "trigger":
+            type: "string"
+          "notification":
+            $ref: "#/components/schemas/SimpleNotification"
+          "auto_disappear":
+            $ref: "#/components/schemas/AutoDisappear"
+          "page":
+            $ref: "#/components/schemas/NetGenericPageData"
+    "PromotionDetails":
+      type: "object"
+      properties:
+        "discountType":
+          $ref: "#/components/schemas/DiscountType"
+    "DiscountModeDetails":
+      type: "object"
+      properties:
+        "discountSteps":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/DiscountStep"
+        "discountUsageTrigger":
+          type: "string"
+    "PromotionImage":
+      type: "object"
+      properties:
+        "url":
+          type: "string"
+        "type":
+          type: "string"
+    "BaseModel":
+      type: "object"
+    "Brand":
+      type: "object"
+      properties:
+        "code_name":
+          type: "string"
+        "f51711id":
+          type: "integer"
+        "logo":
+          type: "string"
+        "name":
+          type: "string"
+    "ChannelConfig":
+      type: "object"
+      properties:
+        "data":
+          $ref: "#/components/schemas/ChannelConfigData"
+        "type":
+          type: "string"
+    "PaymentMethodType":
+      type: "string"
+      enum:
+      - "CHANNEL"
+      - "CARD"
+    "PaymentType":
+      type: "string"
+      enum:
+      - "CreditCards"
+      - "FastTransfers"
+      - "Transfers"
+      - "MobileTransfers"
+      - "PursesAndVouchers"
+      - "Installment"
+      - "Cash"
+    "Sender":
+      type: "object"
+      properties:
+        "ValidationMessage":
+          type: "string"
+        "Value":
+          type: "string"
+        "description":
+          type: "string"
+        "message":
+          type: "string"
+        "name":
+          type: "string"
+        "regex":
+          type: "string"
+    "Fields":
+      type: "object"
+    "ConsentStatus":
+      type: "string"
+      enum:
+      - "GIVEN"
+      - "REFUSED"
+    "DotpayChannelConfigNetwork":
+      type: "object"
+      properties:
+        "data":
+          $ref: "#/components/schemas/DotpayChannelConfigDataNetwork"
+        "type":
+          type: "string"
+    "ParcelPriceNetwork":
+      type: "object"
+      properties:
+        "sizeA":
+          type: "string"
+        "sizeB":
+          type: "string"
+        "sizeC":
+          type: "string"
+    "CompartmentLocationNetwork":
+      type: "object"
+      properties:
+        "column":
+          type: "string"
+        "row":
+          type: "string"
+        "side":
+          type: "string"
+    "InvoiceAddressNetwork":
+      type: "object"
+      properties:
+        "buildingNumber":
+          type: "string"
+        "city":
+          type: "string"
+        "country":
+          type: "string"
+        "flatNumber":
+          type: "string"
+        "postCode":
+          type: "string"
+        "postOffice":
+          type: "string"
+        "street":
+          type: "string"
+    "AirQualityNetwork":
+      type: "string"
+      enum:
+      - "VERY_GOOD"
+      - "GOOD"
+      - "MODERATE"
+      - "SATISFACTORY"
+      - "BAD"
+      - "VERY_BAD"
+    "PollutantsNetwork":
+      type: "object"
+      properties:
+        "no2":
+          $ref: "#/components/schemas/PollutantNetwork"
+        "f46686o3":
+          $ref: "#/components/schemas/PollutantNetwork"
+        "pm10":
+          $ref: "#/components/schemas/PollutantNetwork"
+        "pm25":
+          $ref: "#/components/schemas/PollutantNetwork"
+    "WeatherNetwork":
+      type: "object"
+      properties:
+        "humidity":
+          type: "number"
+        "pressure":
+          type: "number"
+        "temperature":
+          type: "number"
+    "ReturnableParcelOrganizationNetwork":
+      type: "object"
+      properties:
+        "name":
+          type: "string"
+        "uuid":
+          type: "string"
+    "ReturnableParcelReceiverNetwork":
+      type: "object"
+      properties:
+        "email":
+          type: "string"
+        "name":
+          type: "string"
+    "AddressNetwork":
+      type: "object"
+      properties:
+        "buildingNumber":
+          type: "string"
+        "city":
+          type: "string"
+        "country":
+          type: "string"
+        "flatNumber":
+          type: "string"
+        "postCode":
+          type: "string"
+        "postOffice":
+          type: "string"
+        "province":
+          type: "string"
+        "street":
+          type: "string"
+    "EventLogDetailsNetwork":
+      type: "object"
+      properties:
+        "invoiceRequested":
+          type: "boolean"
+    "DeliveryPointAddressNetwork":
+      type: "object"
+      properties:
+        "buildingNumber":
+          type: "string"
+        "city":
+          type: "string"
+        "companyName":
+          type: "string"
+        "flatNumber":
+          type: "string"
+        "postCode":
+          type: "string"
+        "street":
+          type: "string"
+    "MCWLinkDestination":
+      type: "string"
+      enum:
+      - "REGISTRATION"
+      - "LOGIN"
+      - "RESET_PASSWORD"
+      - "CARDS"
+      - "TERMS_OF_SERVICE"
+    "Recommended":
+      type: "object"
+      properties:
+        "data":
+          type: "array"
+          items:
+            type: "object"
+            additionalProperties:
+              type: "object"
+              additionalProperties: {}
+        "extras":
+          $ref: "#/components/schemas/Extras"
+    "NotificationButton":
+      type: "object"
+      properties:
+        "identifier":
+          type: "string"
+        "text":
+          type: "string"
+        "action":
+          $ref: "#/components/schemas/Action"
+    "AutoDisappear":
+      type: "object"
+      properties:
+        "is_enabled":
+          type: "boolean"
+        "timeout":
+          type: "integer"
+    "DiscountType":
+      type: "object"
+      properties:
+        "f18648a":
+          type: "string"
+        "outerScope":
+          type: "boolean"
+        "requiredItemsCount":
+          type: "integer"
+        "discountedItemsCount":
+          type: "integer"
+    "DiscountStep":
+      type: "object"
+      properties:
+        "discountValue":
+          type: "integer"
+        "usageThreshold":
+          type: "integer"
+    "ChannelConfigData":
+      type: "object"
+      properties:
+        "gp_api_version":
+          type: "integer"
+        "gp_api_version_minor":
+          type: "integer"
+        "gp_auth_methods":
+          type: "array"
+          items:
+            type: "string"
+        "gp_card_brands":
+          type: "array"
+          items:
+            type: "string"
+        "gp_currency_code":
+          type: "string"
+        "gp_environment":
+          type: "string"
+        "gp_gateway":
+          type: "string"
+        "gp_gateway_merchant_id":
+          type: "string"
+        "gp_merchant_id":
+          type: "string"
+        "gp_merchant_name":
+          type: "string"
+        "gp_protocol_version":
+          type: "string"
+        "gp_script_url":
+          type: "string"
+        "gp_total_price":
+          type: "string"
+        "mp_amount":
+          type: "string"
+        "mp_base_api_url":
+          type: "string"
+        "mp_card_brands":
+          type: "array"
+          items:
+            type: "string"
+        "mp_currency":
+          type: "string"
+        "mp_js_sdk_url":
+          type: "string"
+        "mp_merchant_credentials_available":
+          type: "boolean"
+        "mp_merchant_id":
+          type: "string"
+        "mp_merchant_name":
+          type: "string"
+        "vco_api_key":
+          type: "string"
+        "vco_button_url":
+          type: "string"
+        "vco_currency":
+          type: "string"
+        "vco_display_name":
+          type: "string"
+        "vco_external_client_id":
+          type: "string"
+        "vco_external_profile_id":
+          type: "string"
+        "vco_script_url":
+          type: "string"
+        "vco_subtotal":
+          type: "string"
+    "DotpayChannelConfigDataNetwork":
+      type: "object"
+      properties:
+        "apiVersion":
+          type: "string"
+        "apiVersionMinor":
+          type: "string"
+        "authMethods":
+          type: "array"
+          items:
+            type: "string"
+        "cardBrands":
+          type: "array"
+          items:
+            type: "string"
+        "currencyCode":
+          type: "string"
+        "environment":
+          type: "string"
+        "gateway":
+          type: "string"
+        "gatewayMerchantId":
+          type: "string"
+        "merchantId":
+          type: "string"
+        "merchantName":
+          type: "string"
+        "protocolVersion":
+          type: "string"
+        "scriptUrl":
+          type: "string"
+        "totalPrice":
+          type: "string"
+    "PollutantNetwork":
+      type: "object"
+      properties:
+        "percent":
+          type: "number"
+        "value":
+          type: "number"
+    "Extras":
+      type: "object"
+      properties:
+        "contextItems":
+          type: "object"
+          additionalProperties: {}
+        "correlationId":
+          type: "string"
+        "slots":
+          type: "array"
+          items:
+            $ref: "#/components/schemas/Slot"
+    "Slot":
+      type: "object"
+      properties:
+        "id":
+          type: "integer"
+        "itemIds":
+          type: "array"
+          items:
+            type: "string"
+        "f17940c":
+          type: "string"
